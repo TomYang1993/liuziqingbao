@@ -1,0 +1,133 @@
+[
+  {
+    "id": "f1-ds",
+    "title": "F-1 Duration of Status ends",
+    "topics": [
+      "F-1",
+      "OPT",
+      "CPT"
+    ],
+    "status": "Blocked by court",
+    "status_kind": "blocked",
+    "summary": "DHS final rule replaces open-ended 'duration of status' for F/J/I visa holders with a fixed admission period and an extension-of-stay process. On Sep 14, 2026, a federal judge in Massachusetts granted a nationwide preliminary injunction, one day before the rule's effective date. D/S stays in place while the lawsuit continues.",
+    "timeline": [
+      {
+        "date": "2025-08-28",
+        "label": "DHS proposes fixed admission period (NPRM); comments through Sep 29, 2025",
+        "url": "https://www.federalregister.gov/documents/2025/08/28/2025-16554/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant"
+      },
+      {
+        "date": "2026-07-17",
+        "label": "Final rule published; effective Sep 15, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant"
+      },
+      {
+        "date": "2026-07-17",
+        "label": "SEVP explainer for DSOs and students",
+        "url": "https://studyinthestates.dhs.gov/2026/07/dhs-publishes-final-rule-establishing-a-fixed-time-period-of-admission-and-an-extension-of"
+      },
+      {
+        "date": "2026-08-18",
+        "label": "NAFSA, Presidents' Alliance, AFT, UAW and others sue in D. Mass. (Judge Saylor); motion for preliminary injunction filed",
+        "url": "https://www.nafsa.org/legal-defense-DS"
+      },
+      {
+        "date": "2026-09-03",
+        "label": "Preliminary injunction hearing, Moakley Courthouse, Boston",
+        "url": "https://www.presidentsalliance.org/duration-of-status-litigation/"
+      },
+      {
+        "date": "2026-09-14",
+        "label": "Judge Saylor grants nationwide preliminary injunction; rule blocked during litigation",
+        "url": "https://nepyork.com/2026/09/14/federal-judge-blocks-dhs-rule-ending-duration-of-status-for-international-students/",
+        "note": "News report; court order not yet linked"
+      }
+    ]
+  },
+  {
+    "id": "h1b-fee",
+    "title": "$100,000 H-1B fee",
+    "topics": [
+      "H-1B"
+    ],
+    "status": "Proposed rule, comments open through Sep 24",
+    "status_kind": "proposed",
+    "summary": "Presidential proclamation imposed a $100,000 payment on new H-1B petitions for workers outside the US. DHS is now codifying a fee through rulemaking; comment period on the NPRM closes Sep 24, 2026.",
+    "timeline": [
+      {
+        "date": "2025-09-19",
+        "label": "Proclamation: Restriction on Entry of Certain Nonimmigrant Workers ($100,000 payment)",
+        "url": "https://www.federalregister.gov/documents/2025/09/24/2025-18601/restriction-on-entry-of-certain-nonimmigrant-workers"
+      },
+      {
+        "date": "2026-08-25",
+        "label": "DHS proposes 'Fee for Certain H-1B Petitions'; comments through Sep 24, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions"
+      },
+      {
+        "date": "2026-09-10",
+        "label": "Correction notice to the proposed rule",
+        "url": "https://www.federalregister.gov/documents/2026/09/10/C1-2026-17324/fee-for-certain-h-1b-petitions"
+      }
+    ]
+  },
+  {
+    "id": "opt-fee",
+    "title": "$100,000 OPT fee",
+    "topics": [
+      "OPT",
+      "STEM OPT"
+    ],
+    "status": "Cleared White House review; not yet published",
+    "status_kind": "pending",
+    "summary": "DHS is drafting a rule that would attach a $100,000 fee to Optional Practical Training. Reported July 2026, sent to the White House (OIRA) for review in August, review completed by Sep 13. Nothing is in effect: the proposed rule still has to be published in the Federal Register for public comment. No official DHS document yet.",
+    "timeline": [
+      {
+        "date": "2026-07-31",
+        "label": "Reports: administration weighing $100,000 fee on OPT",
+        "url": "https://americanbazaaronline.com/2026/07/30/trump-100000-opt-fee-international-students-485508/",
+        "note": "News report"
+      },
+      {
+        "date": "2026-08-20",
+        "label": "DHS sends proposed OPT fee rule to OIRA for regulatory review",
+        "url": "https://reason.com/2026/08/21/trump-once-promised-international-students-green-cards-now-the-government-might-charge-them-100000-to-work/",
+        "note": "News report; reginfo.gov entry 1505717"
+      },
+      {
+        "date": "2026-09-13",
+        "label": "OIRA completes review; Federal Register publication expected next",
+        "url": "https://americanbazaaronline.com/2026/09/13/us-100k-opt-fee-proposal-white-house-review-indian-students-488044/",
+        "note": "News report"
+      }
+    ]
+  },
+  {
+    "id": "cpt-guidance",
+    "title": "CPT must be required by curriculum",
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
+    "status": "SEVP guidance in effect",
+    "status_kind": "effective",
+    "summary": "Two SEVP broadcast messages (Aug 12 and Aug 24, 2026) tell DSOs that CPT may be authorized only when the training is an integral, required part of the established curriculum, required of all students in the program regardless of immigration status, and needed to complete the degree. Course credit alone is not enough. Not a new regulation, but SEVP may request documentation. Hits day-1 CPT programs and optional internships.",
+    "timeline": [
+      {
+        "date": "2026-08-12",
+        "label": "Broadcast Message 2608-01: Reminder of Liability for DSOs Regarding CPT Authorization",
+        "url": "https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf"
+      },
+      {
+        "date": "2026-08-24",
+        "label": "Broadcast Message 2608-02: Q&A on when practical training is 'integral' to the curriculum",
+        "url": "https://www.ice.gov/doclib/sevis/pdf/bcm_260802.pdf"
+      },
+      {
+        "date": "2026-08-24",
+        "label": "Study in the States: F-1 CPT reference page",
+        "url": "https://studyinthestates.dhs.gov/sevis-help-hub/student-records/fm-student-employment/f-1-curricular-practical-training-cpt"
+      }
+    ]
+  }
+]

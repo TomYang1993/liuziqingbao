@@ -1,0 +1,11 @@
+name = "liuziqingbao-votes"
+main = "index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+ORIGIN = "https://tomyang1993.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "liuziqingbao"
+database_id = "REPLACE_AFTER_CREATE"

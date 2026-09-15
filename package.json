@@ -1,0 +1,16 @@
+{
+  "name": "liuziqingbao",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "fetch": "node scripts/fetch.mjs"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.11",
+    "astro": "^5.12.0",
+    "rss-parser": "^3.13.0"
+  }
+}

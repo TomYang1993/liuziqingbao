@@ -1,0 +1,250 @@
+---
+import items from '../../data/items.json';
+import issues from '../../data/issues.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const visible = items.filter((i) => i.relevant !== false);
+const topics = [...new Set(visible.flatMap((i) => i.topics ?? []))].sort();
+const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+const updated = visible[0]?.first_seen;
+const latest = (iss) => iss.timeline.at(-1)?.date;
+const VOTES_URL = import.meta.env.PUBLIC_VOTES_URL ?? '';
+// stable short id per news URL; issues use their own id
+const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCodeAt(0)) >>> 0; return 'n' + h.toString(36); };
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>留子情报 · liuziqingbao</title>
+    <meta name="description" content="Official US immigration policy updates for H-1B, F-1, OPT, CPT, straight from USCIS, Federal Register, ICE/SEVP, and the White House." />
+    <link rel="alternate" type="application/rss+xml" title="留子情报" href={`${base}/rss.xml`} />
+    <style is:global>
+      :root {
+        --bg: #fbfaf7; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e6e2d8; --accent: #b3261e; --chip: #efece4; --card: #ffffff;
+        --blocked: #b3261e; --proposed: #8a6d00; --effective: #1f6f3f; --unverified: #6b6b6b; --final: #1f4f8a;
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root { --bg: #141414; --fg: #eae8e3; --muted: #9a9a9a; --line: #2a2a2a; --accent: #ff6b5e; --chip: #232323; --card: #1c1c1c;
+          --blocked: #ff6b5e; --proposed: #e0b63a; --effective: #5fbf7f; --unverified: #9a9a9a; --final: #6fa3e0; }
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 ui-serif, Georgia, "Noto Serif SC", serif; }
+      .sans { font-family: ui-sans-serif, system-ui, sans-serif; }
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+      header h1 { font-size: 2.4rem; margin: 0; letter-spacing: -0.02em; }
+      header h1 small { display: block; font-size: 0.9rem; font-weight: 400; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.3rem; }
+      header p { color: var(--muted); margin: 0.9rem 0 0; max-width: 720px; }
+      .grid { display: grid; grid-template-columns: 340px 1fr; gap: 3rem; margin-top: 2.5rem; align-items: start; }
+      @media (max-width: 860px) { .grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+      aside h2, section h2.section { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.9rem; }
+      .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 0.8rem; }
+      .card summary { list-style: none; cursor: pointer; padding: 0.9rem 1rem; }
+      .card summary::-webkit-details-marker { display: none; }
+      .card summary::after { content: '+'; float: right; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
+      .card[open] summary::after { content: '−'; }
+      .card h3 { margin: 0 0 0.35rem; font-size: 1.05rem; line-height: 1.3; }
+      .status { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; }
+      .status::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+      .status.blocked { color: var(--blocked); } .status.proposed { color: var(--proposed); } .status.effective { color: var(--effective); }
+      .status.unverified, .status.pending { color: var(--unverified); } .status.final { color: var(--final); }
+      .card .when { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; color: var(--muted); margin-left: 0.6rem; }
+      .card .body { padding: 0 1rem 1rem; border-top: 1px solid var(--line); }
+      .card .body p { font-size: 0.92rem; margin: 0.9rem 0; }
+      .tl { list-style: none; margin: 0; padding: 0 0 0 1rem; border-left: 2px solid var(--line); }
+      .tl li { position: relative; padding: 0 0 0.9rem 0.9rem; font-size: 0.85rem; }
+      .tl li::before { content: ''; position: absolute; left: calc(-1rem - 5px); top: 0.45em; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+      .tl li:last-child::before { background: var(--fg); }
+      .tl time { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.7rem; color: var(--muted); }
+      .tl a { color: inherit; }
+      .tl .note { display: block; font-size: 0.72rem; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
+      .empty-tl { font-size: 0.82rem; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
+
+      nav { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.5rem; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.85rem; }
+      nav button { border: 1px solid var(--line); background: transparent; color: var(--fg); padding: 0.3rem 0.75rem; border-radius: 999px; cursor: pointer; }
+      nav button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+      article { padding: 1.3rem 0; border-top: 1px solid var(--line); }
+      article[hidden] { display: none; }
+      .meta { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; color: var(--muted); display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.35rem; }
+      .meta .type { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+      article h3 { font-size: 1.1rem; margin: 0 0 0.5rem; line-height: 1.35; }
+      article h3 a { color: inherit; text-decoration: none; }
+      article h3 a:hover { text-decoration: underline; }
+      .summary { margin: 0; font-size: 0.95rem; }
+      .ai { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; color: var(--muted); margin-top: 0.45rem; }
+      .chips { margin-top: 0.6rem; display: flex; gap: 0.35rem; flex-wrap: wrap; }
+      .chips span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; background: var(--chip); padding: 0.15rem 0.55rem; border-radius: 4px; }
+      footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; font-family: ui-sans-serif, system-ui, sans-serif; }
+      footer a { color: inherit; }
+      .empty { color: var(--muted); padding: 3rem 0; text-align: center; }
+
+      .votes { display: flex; gap: 0.4rem; margin-top: 0.7rem; font-family: ui-sans-serif, system-ui, sans-serif; }
+      .card .votes { margin: 0.2rem 0 0; }
+      .vote { border: 1px solid var(--line); background: transparent; color: var(--fg); border-radius: 999px; padding: 0.2rem 0.65rem 0.2rem 0.5rem; font-size: 0.82rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; line-height: 1; }
+      .vote:hover { border-color: var(--fg); }
+      .vote:active { transform: scale(0.94); }
+      .vote .n { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 1ch; }
+      article, .card { position: relative; }
+      .fx { position: absolute; pointer-events: none; z-index: 5; }
+      .fx-egg { font-size: 1.6rem; animation: throw 0.38s cubic-bezier(0.2, 0.6, 0.4, 1) forwards; }
+      .fx-splat { width: 110px; height: 110px; margin: -55px 0 0 -55px; animation: splat 1.1s ease-out forwards; }
+      .fx-flower { font-size: 1.4rem; animation: bloom 0.9s ease-out forwards; }
+      @keyframes throw { 0% { transform: translate(0, 0) scale(1) rotate(0); } 100% { transform: translate(var(--dx), var(--dy)) scale(0.85) rotate(240deg); opacity: 1; } }
+      @keyframes splat { 0% { transform: scale(0.3); opacity: 1; } 18% { transform: scale(1.1); } 30% { transform: scale(1); } 100% { transform: scale(1) translateY(6px); opacity: 0; } }
+      @keyframes bloom { 0% { transform: translate(0, 0) scale(0.6); opacity: 1; } 100% { transform: translate(var(--dx), -70px) scale(1.4) rotate(var(--rot)); opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .fx { display: none; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>留子情报<small>liuziqingbao · US student & work visa policy watch</small></h1>
+        <p>
+          Official updates on H-1B, F-1, OPT, CPT and STEM OPT, pulled from USCIS, the Federal Register, ICE/SEVP, and the White House.
+          {updated && <span>Last checked {fmt(updated)}.</span>}
+          <a href={`${base}/rss.xml`}>Subscribe via RSS</a>.
+        </p>
+      </header>
+
+      <div class="grid">
+        <aside>
+          <h2>Tracking</h2>
+          {issues.map((iss, n) => (
+            <details class="card" open={n === 0}>
+              <summary>
+                <h3>{iss.title}</h3>
+                <span class={`status ${iss.status_kind}`}>{iss.status}</span>
+                {latest(iss) && <span class="when">{fmt(latest(iss))}</span>}
+              </summary>
+              <div class="body">
+                <p>{iss.summary}</p>
+                {iss.timeline.length ? (
+                  <ol class="tl">
+                    {iss.timeline.map((e) => (
+                      <li>
+                        <time datetime={e.date}>{fmt(e.date)}</time>
+                        {e.url ? <a href={e.url} target="_blank" rel="noopener">{e.label}</a> : e.label}
+                        {e.note && <span class="note">{e.note}</span>}
+                      </li>
+                    ))}
+                  </ol>
+                ) : (
+                  <span class="empty-tl">No official document yet.</span>
+                )}
+                <div class="votes" data-vote-id={iss.id}>
+                  <button class="vote" data-kind="egg" aria-label="Throw an egg">🥚 <span class="n"></span></button>
+                  <button class="vote" data-kind="flower" aria-label="Give a flower">🌸 <span class="n"></span></button>
+                </div>
+              </div>
+            </details>
+          ))}
+        </aside>
+
+        <section>
+          <h2 class="section">Latest from official sources</h2>
+          {topics.length > 0 && (
+            <nav aria-label="Filter by topic">
+              <button data-topic="" aria-pressed="true">All</button>
+              {topics.map((t) => <button data-topic={t} aria-pressed="false">{t}</button>)}
+            </nav>
+          )}
+
+          {visible.length === 0 && <p class="empty">No items yet. The worker hasn't run.</p>}
+
+          {visible.map((i) => (
+            <article data-topics={(i.topics ?? []).join('|')}>
+              <div class="meta">
+                <span class="type">{i.doc_type ?? 'update'}</span>
+                <span>{i.source}</span>
+                <span>{fmt(i.published)}</span>
+              </div>
+              <h3><a href={i.url} target="_blank" rel="noopener">{i.title}</a></h3>
+              {i.summary
+                ? <p class="summary">{i.summary}</p>
+                : i.excerpt && <p class="summary">{i.excerpt.slice(0, 300)}{i.excerpt.length > 300 ? '…' : ''}</p>}
+              {i.ai && i.summary && <div class="ai">AI-generated summary, unreviewed. Read the source.</div>}
+              {i.topics?.length > 0 && <div class="chips">{i.topics.map((t) => <span>{t}</span>)}</div>}
+              <div class="votes" data-vote-id={vid(i.url)}>
+                <button class="vote" data-kind="egg" aria-label="Throw an egg">🥚 <span class="n"></span></button>
+                <button class="vote" data-kind="flower" aria-label="Give a flower">🌸 <span class="n"></span></button>
+              </div>
+            </article>
+          ))}
+        </section>
+      </div>
+
+      <footer>
+        Not legal advice. Every item links to its official source: verify there before acting.
+        Found an error? <a href="https://github.com/TomYang1993/liuziqingbao/issues">Open an issue</a>.
+      </footer>
+    </div>
+
+    <script define:vars={{ VOTES_URL }}>
+      const SPLAT = `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#d8c33a" opacity=".92" d="M50 12c9 0 12 9 20 10s16-4 19 6-8 12-6 20 12 10 8 19-14 2-20 8-4 15-13 15-9-9-17-11-17 3-20-6 7-12 5-20-12-9-8-18 14-3 20-9 3-14 12-14z"/><circle cx="46" cy="50" r="14" fill="#f2a71b"/><path fill="#d8c33a" opacity=".9" d="M24 78c3 0 4 6 2 14-2 6-6 4-6-2s1-12 4-12zM72 80c3 1 4 9 1 16-3 5-6 1-6-6s2-11 5-10z"/></svg>`;
+
+      const boxes = [...document.querySelectorAll('[data-vote-id]')];
+      const render = (box, counts) => box.querySelectorAll('.vote').forEach((b) => (b.querySelector('.n').textContent = counts?.[b.dataset.kind] ?? ''));
+
+      if (VOTES_URL) {
+        fetch(`${VOTES_URL}/counts`).then((r) => r.json()).then((all) => boxes.forEach((b) => render(b, all[b.dataset.voteId]))).catch(() => {});
+      }
+
+      const fx = (host, cls, html, style) => {
+        const el = document.createElement('div');
+        el.className = `fx ${cls}`;
+        el.innerHTML = html;
+        for (const [k, v] of Object.entries(style)) k.startsWith('--') ? el.style.setProperty(k, v) : (el.style[k] = v);
+        host.appendChild(el);
+        return el;
+      };
+
+      boxes.forEach((box) =>
+        box.querySelectorAll('.vote').forEach((btn) =>
+          btn.addEventListener('click', async () => {
+            const host = box.closest('article, .card');
+            const hr = host.getBoundingClientRect(), br = btn.getBoundingClientRect();
+            const x0 = br.left - hr.left + br.width / 2, y0 = br.top - hr.top + br.height / 2;
+            const kind = btn.dataset.kind;
+
+            if (kind === 'egg') {
+              const tx = 40 + Math.random() * (hr.width - 80), ty = 20 + Math.random() * Math.max(20, hr.height - 60);
+              const egg = fx(host, 'fx-egg', '🥚', { left: `${x0 - 12}px`, top: `${y0 - 14}px`, '--dx': `${tx - x0}px`, '--dy': `${ty - y0}px` });
+              egg.addEventListener('animationend', () => {
+                egg.remove();
+                const s = fx(host, 'fx-splat', SPLAT, { left: `${tx}px`, top: `${ty}px` });
+                s.addEventListener('animationend', () => s.remove());
+              });
+            } else {
+              for (let k = 0; k < 4; k++) {
+                const f = fx(host, 'fx-flower', ['🌸', '🌼', '🌷', '💐'][k], { left: `${x0 - 10}px`, top: `${y0 - 12}px`, '--dx': `${(Math.random() - 0.5) * 90}px`, '--rot': `${(Math.random() - 0.5) * 60}deg`, animationDelay: `${k * 70}ms` });
+                f.addEventListener('animationend', () => f.remove());
+              }
+            }
+
+            const n = btn.querySelector('.n');
+            n.textContent = (Number(n.textContent) || 0) + 1;
+            if (!VOTES_URL) return;
+            try {
+              const r = await fetch(`${VOTES_URL}/vote`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: box.dataset.voteId, kind }) });
+              if (r.ok) render(box, await r.json());
+            } catch {}
+          }),
+        ),
+      );
+
+      const buttons = document.querySelectorAll('nav button');
+      buttons.forEach((b) =>
+        b.addEventListener('click', () => {
+          const t = b.dataset.topic;
+          buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+          document.querySelectorAll('article').forEach((a) => {
+            a.hidden = !!t && !a.dataset.topics.split('|').includes(t);
+          });
+        }),
+      );
+    </script>
+  </body>
+</html>
