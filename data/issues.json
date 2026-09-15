@@ -45,6 +45,36 @@
     ]
   },
   {
+    "id": "grace-period",
+    "title": "60-day grace period eliminated",
+    "topics": [
+      "H-1B",
+      "H-4",
+      "Other"
+    ],
+    "status": "Proposed rule, comments open through Nov 10",
+    "status_kind": "proposed",
+    "summary": "DHS proposes to delete 8 CFR 214.1(l)(2), the up-to-60-day grace period after job loss for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 and TN workers and their dependents (H-4, L-2, O-3, E, TD). If finalized, status ends the day employment ends unless another basis to stay exists. The 10-day grace periods before and after the petition validity window (214.1(l)(1)) are not touched. Still in effect until a final rule takes effect.",
+    "timeline": [
+      {
+        "date": "2016-11-18",
+        "label": "AC21 final rule creates the 60-day grace period (8 CFR 214.1(l)(2)); effective Jan 17, 2017",
+        "url": "https://www.federalregister.gov/documents/2016/11/18/2016-27540/retention-of-eb-1-eb-2-and-eb-3-immigrant-workers-and-program-improvements-affecting-high-skilled"
+      },
+      {
+        "date": "2026-09-11",
+        "label": "DHS NPRM 'Eliminating the Discretionary 60-Day Grace Period'; comments through Nov 10, 2026 (Docket USCIS-2026-0364, RIN 1615-AD22)",
+        "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18631/eliminating-the-discretionary-60-day-grace-period"
+      },
+      {
+        "date": "2026-09-11",
+        "label": "Coverage: applies to H-1B, L-1, O-1, E, TN and dependents, not H-1B only",
+        "url": "https://www.rnlawgroup.com/dhs-proposes-to-eliminate-the-60-day-grace-period-for-h-1b-l-1-o-1-e-and-tn-workers/",
+        "note": "Law firm summary"
+      }
+    ]
+  },
+  {
     "id": "h1b-fee",
     "title": "$100,000 H-1B fee",
     "topics": [
