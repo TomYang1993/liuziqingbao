@@ -1,5 +1,39 @@
 [
   {
+    "id": "cpt-guidance",
+    "title": "CPT must be required by curriculum",
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
+    "status": "SEVP guidance in effect",
+    "status_kind": "effective",
+    "summary": "Two SEVP broadcast messages (Aug 12 and Aug 24, 2026) tell DSOs that CPT may be authorized only when the training is an integral, required part of the established curriculum, required of all students in the program regardless of immigration status, and needed to complete the degree. Course credit alone is not enough. Not a new regulation, but SEVP may request documentation. Hits day-1 CPT programs and optional internships.",
+    "timeline": [
+      {
+        "date": "2026-08-12",
+        "label": "Broadcast Message 2608-01: Reminder of Liability for DSOs Regarding CPT Authorization",
+        "url": "https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf"
+      },
+      {
+        "date": "2026-08-24",
+        "label": "Broadcast Message 2608-02: Q&A on when practical training is 'integral' to the curriculum",
+        "url": "https://www.ice.gov/doclib/sevis/pdf/bcm_260802.pdf"
+      },
+      {
+        "date": "2026-08-24",
+        "label": "Study in the States: F-1 CPT reference page",
+        "url": "https://studyinthestates.dhs.gov/sevis-help-hub/student-records/fm-student-employment/f-1-curricular-practical-training-cpt"
+      }
+    ],
+    "links": [
+      {
+        "label": "CPT Map: school-by-school policies",
+        "url": "https://cptmap.com/"
+      }
+    ]
+  },
+  {
     "id": "f1-ds",
     "title": "F-1 Duration of Status ends",
     "topics": [
@@ -129,40 +163,6 @@
         "label": "OIRA completes review; Federal Register publication expected next",
         "url": "https://americanbazaaronline.com/2026/09/13/us-100k-opt-fee-proposal-white-house-review-indian-students-488044/",
         "note": "News report"
-      }
-    ]
-  },
-  {
-    "id": "cpt-guidance",
-    "title": "CPT must be required by curriculum",
-    "topics": [
-      "CPT",
-      "F-1"
-    ],
-    "status": "SEVP guidance in effect",
-    "status_kind": "effective",
-    "summary": "Two SEVP broadcast messages (Aug 12 and Aug 24, 2026) tell DSOs that CPT may be authorized only when the training is an integral, required part of the established curriculum, required of all students in the program regardless of immigration status, and needed to complete the degree. Course credit alone is not enough. Not a new regulation, but SEVP may request documentation. Hits day-1 CPT programs and optional internships.",
-    "timeline": [
-      {
-        "date": "2026-08-12",
-        "label": "Broadcast Message 2608-01: Reminder of Liability for DSOs Regarding CPT Authorization",
-        "url": "https://www.ice.gov/doclib/sevis/pdf/bcm260801.pdf"
-      },
-      {
-        "date": "2026-08-24",
-        "label": "Broadcast Message 2608-02: Q&A on when practical training is 'integral' to the curriculum",
-        "url": "https://www.ice.gov/doclib/sevis/pdf/bcm_260802.pdf"
-      },
-      {
-        "date": "2026-08-24",
-        "label": "Study in the States: F-1 CPT reference page",
-        "url": "https://studyinthestates.dhs.gov/sevis-help-hub/student-records/fm-student-employment/f-1-curricular-practical-training-cpt"
-      }
-    ],
-    "links": [
-      {
-        "label": "CPT Map: school-by-school policies",
-        "url": "https://cptmap.com/"
       }
     ]
   }
