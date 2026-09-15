@@ -38,6 +38,22 @@ export default {
       return Response.json(row, { headers: cors });
     }
 
+    if (req.method === 'POST' && pathname === '/feedback') {
+      const { text, page } = await req.json().catch(() => ({}));
+      if (typeof text !== 'string' || !text.trim() || text.length > 2000) {
+        return new Response('bad request', { status: 400, headers: cors });
+      }
+      const ip = req.headers.get('cf-connecting-ip') ?? 'x';
+      const key = `fb:${ip}:${Math.floor(Date.now() / 3.6e6)}`;
+      const hit = await env.DB.prepare(
+        'INSERT INTO hits (key, n) VALUES (?, 1) ON CONFLICT(key) DO UPDATE SET n = n + 1 RETURNING n',
+      ).bind(key).first();
+      if (hit.n > 5) return new Response('slow down', { status: 429, headers: cors });
+      await env.DB.prepare('INSERT INTO feedback (text, page, ts) VALUES (?, ?, ?)')
+        .bind(text.trim(), String(page ?? '').slice(0, 200), new Date().toISOString()).run();
+      return Response.json({ ok: true }, { headers: cors });
+    }
+
     return new Response('not found', { status: 404, headers: cors });
   },
 };

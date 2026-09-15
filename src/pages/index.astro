@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const visible = items.filter((i) => i.relevant !== false);
 const topics = [...new Set(visible.flatMap((i) => i.topics ?? []))].sort();
 const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
-const updated = visible[0]?.first_seen;
+const checked = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', hour12: true }) + ' PT';
 const latest = (iss) => iss.timeline.at(-1)?.date;
 const VOTES_URL = import.meta.env.PUBLIC_VOTES_URL ?? '';
 // stable short id per news URL; issues use their own id
@@ -35,7 +35,8 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       .sans { font-family: ui-sans-serif, system-ui, sans-serif; }
       .wrap { max-width: 1120px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
       header h1 { font-size: 2.4rem; margin: 0; letter-spacing: -0.02em; }
-      header h1 small { display: block; font-size: 0.9rem; font-weight: 400; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.3rem; }
+      header h1 { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+      header h1 small { font-size: 0.8rem; font-weight: 400; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.04em; }
       header p { color: var(--muted); margin: 0.9rem 0 0; max-width: 720px; }
       .grid { display: grid; grid-template-columns: 340px 1fr; gap: 3rem; margin-top: 2.5rem; align-items: start; }
       @media (max-width: 860px) { .grid { grid-template-columns: 1fr; gap: 2rem; } }
@@ -74,11 +75,15 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       article h3 a { color: inherit; text-decoration: none; }
       article h3 a:hover { text-decoration: underline; }
       .summary { margin: 0; font-size: 0.95rem; }
-      .ai { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; color: var(--muted); margin-top: 0.45rem; }
       .chips { margin-top: 0.6rem; display: flex; gap: 0.35rem; flex-wrap: wrap; }
       .chips span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; background: var(--chip); padding: 0.15rem 0.55rem; border-radius: 4px; }
       footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; font-family: ui-sans-serif, system-ui, sans-serif; }
-      footer a { color: inherit; }
+      footer p { margin: 0 0 0.8rem; }
+      .fb summary { cursor: pointer; color: var(--fg); }
+      .fb form { display: grid; gap: 0.5rem; margin-top: 0.7rem; max-width: 520px; }
+      .fb textarea { font: inherit; padding: 0.5rem; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--fg); resize: vertical; }
+      .fb button { justify-self: start; font: inherit; padding: 0.35rem 0.9rem; border: 1px solid var(--fg); background: var(--fg); color: var(--bg); border-radius: 999px; cursor: pointer; }
+      .fb-msg { color: var(--muted); }
       .empty { color: var(--muted); padding: 3rem 0; text-align: center; }
 
       .votes { display: flex; gap: 0.4rem; margin-top: 0.7rem; font-family: ui-sans-serif, system-ui, sans-serif; }
@@ -101,11 +106,9 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
   <body>
     <div class="wrap">
       <header>
-        <h1>留子情报<small>liuziqingbao · US student & work visa policy watch</small></h1>
+        <h1>留子情报<small>Last checked {checked}</small></h1>
         <p>
           Official updates on H-1B, F-1, OPT, CPT and STEM OPT, pulled from USCIS, the Federal Register, ICE/SEVP, and the White House.
-          {updated && <span>Last checked {fmt(updated)}.</span>}
-          <a href={`${base}/rss.xml`}>Subscribe via RSS</a>.
         </p>
       </header>
 
@@ -165,7 +168,6 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
               {i.summary
                 ? <p class="summary">{i.summary}</p>
                 : i.excerpt && <p class="summary">{i.excerpt.slice(0, 300)}{i.excerpt.length > 300 ? '…' : ''}</p>}
-              {i.ai && i.summary && <div class="ai">AI-generated summary, unreviewed. Read the source.</div>}
               {i.topics?.length > 0 && <div class="chips">{i.topics.map((t) => <span>{t}</span>)}</div>}
               <div class="votes" data-vote-id={vid(i.url)}>
                 <button class="vote" data-kind="egg" aria-label="Throw an egg">🥚 <span class="n"></span></button>
@@ -177,8 +179,15 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       </div>
 
       <footer>
-        Not legal advice. Every item links to its official source: verify there before acting.
-        Found an error? <a href="https://github.com/TomYang1993/liuziqingbao/issues">Open an issue</a>.
+        <p>Not legal advice. Every item links to its official source: verify there before acting.</p>
+        <details class="fb">
+          <summary>Send feedback</summary>
+          <form id="fb">
+            <textarea name="text" maxlength="2000" rows="4" required placeholder="Wrong date, missing news, broken link, anything."></textarea>
+            <button type="submit">Send</button>
+            <span class="fb-msg" aria-live="polite"></span>
+          </form>
+        </details>
       </footer>
     </div>
 
@@ -234,6 +243,18 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
           }),
         ),
       );
+
+      document.getElementById('fb')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const form = e.target, msg = form.querySelector('.fb-msg'), btn = form.querySelector('button');
+        btn.disabled = true;
+        try {
+          const r = await fetch(`${VOTES_URL}/feedback`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text: form.text.value, page: location.pathname }) });
+          msg.textContent = r.ok ? 'Sent. Thanks.' : r.status === 429 ? 'Too many. Try later.' : 'Failed. Try again.';
+          if (r.ok) form.text.value = '';
+        } catch { msg.textContent = 'Failed. Try again.'; }
+        btn.disabled = false;
+      });
 
       const buttons = document.querySelectorAll('nav button');
       buttons.forEach((b) =>
