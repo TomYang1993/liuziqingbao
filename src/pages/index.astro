@@ -8,6 +8,7 @@ const topics = [...new Set(visible.flatMap((i) => i.topics ?? []))].sort();
 const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const checked = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', hour12: true }) + ' PT';
 const latest = (iss) => iss.timeline.at(-1)?.date;
+const kindOf = (t = '') => /proposed/.test(t) ? 'proposed' : /final rule/.test(t) ? 'final' : /court/.test(t) ? 'blocked' : /policy alert|executive/.test(t) ? 'effective' : 'unverified';
 const VOTES_URL = import.meta.env.PUBLIC_VOTES_URL ?? '';
 // stable short id per news URL; issues use their own id
 const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCodeAt(0)) >>> 0; return 'n' + h.toString(36); };
@@ -53,8 +54,9 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       .card h3 { margin: 0 0 0.35rem; font-size: 1.05rem; line-height: 1.3; }
       .status { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; }
       .status::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
-      .status.blocked { color: var(--blocked); } .status.proposed { color: var(--proposed); } .status.effective { color: var(--effective); }
-      .status.unverified, .status.pending { color: var(--unverified); } .status.final { color: var(--final); }
+      .status { color: var(--accent); }
+      .type.blocked { color: var(--blocked); } .type.proposed { color: var(--proposed); } .type.effective { color: var(--effective); }
+      .type.unverified, .type.pending { color: var(--unverified); } .type.final { color: var(--final); }
       .card .when { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; color: var(--muted); margin-left: 0.6rem; }
       .card .body { padding: 0 1rem 1rem; border-top: 1px solid var(--line); }
       .card .body p { font-size: 0.92rem; margin: 0.9rem 0; }
@@ -73,7 +75,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       article { padding: 1.3rem 0; border-top: 1px solid var(--line); }
       article[hidden] { display: none; }
       .meta { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; color: var(--muted); display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.35rem; }
-      .meta .type { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+      .meta .type { font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
       article h3 { font-size: 1.1rem; margin: 0 0 0.5rem; line-height: 1.35; }
       article h3 a { color: inherit; text-decoration: none; }
       article h3 a:hover { text-decoration: underline; }
@@ -170,7 +172,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
           {visible.map((i) => (
             <article data-topics={(i.topics ?? []).join('|')}>
               <div class="meta">
-                <span class="type">{i.doc_type ?? 'update'}</span>
+                <span class={`type ${kindOf(i.doc_type)}`}>{i.doc_type ?? 'update'}</span>
                 <span>{i.source}</span>
                 <span>{fmt(i.published)}</span>
               </div>
