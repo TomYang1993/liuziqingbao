@@ -10,6 +10,8 @@ const checked = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Ange
 const latest = (iss) => iss.timeline.at(-1)?.date;
 const kindOf = (t = '') => /proposed/.test(t) ? 'proposed' : /final rule/.test(t) ? 'final' : /court/.test(t) ? 'blocked' : /policy alert|executive/.test(t) ? 'effective' : 'unverified';
 const VOTES_URL = import.meta.env.PUBLIC_VOTES_URL ?? '';
+const SITE = 'https://liuzi.win/';
+const DESC = 'Daily-updated tracker of US immigration policy for international students and H-1B workers: F-1, OPT, CPT, STEM OPT, H-1B, H-4, PERM, I-140. Sourced from USCIS, the Federal Register, ICE/SEVP and the White House. 留学生 H1B OPT CPT 政策追踪.';
 // stable short id per news URL; issues use their own id
 const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCodeAt(0)) >>> 0; return 'n' + h.toString(36); };
 ---
@@ -18,15 +20,39 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>北美留子今天还活着</title>
-    <meta name="description" content="Official US immigration policy updates for H-1B, F-1, OPT, CPT, straight from USCIS, Federal Register, ICE/SEVP, and the White House." />
+    <title>北美留子今天还活着 · H-1B, F-1, OPT, CPT policy tracker</title>
+    <meta name="description" content={DESC} />
+    <link rel="canonical" href={SITE} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="北美留子今天还活着" />
+    <meta property="og:title" content="北美留子今天还活着 · H-1B, F-1, OPT, CPT policy tracker" />
+    <meta property="og:description" content={DESC} />
+    <meta property="og:url" content={SITE} />
+    <meta property="og:image" content={`${SITE}og.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="北美留子今天还活着" />
+    <meta name="twitter:description" content={DESC} />
+    <meta name="twitter:image" content={`${SITE}og.png`} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/msz-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: '北美留子今天还活着',
+      alternateName: 'liuzi.win',
+      url: SITE,
+      description: DESC,
+      inLanguage: ['en', 'zh'],
+      about: ['H-1B visa', 'F-1 visa', 'OPT', 'CPT', 'STEM OPT', 'PERM', 'I-140', 'US immigration policy'],
+    })} />
     <link rel="alternate" type="application/rss+xml" title="北美留子今天还活着" href={`${base}/rss.xml`} />
     <style is:global>
+      @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740; }
       :root {
         --bg: #fbfaf7; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e6e2d8; --accent: #b3261e; --chip: #efece4; --card: #ffffff;
         --blocked: #b3261e; --proposed: #8a6d00; --effective: #1f6f3f; --unverified: #6b6b6b; --final: #1f4f8a;

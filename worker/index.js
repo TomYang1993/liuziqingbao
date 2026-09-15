@@ -2,7 +2,20 @@
 const KINDS = ['egg', 'flower', 'banana'];
 const MAX_PER_HOUR = 60; // ponytail: per-IP cap in D1; move to Rate Limiting binding if abused
 
+// ponytail: hashed IP only, never stored raw
+async function ipKey(req) {
+  const ip = req.headers.get('cf-connecting-ip') ?? 'x';
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(ip + (globalThis.SALT ?? 'lzqb')));
+  return [...new Uint8Array(buf)].slice(0, 8).map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
 export default {
+  // daily: drop rate-limit rows older than the current hour
+  async scheduled(_evt, env) {
+    const hour = Math.floor(Date.now() / 3.6e6);
+    await env.DB.prepare('DELETE FROM hits WHERE CAST(substr(key, -6) AS INTEGER) < ?').bind(hour).run();
+  },
+
   async fetch(req, env) {
     const origin = req.headers.get('origin') ?? '';
     const cors = {
@@ -25,8 +38,7 @@ export default {
       if (typeof id !== 'string' || !/^[a-z0-9-]{1,64}$/.test(id) || !KINDS.includes(kind)) {
         return new Response('bad request', { status: 400, headers: cors });
       }
-      const ip = req.headers.get('cf-connecting-ip') ?? 'x';
-      const key = `${ip}:${Math.floor(Date.now() / 3.6e6)}`;
+      const key = `${await ipKey(req)}:${Math.floor(Date.now() / 3.6e6)}`;
       const hit = await env.DB.prepare(
         'INSERT INTO hits (key, n) VALUES (?, 1) ON CONFLICT(key) DO UPDATE SET n = n + 1 RETURNING n',
       ).bind(key).first();
@@ -44,8 +56,7 @@ export default {
       if (typeof text !== 'string' || !text.trim() || text.length > 2000) {
         return new Response('bad request', { status: 400, headers: cors });
       }
-      const ip = req.headers.get('cf-connecting-ip') ?? 'x';
-      const key = `fb:${ip}:${Math.floor(Date.now() / 3.6e6)}`;
+      const key = `fb:${await ipKey(req)}:${Math.floor(Date.now() / 3.6e6)}`;
       const hit = await env.DB.prepare(
         'INSERT INTO hits (key, n) VALUES (?, 1) ON CONFLICT(key) DO UPDATE SET n = n + 1 RETURNING n',
       ).bind(key).first();
