@@ -3,7 +3,7 @@ main = "index.js"
 compatibility_date = "2026-09-01"
 
 [vars]
-ORIGIN = "https://liuzi.win"
+ORIGIN = "https://liuzi.win,http://liuzi.win,https://www.liuzi.win,https://tomyang1993.github.io"
 
 [[d1_databases]]
 binding = "DB"

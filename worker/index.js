@@ -4,8 +4,9 @@ const MAX_PER_HOUR = 60; // ponytail: per-IP cap in D1; move to Rate Limiting bi
 
 export default {
   async fetch(req, env) {
+    const origin = req.headers.get('origin') ?? '';
     const cors = {
-      'Access-Control-Allow-Origin': env.ORIGIN,
+      'Access-Control-Allow-Origin': env.ORIGIN.split(',').includes(origin) ? origin : env.ORIGIN.split(',')[0],
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'content-type',
     };
