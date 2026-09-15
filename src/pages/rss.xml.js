@@ -3,8 +3,8 @@ import items from '../../data/items.json';
 
 export function GET(context) {
   return rss({
-    title: '留子情报 · liuziqingbao',
-    description: 'Official US immigration policy updates for H-1B, F-1, OPT, CPT, STEM OPT.',
+    title: '北美留子今天还活着',
+    description: 'Official US immigration policy updates for H-1B, F-1, OPT, CPT, STEM OPT, PERM, I-140.',
     site: context.site,
     items: items
       .filter((i) => i.relevant !== false)

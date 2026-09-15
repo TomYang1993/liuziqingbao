@@ -17,9 +17,12 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>留子情报 · liuziqingbao</title>
+    <title>北美留子今天还活着</title>
     <meta name="description" content="Official US immigration policy updates for H-1B, F-1, OPT, CPT, straight from USCIS, Federal Register, ICE/SEVP, and the White House." />
-    <link rel="alternate" type="application/rss+xml" title="留子情报" href={`${base}/rss.xml`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+    <link rel="alternate" type="application/rss+xml" title="北美留子今天还活着" href={`${base}/rss.xml`} />
     <style is:global>
       :root {
         --bg: #fbfaf7; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e6e2d8; --accent: #b3261e; --chip: #efece4; --card: #ffffff;
@@ -34,7 +37,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 ui-serif, Georgia, "Noto Serif SC", serif; }
       .sans { font-family: ui-sans-serif, system-ui, sans-serif; }
       .wrap { max-width: 1120px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
-      header h1 { font-size: 2.4rem; margin: 0; letter-spacing: -0.02em; }
+      header h1 { font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-weight: 400; font-size: 2.9rem; margin: 0; letter-spacing: 0.02em; }
       header h1 { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
       header h1 small { font-size: 0.8rem; font-weight: 400; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.04em; }
       header p { color: var(--muted); margin: 0.9rem 0 0; max-width: 720px; }
@@ -106,15 +109,15 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
   <body>
     <div class="wrap">
       <header>
-        <h1>留子情报<small>Last checked {checked}</small></h1>
+        <h1>北美留子今天还活着<small>Last checked {checked}</small></h1>
         <p>
-          Official updates on H-1B, F-1, OPT, CPT and STEM OPT, pulled from USCIS, the Federal Register, ICE/SEVP, and the White House.
+          Official updates on H-1B, F-1, OPT, CPT, STEM OPT, PERM and I-140, pulled from USCIS, the Federal Register, ICE/SEVP, and the White House.
         </p>
       </header>
 
       <div class="grid">
         <aside>
-          <h2>Tracking</h2>
+          <h2>🔥 Tracking</h2>
           {issues.map((iss, n) => (
             <details class="card" open={n === 0}>
               <summary>

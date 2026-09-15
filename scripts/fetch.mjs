@@ -8,7 +8,7 @@ const ITEMS = new URL('../data/items.json', import.meta.url);
 const LOOKBACK_DAYS = Number(process.env.LOOKBACK_DAYS ?? 14);
 const CLASSIFIER = process.env.CLASSIFIER ?? 'cli'; // cli | none
 const cutoff = Date.now() - LOOKBACK_DAYS * 86400e3;
-const RELEVANT = /H-?1B|H-?4|OPT\b|CPT\b|F-?1\b|STEM|practical training|specialty occupation|prevailing wage|labor condition|LCA\b|student visa|nonimmigrant|work authorization|EAD\b|grace period|cap-subject|registration|SEVP|SEVIS|DSO\b|student/i;
+const RELEVANT = /H-?1B|H-?4|OPT\b|CPT\b|F-?1\b|STEM|practical training|specialty occupation|prevailing wage|labor condition|LCA\b|student visa|nonimmigrant|work authorization|EAD\b|grace period|cap-subject|registration|SEVP|SEVIS|DSO\b|student|PERM\b|I-140|labor certification|EB-?[123]\b|immigrant petition|priority date|visa bulletin/i;
 
 const rss = new Parser({ headers: { 'User-Agent': 'Mozilla/5.0 liuziqingbao' } });
 
@@ -25,7 +25,7 @@ const sources = [
     name: 'Federal Register',
     fetch: async () => {
       const out = [];
-      for (const term of ['"H-1B"', '"optional practical training"', '"F-1 nonimmigrant"']) {
+      for (const term of ['"H-1B"', '"optional practical training"', '"F-1 nonimmigrant"', '"permanent labor certification"', '"I-140"']) {
         const u = `https://www.federalregister.gov/api/v1/documents.json?conditions[term]=${encodeURIComponent(term)}&order=newest&per_page=100`;
         const { results } = await (await fetch(u)).json();
         for (const r of results) out.push({ title: r.title, url: r.html_url, published: r.publication_date, excerpt: r.abstract ?? '', doc_type: r.type });
@@ -83,8 +83,8 @@ async function classify(batch) {
   if (CLASSIFIER === 'none' || batch.length === 0) return {};
   const prompt = `You classify US immigration news for international students and H-1B workers.
 For each item below return a JSON object keyed by "url" with:
-  relevant: boolean (true only if it affects H-1B, H-4, F-1, OPT, CPT, STEM OPT holders or applicants)
-  topics: array from ["H-1B","H-4","F-1","OPT","STEM OPT","CPT","Other"]
+  relevant: boolean (true only if it affects H-1B, H-4, F-1, OPT, CPT, STEM OPT holders or applicants, or employment-based green card applicants via PERM / I-140)
+  topics: array from ["H-1B","H-4","F-1","OPT","STEM OPT","CPT","PERM","I-140","Other"]
   doc_type: one of "proposed rule","final rule","policy alert","press release","executive action","court","other"
   summary: 1-2 plain-English sentences: what changed and who is affected. No advice.
 Output ONLY the JSON object, no prose, no code fences.
