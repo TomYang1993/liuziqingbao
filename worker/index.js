@@ -1,5 +1,5 @@
 // Anonymous egg/flower counters. GET /counts, POST /vote {id, kind}. D1-backed, atomic increments.
-const KINDS = ['egg', 'flower'];
+const KINDS = ['egg', 'flower', 'banana'];
 const MAX_PER_HOUR = 60; // ponytail: per-IP cap in D1; move to Rate Limiting binding if abused
 
 export default {
@@ -13,8 +13,8 @@ export default {
     const { pathname } = new URL(req.url);
 
     if (req.method === 'GET' && pathname === '/counts') {
-      const { results } = await env.DB.prepare('SELECT id, egg, flower FROM votes').all();
-      const out = Object.fromEntries(results.map((r) => [r.id, { egg: r.egg, flower: r.flower }]));
+      const { results } = await env.DB.prepare('SELECT id, egg, flower, banana FROM votes').all();
+      const out = Object.fromEntries(results.map((r) => [r.id, { egg: r.egg, flower: r.flower, banana: r.banana }]));
       return Response.json(out, { headers: cors });
     }
 
@@ -32,9 +32,9 @@ export default {
       if (hit.n > MAX_PER_HOUR) return new Response('slow down', { status: 429, headers: cors });
 
       const row = await env.DB.prepare(
-        `INSERT INTO votes (id, egg, flower) VALUES (?, ?, ?)
-         ON CONFLICT(id) DO UPDATE SET ${kind} = ${kind} + 1 RETURNING egg, flower`,
-      ).bind(id, kind === 'egg' ? 1 : 0, kind === 'flower' ? 1 : 0).first();
+        `INSERT INTO votes (id, egg, flower, banana) VALUES (?, ?, ?, ?)
+         ON CONFLICT(id) DO UPDATE SET ${kind} = ${kind} + 1 RETURNING egg, flower, banana`,
+      ).bind(id, ...KINDS.map((k) => (k === kind ? 1 : 0))).first();
       return Response.json(row, { headers: cors });
     }
 
