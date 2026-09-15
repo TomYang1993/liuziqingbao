@@ -211,10 +211,10 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       const SPLAT = `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#d8c33a" opacity=".92" d="M50 12c9 0 12 9 20 10s16-4 19 6-8 12-6 20 12 10 8 19-14 2-20 8-4 15-13 15-9-9-17-11-17 3-20-6 7-12 5-20-12-9-8-18 14-3 20-9 3-14 12-14z"/><circle cx="46" cy="50" r="14" fill="#f2a71b"/><path fill="#d8c33a" opacity=".9" d="M24 78c3 0 4 6 2 14-2 6-6 4-6-2s1-12 4-12zM72 80c3 1 4 9 1 16-3 5-6 1-6-6s2-11 5-10z"/></svg>`;
 
       const boxes = [...document.querySelectorAll('[data-vote-id]')];
-      const render = (box, counts) => box.querySelectorAll('.vote').forEach((b) => (b.querySelector('.n').textContent = counts?.[b.dataset.kind] ?? ''));
+      const render = (box, counts) => box.querySelectorAll('.vote').forEach((b) => (b.querySelector('.n').textContent = counts?.[b.dataset.kind] ?? 0));
 
       if (VOTES_URL) {
-        fetch(`${VOTES_URL}/counts`).then((r) => r.json()).then((all) => boxes.forEach((b) => render(b, all[b.dataset.voteId]))).catch(() => {});
+        fetch(`${VOTES_URL}/counts`).then((r) => r.json()).then((all) => boxes.forEach((b) => render(b, all[b.dataset.voteId] ?? {}))).catch(() => {});
       }
 
       const fx = (host, cls, html, style) => {
