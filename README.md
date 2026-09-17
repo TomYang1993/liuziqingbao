@@ -3,30 +3,23 @@
 US student & work visa policy watch. Static site on GitHub Pages, no server, no DB.
 
 ```
-launchd (Mac, 2x/day) → scripts/run.sh → node scripts/fetch.mjs → data/items.json → git push
-                                                                                      ↓
-                                                              GitHub Action → astro build → Pages
+07:23 / 19:23 PT  GitHub Actions (fetch.yml): scripts/fetch.mjs, CLASSIFIER=none → items.json (ai:false) → push → deploy
+08:23 / 20:23 PT  Claude cloud routine (subscription): pending.mjs → classify → apply.mjs → push → deploy
 ```
+No local machine involved. Actions can reach .gov but has no Claude login; the Claude sandbox has the login but no .gov egress.
 
 ## Sources (v1)
 - USCIS All News RSS
 - White House Presidential Actions RSS
 - Federal Register API (`"H-1B"`, `"optional practical training"`, `"F-1 nonimmigrant"`)
 
-## Worker
+## Worker (manual runs)
 ```bash
-npm run fetch                    # fetch + classify via local `claude` CLI (subscription)
-CLASSIFIER=none npm run fetch    # skip AI, publish raw
-LOOKBACK_DAYS=60 npm run fetch   # widen window (first run / catch-up)
+CLASSIFIER=none npm run fetch    # fetch only, publish raw (what Actions does)
+npm run fetch                    # fetch + classify via local `claude` CLI, if you have one
+LOOKBACK_DAYS=60 npm run fetch   # widen window (catch-up)
 ```
 Regex prefilter runs before AI. AI failure never blocks publish; item goes out with `summary: null`.
-
-## Schedule (Mac)
-```bash
-cp launchd/com.tomyang.liuziqingbao.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.tomyang.liuziqingbao.plist
-tail -f /tmp/liuziqingbao.log
-```
 
 ## Site
 ```bash
@@ -54,4 +47,4 @@ Cloud fetch (`fetch.yml`) publishes raw items (`ai: false`). Anything with a Cla
 node scripts/pending.mjs                 # unclassified items as JSON
 node scripts/apply.mjs < result.json     # { "<url>": {relevant, topics, doc_type, summary} }
 ```
-`scripts/fetch.mjs` (local, `CLASSIFIER=cli`) does the same automatically via `claude -p`. A Claude Code cloud routine does it twice daily on the subscription.
+The Claude Code cloud routine "liuzi.win classify" does this twice daily on the subscription: https://claude.ai/code/routines/trig_01W3KFEYjdAV5uX9cJ8VNCJS
