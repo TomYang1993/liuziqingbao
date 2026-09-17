@@ -21,13 +21,9 @@
     "source": "Federal Register",
     "first_seen": "2026-09-15T00:47:46.087Z",
     "relevant": true,
-    "topics": [
-      "H-1B",
-      "H-4",
-      "Other"
-    ],
-    "summary": "DHS proposes eliminating the 60-day grace period after employment ends for certain nonimmigrant visa holders. H-1B workers and dependents would lose status immediately upon job cessation rather than having 60 days to find new employment or depart.",
-    "ai": true
+    "topics": [],
+    "summary": null,
+    "ai": false
   },
   {
     "title": "Fee for Certain H-1B Petitions",
