@@ -22,7 +22,7 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href="/msz-subset.woff2" as="font" type="font/woff2" crossorigin />
     <style is:global>
-      @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740, U+592F, U+4EBA, U+4E0A, U+62C9, U+5B8C, U+4E86, U+68AF, U+961F, U+0041-005A; }
+      @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740, U+592F, U+4EBA, U+4E0A, U+62C9, U+5B8C, U+4E86, U+68AF, U+961F, U+0041-005A, U+0028-0029; }
       :root {
         --bg: #fbfaf7; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e6e2d8; --accent: #b3261e; --chip: #efece4; --card: #ffffff;
         --sponsoring: #1f6f3f; --paused: #8a6d00; --not_sponsoring: #b3261e; --stuck: #1f4f8a;
@@ -45,18 +45,20 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
       h1 small { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.8rem; font-weight: 400; color: var(--muted); letter-spacing: 0.04em; margin-top: 0.3rem; }
       .intro { color: var(--muted); margin: 0.9rem 0 0; max-width: 720px; }
       .tiers { display: grid; gap: 0.6rem; margin-top: 2rem; }
-      .tier { display: grid; grid-template-columns: 132px 1fr; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); }
+      .tier { display: grid; grid-template-columns: 156px 1fr; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); }
       @media (max-width: 560px) { .tier { grid-template-columns: 96px 1fr; } }
       .tier .lab { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 1rem 0.5rem; color: #fff; text-align: center; }
       .tier .lab b { font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-weight: 400; font-size: 1.75rem; line-height: 1; letter-spacing: 0.02em; }
-      .tier .lab small { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85; margin-top: 0.4rem; }
       .tier.s .lab { background: linear-gradient(135deg, #b3261e, #e0463b); }
       .tier.a .lab { background: linear-gradient(135deg, #b8620a, #e08a2a); }
       .tier.b .lab { background: linear-gradient(135deg, #8a6d00, #c7a21f); }
       .tier.f .lab { background: linear-gradient(135deg, #4a4a4a, #7a7a7a); }
       .tier .co { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; padding: 0.9rem 1rem; }
-      .tier .co span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); }
-      .tier.f .co span { opacity: 0.7; text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; }
+      .tier .co .logo { display: inline-flex; width: 52px; height: 52px; align-items: center; justify-content: center; border-radius: 10px; background: #fff; border: 1px solid var(--line); cursor: default; transition: transform 0.15s; }
+      .tier .co .logo:hover { transform: translateY(-2px); }
+      .tier .co .logo img { width: 36px; height: 36px; object-fit: contain; border-radius: 6px; }
+      .tier.f .co .logo { filter: grayscale(1); opacity: 0.55; }
+      .tier.f .co .logo:hover { filter: none; opacity: 1; }
       .tier .co .none { color: var(--muted); font-weight: 400; background: none; border: 0; }
       footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; font-family: ui-sans-serif, system-ui, sans-serif; }
       footer a { color: inherit; }
@@ -71,9 +73,15 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
       <div class="tiers">
         {data.tiers.map((t) => (
           <section class={`tier ${t.id}`}>
-            <div class="lab"><b>{t.label}</b><small>{t.sub}</small></div>
+            <div class="lab"><b>{t.label}</b></div>
             <div class="co">
-              {t.companies.length ? t.companies.map((c) => <span>{c}</span>) : <span class="none">Nobody yet</span>}
+              {t.companies.length
+                ? t.companies.map((c) => (
+                    <span class="logo" title={c.note ? `${c.name}: ${c.note}` : c.name} aria-label={c.name}>
+                      <img src={`/logos/${c.domain.replace(/\.com$/, '')}.png`} alt={c.name} width="36" height="36" loading="lazy" />
+                    </span>
+                  ))
+                : <span class="none">Nobody yet</span>}
             </div>
           </section>
         ))}

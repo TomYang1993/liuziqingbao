@@ -53,7 +53,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
     })} />
     <link rel="alternate" type="application/rss+xml" title="北美留子今天还活着" href={`${base}/rss.xml`} />
     <style is:global>
-      @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740, U+592F, U+4EBA, U+4E0A, U+62C9, U+5B8C, U+4E86, U+68AF, U+961F, U+0041-005A; }
+      @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740, U+592F, U+4EBA, U+4E0A, U+62C9, U+5B8C, U+4E86, U+68AF, U+961F, U+0041-005A, U+0028-0029; }
       :root {
         --bg: #fbfaf7; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e6e2d8; --accent: #b3261e; --chip: #efece4; --card: #ffffff;
         --blocked: #b3261e; --proposed: #8a6d00; --effective: #1f6f3f; --unverified: #6b6b6b; --final: #1f4f8a;

@@ -1,9 +1,141 @@
 {
   "updated": "2026-09-17",
   "tiers": [
-    { "id": "s", "label": "夯S", "sub": "Filing, no drama", "companies": ["Adobe", "Snowflake", "Bloomberg", "Rippling", "Instacart", "Airbnb", "Waymo"] },
-    { "id": "a", "label": "人上人A", "sub": "Filing", "companies": ["TikTok", "Tesla", "Pinterest", "Whatnot", "DoorDash", "Roblox", "Netflix", "Reddit"] },
-    { "id": "b", "label": "NPC B", "sub": "Selective / slow", "companies": ["Walmart"] },
-    { "id": "f", "label": "拉完了F", "sub": "Paused or not filing", "companies": ["Microsoft", "Snap", "Stripe", "Robinhood", "Uber", "Apple", "Meta", "Google", "Oracle", "Amazon", "OpenAI", "Anthropic"] }
+    {
+      "id": "s",
+      "label": "夯(S)",
+      "companies": [
+        {
+          "name": "Adobe",
+          "domain": "adobe.com"
+        },
+        {
+          "name": "Snowflake",
+          "domain": "snowflake.com"
+        },
+        {
+          "name": "Bloomberg",
+          "domain": "bloomberg.com"
+        },
+        {
+          "name": "Rippling",
+          "domain": "rippling.com"
+        },
+        {
+          "name": "Instacart",
+          "domain": "instacart.com"
+        },
+        {
+          "name": "Airbnb",
+          "domain": "airbnb.com"
+        },
+        {
+          "name": "Waymo",
+          "domain": "waymo.com"
+        }
+      ]
+    },
+    {
+      "id": "a",
+      "label": "人上人(A)",
+      "companies": [
+        {
+          "name": "TikTok",
+          "domain": "tiktok.com"
+        },
+        {
+          "name": "Tesla",
+          "domain": "tesla.com"
+        },
+        {
+          "name": "Pinterest",
+          "domain": "pinterest.com"
+        },
+        {
+          "name": "Whatnot",
+          "domain": "whatnot.com"
+        },
+        {
+          "name": "DoorDash",
+          "domain": "doordash.com"
+        },
+        {
+          "name": "Roblox",
+          "domain": "roblox.com"
+        },
+        {
+          "name": "Netflix",
+          "domain": "netflix.com"
+        },
+        {
+          "name": "Reddit",
+          "domain": "reddit.com"
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "label": "NPC(B)",
+      "companies": [
+        {
+          "name": "Walmart",
+          "domain": "walmart.com"
+        }
+      ]
+    },
+    {
+      "id": "f",
+      "label": "拉完了(F)",
+      "companies": [
+        {
+          "name": "Microsoft",
+          "domain": "microsoft.com"
+        },
+        {
+          "name": "Snap",
+          "domain": "snap.com"
+        },
+        {
+          "name": "Stripe",
+          "domain": "stripe.com"
+        },
+        {
+          "name": "Robinhood",
+          "domain": "robinhood.com"
+        },
+        {
+          "name": "Uber",
+          "domain": "uber.com"
+        },
+        {
+          "name": "Apple",
+          "domain": "apple.com"
+        },
+        {
+          "name": "Meta",
+          "domain": "meta.com"
+        },
+        {
+          "name": "Google",
+          "domain": "google.com"
+        },
+        {
+          "name": "Oracle",
+          "domain": "oracle.com"
+        },
+        {
+          "name": "Amazon",
+          "domain": "amazon.com"
+        },
+        {
+          "name": "OpenAI",
+          "domain": "openai.com"
+        },
+        {
+          "name": "Anthropic",
+          "domain": "anthropic.com"
+        }
+      ]
+    }
   ]
 }
