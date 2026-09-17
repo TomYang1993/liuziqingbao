@@ -26,8 +26,13 @@ const sources = [
     name: 'Federal Register',
     fetch: async () => {
       const out = [];
-      for (const term of ['"H-1B"', '"optional practical training"', '"F-1 nonimmigrant"', '"permanent labor certification"', '"I-140"']) {
-        const u = `https://www.federalregister.gov/api/v1/documents.json?conditions[term]=${encodeURIComponent(term)}&order=newest&per_page=100`;
+      // DOL (ETA) has no RSS and blocks scrapers; the Federal Register is its official channel.
+      const queries = [
+        ...['"H-1B"', '"optional practical training"', '"F-1 nonimmigrant"', '"permanent labor certification"', '"I-140"'].map((t) => `conditions[term]=${encodeURIComponent(t)}`),
+        ...['"prevailing wage"', 'PERM'].map((t) => `conditions[agencies][]=employment-and-training-administration&conditions[term]=${encodeURIComponent(t)}`),
+      ];
+      for (const q of queries) {
+        const u = `https://www.federalregister.gov/api/v1/documents.json?${q}&order=newest&per_page=100`;
         const { results } = await (await fetch(u)).json();
         for (const r of results) out.push({ title: r.title, url: r.html_url, published: r.publication_date, excerpt: r.abstract ?? '', doc_type: r.type });
       }
@@ -105,7 +110,7 @@ for (const s of sources) {
   try {
     for (const it of await s.fetch()) {
       if (seen.has(it.url) || new Date(it.published) < cutoff) continue;
-      if (!RELEVANT.test(`${it.title} ${it.excerpt}`)) continue;
+      if (!RELEVANT.test(`${it.title} ${it.excerpt}`) || /H-2A|H-2B|CW-1/.test(it.title)) continue;
       seen.add(it.url);
       fresh.push({ ...it, source: s.name, first_seen: new Date().toISOString() });
     }

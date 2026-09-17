@@ -165,5 +165,57 @@
         "note": "News report"
       }
     ]
+  },
+  {
+    "id": "dol-wage-levels",
+    "title": "DOL raises prevailing wage levels",
+    "topics": [
+      "H-1B",
+      "PERM"
+    ],
+    "status": "Proposed rule; comments closed, final rule pending",
+    "status_kind": "proposed",
+    "summary": "DOL proposes moving the four prevailing wage levels from the 17th/34th/50th/67th percentiles of OEWS data to the 34th/52nd/70th/88th. Applies to H-1B, H-1B1, E-3 and PERM (EB-2/EB-3) filings made after the effective date; already-approved PWDs, LCAs and labor certifications are not affected. Comment period closed May 26, 2026. No final rule yet.",
+    "timeline": [
+      {
+        "date": "2026-03-26",
+        "label": "DOL press release announcing the NPRM",
+        "url": "https://www.dol.gov/newsroom/releases/eta/eta20260326-0"
+      },
+      {
+        "date": "2026-03-27",
+        "label": "NPRM 'Improving Wage Protections for the Temporary and Permanent Employment of Certain Foreign Nationals' (RIN 1205-AC30, Docket ETA-2026-0001); comments through May 26, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/03/27/2026-06017/improving-wage-protections-for-the-temporary-and-permanent-employment-of-certain-foreign-nationals"
+      },
+      {
+        "date": "2026-05-26",
+        "label": "Comment period closed",
+        "url": "https://www.regulations.gov/docket/ETA-2026-0001"
+      }
+    ]
+  },
+  {
+    "id": "perm-modernization",
+    "title": "PERM recruitment overhaul",
+    "topics": [
+      "PERM",
+      "I-140"
+    ],
+    "status": "At White House review; not yet published",
+    "status_kind": "pending",
+    "summary": "DOL is drafting 'Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program' (RIN 1205-AC29). Per the regulatory agenda it revisits recruitment standards (online job boards vs. newspaper ads), protections for laid-off U.S. workers, nondiscriminatory hiring, and employer record retention. Sent to OIRA Sep 14, 2026. No proposed text is public; nothing changes until a rule is published and finalized.",
+    "timeline": [
+      {
+        "date": "2026-09-14",
+        "label": "DOL sends the proposed rule to OIRA for review (RIN 1205-AC29)",
+        "url": "https://www.reginfo.gov/public/do/eoDetails?rrid=1532863"
+      },
+      {
+        "date": "2026-09-15",
+        "label": "Law firm explainer: what the overhaul is expected to cover",
+        "url": "https://badmuslaw.com/blog/dol-advances-major-perm-overhaul-what-employers-should-know-and-why-nothing-has-changed-yet/",
+        "note": "Law firm summary"
+      }
+    ]
   }
 ]
