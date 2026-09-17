@@ -91,6 +91,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       .card .body { padding: 0 1rem 1rem; border-top: 1px solid var(--line); }
       .card .body p { font-size: 0.92rem; margin: 0.9rem 0; }
       .links { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: -0.3rem 0 1rem; }
+      .hero-links { margin: 1rem 0 0; }
       .linkbtn { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; font-weight: 600; text-decoration: none; color: var(--bg); background: var(--fg); border-radius: 999px; padding: 0.35rem 0.85rem; }
       .linkbtn:hover { background: var(--accent); }
       .tl { list-style: none; margin: 0; padding: 0 0 0 1rem; border-left: 2px solid var(--line); }
@@ -153,8 +154,11 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
         <h1>北美留子今天还活着<small>Last checked {checked}</small></h1>
         <p>
           Official updates on H-1B, F-1, OPT, CPT, STEM OPT, PERM and I-140, pulled from USCIS, the Federal Register, ICE/SEVP, DOL, and the White House.
-          Also: <a href="/perm">PERM 梯队</a>, which employers are still filing green cards.
         </p>
+        <div class="links hero-links">
+          <a class="linkbtn" href="/perm">PERM 梯队: who still files green cards</a>
+          <a class="linkbtn" href="https://cptmap.com/" target="_blank" rel="noopener">CPT Map: school-by-school policies ↗</a>
+        </div>
       </header>
 
       <div class="grid">
