@@ -23,11 +23,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Fetch and classify
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          CLASSIFIER: ${{ secrets.ANTHROPIC_API_KEY != '' && 'api' || 'none' }}
-        run: node scripts/fetch.mjs
+      - name: Fetch (raw, no AI; your Mac backfills summaries via subscription)
+        run: CLASSIFIER=none node scripts/fetch.mjs
       - name: Commit data
         id: commit
         run: |

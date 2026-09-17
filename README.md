@@ -47,3 +47,11 @@ npx wrangler d1 execute liuziqingbao --remote --file schema.sql
 npx wrangler deploy                          # prints https://liuziqingbao-votes.<acct>.workers.dev
 ```
 Put that URL in `.env` as `PUBLIC_VOTES_URL=` and rebuild. Empty URL = buttons animate, counts don't persist.
+
+## Classification without an API key
+Cloud fetch (`fetch.yml`) publishes raw items (`ai: false`). Anything with a Claude login can classify them:
+```bash
+node scripts/pending.mjs                 # unclassified items as JSON
+node scripts/apply.mjs < result.json     # { "<url>": {relevant, topics, doc_type, summary} }
+```
+`scripts/fetch.mjs` (local, `CLASSIFIER=cli`) does the same automatically via `claude -p`. A Claude Code cloud routine does it twice daily on the subscription.
