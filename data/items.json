@@ -21,9 +21,12 @@
     "source": "Federal Register",
     "first_seen": "2026-09-15T00:47:46.087Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "H-4"
+    ],
+    "summary": "DHS proposes eliminating the discretionary up-to-60-day grace period that currently lets nonimmigrant workers (including H-1B holders) and their dependents remain in the US after their job ends before their status expires. If finalized, workers who lose their jobs would need to find new employment, change status, or depart immediately rather than having a grace period buffer.",
+    "ai": true
   },
   {
     "title": "Fee for Certain H-1B Petitions",
