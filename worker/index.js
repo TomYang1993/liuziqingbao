@@ -66,6 +66,25 @@ export default {
       return Response.json({ ok: true }, { headers: cors });
     }
 
+    if (req.method === 'POST' && pathname === '/perm-report') {
+      const b = await req.json().catch(() => ({}));
+      const company = String(b.company ?? '').trim().slice(0, 80);
+      const tier = String(b.tier ?? '');
+      const note = String(b.note ?? '').trim().slice(0, 2000);
+      const link = String(b.link ?? '').trim().slice(0, 500);
+      if (!company || !['s', 'a', 'b', 'f', 'unknown'].includes(tier) || !note) {
+        return new Response('bad request', { status: 400, headers: cors });
+      }
+      const key = `pr:${await ipKey(req)}:${Math.floor(Date.now() / 3.6e6)}`;
+      const hit = await env.DB.prepare(
+        'INSERT INTO hits (key, n) VALUES (?, 1) ON CONFLICT(key) DO UPDATE SET n = n + 1 RETURNING n',
+      ).bind(key).first();
+      if (hit.n > 5) return new Response('slow down', { status: 429, headers: cors });
+      await env.DB.prepare('INSERT INTO perm_reports (company, tier, note, link, ts) VALUES (?, ?, ?, ?, ?)')
+        .bind(company, tier, note, link, new Date().toISOString()).run();
+      return Response.json({ ok: true }, { headers: cors });
+    }
+
     return new Response('not found', { status: 404, headers: cors });
   },
 };

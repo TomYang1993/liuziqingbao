@@ -2,6 +2,7 @@
 import data from '../../data/perm.json';
 const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const SITE = 'https://liuzi.win/perm';
+const VOTES_URL = import.meta.env.PUBLIC_VOTES_URL ?? '';
 const DESC = 'PERM green card sponsorship tier list: which big tech employers are still filing, which paused. Community-reported. 各大公司 PERM 绿卡 sponsor 现状梯队.';
 ---
 
@@ -62,6 +63,16 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
       .tier.f .co .logo { filter: grayscale(1); opacity: 0.55; }
       .tier.f .co .logo:hover { filter: none; opacity: 1; }
       .tier .co .none { color: var(--muted); font-weight: 400; background: none; border: 0; }
+      .report { margin-top: 2.5rem; padding: 1.4rem 1.25rem; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+      .report h2 { margin: 0 0 0.4rem; font-size: 1.15rem; }
+      .report p { margin: 0 0 1rem; font-size: 0.9rem; color: var(--muted); }
+      .report form { display: grid; gap: 0.75rem; max-width: 640px; }
+      .report .row { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+      .report label { display: grid; gap: 0.3rem; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; font-weight: 600; color: var(--muted); flex: 1 1 200px; }
+      .report input, .report select, .report textarea { font: inherit; font-size: 0.95rem; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 0.5rem 0.6rem; width: 100%; }
+      .report textarea { resize: vertical; font-family: ui-serif, Georgia, serif; }
+      .report button { font-family: ui-sans-serif, system-ui, sans-serif; font-weight: 600; padding: 0.45rem 1.1rem; border: 1px solid var(--fg); background: var(--fg); color: var(--bg); border-radius: 999px; cursor: pointer; }
+      .report .msg { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
       footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; font-family: ui-sans-serif, system-ui, sans-serif; }
       footer a { color: inherit; }
     </style>
@@ -89,9 +100,42 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
         ))}
       </div>
 
+      <section class="report">
+        <h2>Report a company</h2>
+        <p>Org-level details matter: "company sponsors but our org froze," "files but every case gets audited," "PERM approved but takes 18 months." Put that in the note. A link (小红书 / Blind / email screenshot) helps.</p>
+        <form id="pr">
+          <div class="row">
+            <label>Company <input name="company" required maxlength="80" placeholder="e.g. Meta" /></label>
+            <label>Tier
+              <select name="tier" required>
+                <option value="">Pick one</option>
+                {data.tiers.map((t) => <option value={t.id}>{t.label}</option>)}
+                <option value="unknown">Not sure</option>
+              </select>
+            </label>
+          </div>
+          <label>What you know <textarea name="note" required maxlength="2000" rows="4" placeholder="Which org / level, since when, filing or not, audit or approval outcome, timeline..."></textarea></label>
+          <label>Link (optional) <input name="link" type="url" maxlength="500" placeholder="https://" /></label>
+          <div class="row"><button type="submit">Send</button><span class="msg" aria-live="polite"></span></div>
+        </form>
+      </section>
+
       <footer>
-        Not legal advice. Know a change? Use the feedback box on the <a href="/">home page</a> with a link.
+        Not legal advice. Community-reported; verify with your own immigration team.
       </footer>
     </div>
+    <script define:vars={{ VOTES_URL }}>
+      document.getElementById('pr')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const f = e.target, msg = f.querySelector('.msg'), btn = f.querySelector('button');
+        btn.disabled = true;
+        try {
+          const r = await fetch(`${VOTES_URL}/perm-report`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ company: f.company.value, tier: f.tier.value, note: f.note.value, link: f.link.value }) });
+          msg.textContent = r.ok ? 'Sent. Thanks, reviewed monthly.' : r.status === 429 ? 'Too many. Try later.' : 'Failed. Try again.';
+          if (r.ok) f.reset();
+        } catch { msg.textContent = 'Failed. Try again.'; }
+        btn.disabled = false;
+      });
+    </script>
   </body>
 </html>

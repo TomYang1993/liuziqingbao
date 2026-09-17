@@ -48,3 +48,9 @@ node scripts/pending.mjs                 # unclassified items as JSON
 node scripts/apply.mjs < result.json     # { "<url>": {relevant, topics, doc_type, summary} }
 ```
 The Claude Code cloud routine "liuzi.win classify" does this twice daily on the subscription: https://claude.ai/code/routines/trig_01W3KFEYjdAV5uX9cJ8VNCJS
+
+## PERM reports
+`/perm` has a report form → Worker `POST /perm-report` → D1 `perm_reports`. Review, then edit `data/perm.json` by hand:
+```bash
+cd worker && npx wrangler d1 execute liuziqingbao --remote --command "SELECT ts, company, tier, note, link FROM perm_reports ORDER BY id DESC LIMIT 50"
+```
