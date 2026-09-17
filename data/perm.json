@@ -53,7 +53,8 @@
         },
         {
           "name": "DoorDash",
-          "domain": "doordash.com"
+          "domain": "doordash.com",
+          "logo": "doordash.svg"
         },
         {
           "name": "Roblox",
@@ -83,7 +84,8 @@
         },
         {
           "name": "Intel",
-          "domain": "intel.com"
+          "domain": "intel.com",
+          "logo": "intel.svg"
         }
       ]
     },

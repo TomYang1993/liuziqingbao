@@ -78,7 +78,7 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
               {t.companies.length
                 ? t.companies.map((c) => (
                     <span class="logo" title={c.note ? `${c.name}: ${c.note}` : c.name} aria-label={c.name}>
-                      <img src={`/logos/${c.domain.replace(/\.com$/, '')}.png`} alt={c.name} width="36" height="36" loading="lazy" />
+                      <img src={`/logos/${c.logo ?? c.domain.replace(/\.com$/, '') + '.png'}`} alt={c.name} width="36" height="36" loading="lazy" />
                     </span>
                   ))
                 : <span class="none">Nobody yet</span>}
