@@ -1,0 +1,19 @@
+{
+  "updated": "2026-09-17",
+  "statuses": {
+    "sponsoring": "Sponsoring",
+    "paused": "Paused",
+    "not_sponsoring": "Not sponsoring",
+    "stuck": "Filing but stuck"
+  },
+  "companies": [
+    {
+      "company": "Example Corp",
+      "status": "paused",
+      "since": "2026-06",
+      "note": "Paused new PERM filings pending DOL wage rule; existing cases continue.",
+      "source": "https://example.com",
+      "example": true
+    }
+  ]
+}
