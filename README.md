@@ -54,3 +54,4 @@ The Claude Code cloud routine "liuzi.win classify" does this twice daily on the 
 ```bash
 cd worker && npx wrangler d1 execute liuziqingbao --remote --command "SELECT ts, company, tier, note, link FROM perm_reports ORDER BY id DESC LIMIT 50"
 ```
+Candidate list: https://www.h1btrends.com/perm/companies (top PERM filers, DOL data). Diff against `data/perm.json` to find unplaced companies.

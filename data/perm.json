@@ -147,5 +147,12 @@
         }
       ]
     }
+  ],
+  "sources": [
+    {
+      "label": "h1btrends PERM companies (DOL disclosure data, FY2020-25)",
+      "url": "https://www.h1btrends.com/perm/companies",
+      "use": "top filers list; diff against tiers to find companies not yet placed"
+    }
   ]
 }
