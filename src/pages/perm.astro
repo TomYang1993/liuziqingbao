@@ -1,21 +1,19 @@
 ---
 import data from '../../data/perm.json';
-const rows = data.companies.filter((c) => !c.example);
-const statuses = Object.entries(data.statuses);
-const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', timeZone: 'UTC' });
+const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const SITE = 'https://liuzi.win/perm';
-const DESC = 'Which big employers are still sponsoring PERM green cards, which have paused, and which are stuck. Crowd-sourced, with sources. 各大公司 PERM 绿卡 sponsor 现状.';
+const DESC = 'PERM green card sponsorship tier list: which big tech employers are still filing, which paused. Community-reported. 各大公司 PERM 绿卡 sponsor 现状梯队.';
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PERM sponsorship tracker · 北美留子今天还活着</title>
+    <title>PERM 梯队 · 北美留子今天还活着</title>
     <meta name="description" content={DESC} />
     <link rel="canonical" href={SITE} />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="PERM sponsorship tracker" />
+    <meta property="og:title" content="PERM 梯队 · who is still filing green cards" />
     <meta property="og:description" content={DESC} />
     <meta property="og:url" content={SITE} />
     <meta property="og:image" content="https://liuzi.win/og.png" />
@@ -24,7 +22,7 @@ const DESC = 'Which big employers are still sponsoring PERM green cards, which h
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href="/msz-subset.woff2" as="font" type="font/woff2" crossorigin />
     <style is:global>
-      @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740; }
+      @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740, U+592F, U+4EBA, U+4E0A, U+62C9, U+5B8C, U+4E86, U+68AF, U+961F, U+0041-005A; }
       :root {
         --bg: #fbfaf7; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e6e2d8; --accent: #b3261e; --chip: #efece4; --card: #ffffff;
         --sponsoring: #1f6f3f; --paused: #8a6d00; --not_sponsoring: #b3261e; --stuck: #1f4f8a;
@@ -38,6 +36,7 @@ const DESC = 'Which big employers are still sponsoring PERM green cards, which h
       body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 ui-serif, Georgia, "Noto Serif SC", serif; }
       .wrap { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
       .sans { font-family: ui-sans-serif, system-ui, sans-serif; }
+      .intro a { color: inherit; }
       .crumb { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; }
       .crumb a { color: inherit; text-decoration: none; }
       .crumb a:hover { text-decoration: underline; }
@@ -45,24 +44,20 @@ const DESC = 'Which big employers are still sponsoring PERM green cards, which h
       h1 { font-size: 2rem; margin: 0; letter-spacing: -0.02em; }
       h1 small { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.8rem; font-weight: 400; color: var(--muted); letter-spacing: 0.04em; margin-top: 0.3rem; }
       .intro { color: var(--muted); margin: 0.9rem 0 0; max-width: 720px; }
-      nav { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1.8rem 0 1.2rem; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.85rem; }
-      nav button { border: 1px solid var(--line); background: transparent; color: var(--fg); padding: 0.3rem 0.75rem; border-radius: 999px; cursor: pointer; }
-      nav button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-      .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
-      table { width: 100%; border-collapse: collapse; font-size: 0.92rem; min-width: 640px; }
-      th { text-align: left; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 0.8rem 1rem; border-bottom: 1px solid var(--line); }
-      td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-      tr:last-child td { border-bottom: 0; }
-      tr[hidden] { display: none; }
-      td.company { font-weight: 600; white-space: nowrap; }
-      .status { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap; }
-      .status::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
-      .status.sponsoring { color: var(--sponsoring); } .status.paused { color: var(--paused); }
-      .status.not_sponsoring { color: var(--not_sponsoring); } .status.stuck { color: var(--stuck); }
-      td.since { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.82rem; color: var(--muted); white-space: nowrap; }
-      td.note { color: var(--fg); }
-      td.src a { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; color: var(--muted); }
-      .empty { padding: 3rem 1rem; text-align: center; color: var(--muted); }
+      .tiers { display: grid; gap: 0.6rem; margin-top: 2rem; }
+      .tier { display: grid; grid-template-columns: 132px 1fr; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); }
+      @media (max-width: 560px) { .tier { grid-template-columns: 96px 1fr; } }
+      .tier .lab { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 1rem 0.5rem; color: #fff; text-align: center; }
+      .tier .lab b { font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-weight: 400; font-size: 1.75rem; line-height: 1; letter-spacing: 0.02em; }
+      .tier .lab small { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85; margin-top: 0.4rem; }
+      .tier.s .lab { background: linear-gradient(135deg, #b3261e, #e0463b); }
+      .tier.a .lab { background: linear-gradient(135deg, #b8620a, #e08a2a); }
+      .tier.b .lab { background: linear-gradient(135deg, #8a6d00, #c7a21f); }
+      .tier.f .lab { background: linear-gradient(135deg, #4a4a4a, #7a7a7a); }
+      .tier .co { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; padding: 0.9rem 1rem; }
+      .tier .co span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); }
+      .tier.f .co span { opacity: 0.7; text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; }
+      .tier .co .none { color: var(--muted); font-weight: 400; background: none; border: 0; }
       footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; font-family: ui-sans-serif, system-ui, sans-serif; }
       footer a { color: inherit; }
     </style>
@@ -70,48 +65,23 @@ const DESC = 'Which big employers are still sponsoring PERM green cards, which h
   <body>
     <div class="wrap">
       <div class="crumb"><a href="/" class="brand">北美留子今天还活着</a> &nbsp;/&nbsp; PERM</div>
-      <h1>PERM sponsorship tracker<small>Who is still filing green cards, who paused, who is stuck · updated {fmt(data.updated)}</small></h1>
-      <p class="intro">Crowd-reported, with a source link per row. Company policy changes fast and varies by team and level; treat this as a starting point, not a promise.</p>
+      <h1>PERM 梯队<small>Who is still filing green cards · updated {fmt(data.updated)}</small></h1>
+      <p class="intro">Community-reported. Policy shifts fast and varies by org and level; treat this as the vibe, not a promise. Know a change? Feedback box on the <a href="/">home page</a>.</p>
 
-      <nav aria-label="Filter by status">
-        <button data-status="" aria-pressed="true">All</button>
-        {statuses.map(([k, label]) => <button data-status={k} aria-pressed="false">{label}</button>)}
-      </nav>
-
-      <div class="tablewrap">
-        {rows.length === 0 ? (
-          <p class="empty">No entries yet. Add rows to <code>data/perm.json</code>.</p>
-        ) : (
-          <table>
-            <thead><tr><th>Company</th><th>Status</th><th>Since</th><th>Notes</th><th>Source</th></tr></thead>
-            <tbody>
-              {rows.map((c) => (
-                <tr data-status={c.status}>
-                  <td class="company">{c.company}</td>
-                  <td><span class={`status ${c.status}`}>{data.statuses[c.status] ?? c.status}</span></td>
-                  <td class="since">{c.since ?? ''}</td>
-                  <td class="note">{c.note ?? ''}</td>
-                  <td class="src">{c.source && <a href={c.source} target="_blank" rel="noopener">source ↗</a>}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
+      <div class="tiers">
+        {data.tiers.map((t) => (
+          <section class={`tier ${t.id}`}>
+            <div class="lab"><b>{t.label}</b><small>{t.sub}</small></div>
+            <div class="co">
+              {t.companies.length ? t.companies.map((c) => <span>{c}</span>) : <span class="none">Nobody yet</span>}
+            </div>
+          </section>
+        ))}
       </div>
 
       <footer>
         Not legal advice. Know a change? Use the feedback box on the <a href="/">home page</a> with a link.
       </footer>
     </div>
-    <script>
-      const buttons = document.querySelectorAll('nav button');
-      buttons.forEach((b) =>
-        b.addEventListener('click', () => {
-          const s = b.dataset.status;
-          buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-          document.querySelectorAll('tbody tr').forEach((r) => (r.hidden = !!s && r.dataset.status !== s));
-        }),
-      );
-    </script>
   </body>
 </html>

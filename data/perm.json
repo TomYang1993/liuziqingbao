@@ -1,19 +1,9 @@
 {
   "updated": "2026-09-17",
-  "statuses": {
-    "sponsoring": "Sponsoring",
-    "paused": "Paused",
-    "not_sponsoring": "Not sponsoring",
-    "stuck": "Filing but stuck"
-  },
-  "companies": [
-    {
-      "company": "Example Corp",
-      "status": "paused",
-      "since": "2026-06",
-      "note": "Paused new PERM filings pending DOL wage rule; existing cases continue.",
-      "source": "https://example.com",
-      "example": true
-    }
+  "tiers": [
+    { "id": "s", "label": "夯S", "sub": "Filing, no drama", "companies": ["Adobe", "Snowflake", "Bloomberg", "Rippling", "Instacart", "Airbnb", "Waymo"] },
+    { "id": "a", "label": "人上人A", "sub": "Filing", "companies": ["TikTok", "Tesla", "Pinterest", "Whatnot", "DoorDash", "Roblox", "Netflix", "Reddit"] },
+    { "id": "b", "label": "NPC B", "sub": "Selective / slow", "companies": ["Walmart"] },
+    { "id": "f", "label": "拉完了F", "sub": "Paused or not filing", "companies": ["Microsoft", "Snap", "Stripe", "Robinhood", "Uber", "Apple", "Meta", "Google", "Oracle", "Amazon", "OpenAI", "Anthropic"] }
   ]
 }
