@@ -101,8 +101,8 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
       </div>
 
       <section class="report">
-        <h2>Report a company</h2>
-        <p>Org-level details matter: "company sponsors but our org froze," "files but every case gets audited," "PERM approved but takes 18 months." Put that in the note. A link (小红书 / Blind / email screenshot) helps.</p>
+        <h2>Anything wrong? Submit your rating</h2>
+        <p>Org-level details matter: "company sponsors but our org froze," "files but every case gets audited," "PERM approved but takes 18 months." Put that in the note.</p>
         <form id="pr">
           <div class="row">
             <label>Company <input name="company" required maxlength="80" placeholder="e.g. Meta" /></label>
@@ -114,8 +114,7 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
               </select>
             </label>
           </div>
-          <label>What you know <textarea name="note" required maxlength="2000" rows="4" placeholder="Which org / level, since when, filing or not, audit or approval outcome, timeline..."></textarea></label>
-          <label>Link (optional) <input name="link" type="url" maxlength="500" placeholder="https://" /></label>
+          <label>What you know <textarea name="note" required maxlength="2000" rows="4" placeholder="Which org / level, since when, filing or not, audit or approval outcome, timeline. Links welcome (小红书 / Blind / news)."></textarea></label>
           <div class="row"><button type="submit">Send</button><span class="msg" aria-live="polite"></span></div>
         </form>
       </section>
@@ -130,7 +129,7 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
         const f = e.target, msg = f.querySelector('.msg'), btn = f.querySelector('button');
         btn.disabled = true;
         try {
-          const r = await fetch(`${VOTES_URL}/perm-report`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ company: f.company.value, tier: f.tier.value, note: f.note.value, link: f.link.value }) });
+          const r = await fetch(`${VOTES_URL}/perm-report`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ company: f.company.value, tier: f.tier.value, note: f.note.value }) });
           msg.textContent = r.ok ? 'Sent. Thanks, reviewed monthly.' : r.status === 429 ? 'Too many. Try later.' : 'Failed. Try again.';
           if (r.ok) f.reset();
         } catch { msg.textContent = 'Failed. Try again.'; }
