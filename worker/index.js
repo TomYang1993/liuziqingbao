@@ -1,6 +1,6 @@
 // Anonymous egg/flower counters. GET /counts, POST /vote {id, kind}. D1-backed, atomic increments.
 const KINDS = ['egg', 'flower', 'banana'];
-const MAX_PER_HOUR = 60; // ponytail: per-IP cap in D1; move to Rate Limiting binding if abused
+const MAX_PER_HOUR = 600; // ponytail: per-IP cap in D1; move to Rate Limiting binding if abused
 
 // ponytail: hashed IP only, never stored raw
 async function ipKey(req) {

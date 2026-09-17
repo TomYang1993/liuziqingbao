@@ -1,0 +1,45 @@
+name: Fetch sources
+
+on:
+  schedule:
+    - cron: '23 2,14 * * *'   # 19:23 / 07:23 Pacific (PDT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch and classify
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLASSIFIER: ${{ secrets.ANTHROPIC_API_KEY != '' && 'api' || 'none' }}
+        run: node scripts/fetch.mjs
+      - name: Commit data
+        id: commit
+        run: |
+          git config user.name "liuzi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/items.json data/meta.json
+          git diff --cached --quiet && echo "changed=false" >> "$GITHUB_OUTPUT" && exit 0
+          git commit -m "data: $(date -u +%F) update"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

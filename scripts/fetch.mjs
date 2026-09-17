@@ -5,8 +5,10 @@ import { spawn } from 'node:child_process';
 import Parser from 'rss-parser';
 
 const ITEMS = new URL('../data/items.json', import.meta.url);
+const META = new URL('../data/meta.json', import.meta.url);
 const LOOKBACK_DAYS = Number(process.env.LOOKBACK_DAYS ?? 14);
-const CLASSIFIER = process.env.CLASSIFIER ?? 'cli'; // cli | none
+const CLASSIFIER = process.env.CLASSIFIER ?? (process.env.ANTHROPIC_API_KEY ? 'api' : 'cli'); // api | cli | none
+const MODEL = process.env.CLAUDE_MODEL ?? 'claude-opus-5';
 const cutoff = Date.now() - LOOKBACK_DAYS * 86400e3;
 const RELEVANT = /H-?1B|H-?4|OPT\b|CPT\b|F-?1\b|STEM|practical training|specialty occupation|prevailing wage|labor condition|LCA\b|student visa|nonimmigrant|work authorization|EAD\b|grace period|cap-subject|registration|SEVP|SEVIS|DSO\b|student|PERM\b|I-140|labor certification|EB-?[123]\b|immigrant petition|priority date|visa bulletin/i;
 
@@ -91,8 +93,21 @@ Output ONLY the JSON object, no prose, no code fences.
 
 ITEMS:
 ${JSON.stringify(batch.map(({ url, title, excerpt, source }) => ({ url, title, source, excerpt })), null, 1)}`;
-  const raw = await run('claude', ['-p', '--model', 'haiku', '--output-format', 'json'], prompt);
-  const text = JSON.parse(raw).result;
+  let text;
+  if (CLASSIFIER === 'api') {
+    const { default: Anthropic } = await import('@anthropic-ai/sdk');
+    const res = await new Anthropic().messages.create({
+      model: MODEL,
+      max_tokens: 4096,
+      output_config: { effort: 'low' },
+      messages: [{ role: 'user', content: prompt }],
+    });
+    if (res.stop_reason === 'refusal') throw new Error('refused');
+    text = res.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
+  } else {
+    const raw = await run('claude', ['-p', '--model', 'haiku', '--output-format', 'json'], prompt);
+    text = JSON.parse(raw).result;
+  }
   return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
 }
 
@@ -112,10 +127,13 @@ for (const s of sources) {
     console.error(`[${s.name}] ${e.message}`);
   }
 }
-console.log(`${fresh.length} new candidate(s)`);
+// items published raw by an earlier run (no classifier available) get classified now
+const backfill = CLASSIFIER === 'none' ? [] : existing.filter((i) => !i.ai && i.relevant !== false).slice(0, 30);
+const todo = [...fresh, ...backfill];
+console.log(`${fresh.length} new candidate(s), ${backfill.length} to backfill, classifier=${CLASSIFIER}`);
 
-for (let i = 0; i < fresh.length; i += 15) {
-  const batch = fresh.slice(i, i + 15);
+for (let i = 0; i < todo.length; i += 15) {
+  const batch = todo.slice(i, i + 15);
   let result = {};
   try {
     result = await classify(batch);
@@ -127,4 +145,5 @@ for (let i = 0; i < fresh.length; i += 15) {
 
 const all = [...fresh, ...existing].sort((a, b) => new Date(b.published) - new Date(a.published));
 await writeFile(ITEMS, JSON.stringify(all, null, 2) + '\n');
+await writeFile(META, JSON.stringify({ checked: new Date().toISOString(), classifier: CLASSIFIER }, null, 2) + '\n');
 console.log(`${fresh.filter((i) => i.relevant).length} relevant, ${all.length} total`);
