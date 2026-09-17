@@ -21,7 +21,9 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href="/msz-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/nserif-tiers.woff2" as="font" type="font/woff2" crossorigin />
     <style is:global>
+      @font-face { font-family: 'Tier Serif'; src: url('/nserif-tiers.woff2') format('woff2'); font-weight: 900; font-display: swap; }
       @font-face { font-family: 'Ma Shan Zheng'; src: url('/msz-subset.woff2') format('woff2'); font-display: swap; unicode-range: U+5317, U+7F8E, U+7559, U+5B50, U+4ECA, U+5929, U+8FD8, U+6D3B, U+7740, U+592F, U+4EBA, U+4E0A, U+62C9, U+5B8C, U+4E86, U+68AF, U+961F, U+0041-005A, U+0028-0029; }
       :root {
         --bg: #fbfaf7; --fg: #1a1a1a; --muted: #6b6b6b; --line: #e6e2d8; --accent: #b3261e; --chip: #efece4; --card: #ffffff;
@@ -48,7 +50,7 @@ const DESC = 'PERM green card sponsorship tier list: which big tech employers ar
       .tier { display: grid; grid-template-columns: 156px 1fr; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); }
       @media (max-width: 560px) { .tier { grid-template-columns: 96px 1fr; } }
       .tier .lab { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 1rem 0.5rem; color: #fff; text-align: center; }
-      .tier .lab b { font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-weight: 400; font-size: 1.75rem; line-height: 1; letter-spacing: 0.02em; }
+      .tier .lab b { font-family: 'Tier Serif', 'Noto Serif SC', 'Songti SC', serif; font-weight: 900; font-size: 1.5rem; line-height: 1; letter-spacing: 0.01em; }
       .tier.s .lab { background: linear-gradient(135deg, #b3261e, #e0463b); }
       .tier.a .lab { background: linear-gradient(135deg, #b8620a, #e08a2a); }
       .tier.b .lab { background: linear-gradient(135deg, #8a6d00, #c7a21f); }
