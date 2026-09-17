@@ -40,10 +40,6 @@
       "label": "人上人(A)",
       "companies": [
         {
-          "name": "TikTok",
-          "domain": "tiktok.com"
-        },
-        {
           "name": "Tesla",
           "domain": "tesla.com"
         },
@@ -80,6 +76,14 @@
         {
           "name": "Walmart",
           "domain": "walmart.com"
+        },
+        {
+          "name": "TikTok",
+          "domain": "tiktok.com"
+        },
+        {
+          "name": "Intel",
+          "domain": "intel.com"
         }
       ]
     },
@@ -134,6 +138,10 @@
         {
           "name": "Anthropic",
           "domain": "anthropic.com"
+        },
+        {
+          "name": "Zillow",
+          "domain": "zillow.com"
         }
       ]
     }
