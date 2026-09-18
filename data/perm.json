@@ -32,6 +32,10 @@
         {
           "name": "Waymo",
           "domain": "waymo.com"
+        },
+        {
+          "name": "NVIDIA",
+          "domain": "nvidia.com"
         }
       ]
     },
