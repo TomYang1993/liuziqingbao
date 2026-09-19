@@ -110,27 +110,46 @@
   },
   {
     "id": "h1b-fee",
-    "title": "$100,000 H-1B fee",
+    "title": "$103,265 H-1B cap fee",
     "topics": [
-      "H-1B"
+      "H-1B",
+      "F-1",
+      "OPT"
     ],
     "status": "Proposed rule, comments open through Sep 24",
     "status_kind": "proposed",
-    "summary": "Presidential proclamation imposed a $100,000 payment on new H-1B petitions for workers outside the US. DHS is now codifying a fee through rulemaking; comment period on the NPRM closes Sep 24, 2026.",
+    "summary": "Round two. The $100,000 proclamation (Sep 2025, entry-only, cap-exempt employers spared) was vacated by a federal court on June 8, 2026 as an unconstitutional tax; the First Circuit refused to stay that ruling. DHS answered with a rulemaking: a $103,265 fee on every cap-subject H-1B petition, including change-of-status filings by F-1/OPT students and cap-exempt universities, on top of existing fees. Comments close Sep 24, 2026. Not in effect until a final rule.",
     "timeline": [
       {
         "date": "2025-09-19",
-        "label": "Proclamation: Restriction on Entry of Certain Nonimmigrant Workers ($100,000 payment)",
+        "label": "Proclamation 10973: $100,000 payment on new H-1B entries",
         "url": "https://www.federalregister.gov/documents/2025/09/24/2025-18601/restriction-on-entry-of-certain-nonimmigrant-workers"
       },
       {
+        "date": "2026-06-08",
+        "label": "Judge Sorokin (D. Mass.) vacates the proclamation's payment as an unconstitutional tax and APA violation",
+        "url": "https://ifp.org/explaining-the-proposed-103k-fee-on-h-1bs/",
+        "note": "Court order via IFP explainer"
+      },
+      {
+        "date": "2026-07-24",
+        "label": "First Circuit denies stay pending appeal (California v. Mullin, No. 26-1699); vacatur stands",
+        "url": "https://ifp.org/explaining-the-proposed-103k-fee-on-h-1bs/",
+        "note": "Via IFP explainer"
+      },
+      {
+        "date": "2026-08-24",
+        "label": "USCIS announces proposed $103,265 fee on all cap-subject petitions",
+        "url": "https://www.uscis.gov/newsroom/news-releases/dhs-proposes-additional-h-1b-fee"
+      },
+      {
         "date": "2026-08-25",
-        "label": "DHS proposes 'Fee for Certain H-1B Petitions'; comments through Sep 24, 2026",
+        "label": "NPRM 'Fee for Certain H-1B Petitions' published; comments through Sep 24, 2026",
         "url": "https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions"
       },
       {
         "date": "2026-09-10",
-        "label": "Correction notice to the proposed rule",
+        "label": "Correction notice to the NPRM",
         "url": "https://www.federalregister.gov/documents/2026/09/10/C1-2026-17324/fee-for-certain-h-1b-petitions"
       }
     ]
