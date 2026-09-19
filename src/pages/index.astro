@@ -91,6 +91,9 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       .card .body { padding: 0 1rem 1rem; border-top: 1px solid var(--line); }
       .card .body p { font-size: 0.92rem; margin: 0.9rem 0; }
       .links { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: -0.3rem 0 1rem; }
+      .card .more { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; margin: -0.4rem 0 0.9rem !important; }
+      .card .more a { color: var(--accent); text-decoration: none; font-weight: 600; }
+      .card .more a:hover { text-decoration: underline; }
       .hero-links { margin: 1rem 0 0; }
       .linkbtn { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; font-weight: 600; text-decoration: none; color: var(--bg); background: var(--fg); border-radius: 999px; padding: 0.35rem 0.85rem; }
       .linkbtn:hover { background: var(--accent); }
@@ -163,7 +166,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
 
       <div class="grid">
         <aside>
-          <h2>🔥 Tracking</h2>
+          <h2 id="tracking">🔥 Tracking</h2>
           {issues.map((iss, n) => (
             <details class="card" open={n === 0}>
               <summary>
@@ -178,6 +181,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
                     {iss.links.map((l) => <a class="linkbtn" href={l.url} target="_blank" rel="noopener">{l.label} ↗</a>)}
                   </div>
                 )}
+                <p class="more"><a href={`/issues/${iss.id}`}>Full timeline and related updates →</a></p>
                 {iss.timeline.length ? (
                   <ol class="tl">
                     {iss.timeline.map((e) => (
