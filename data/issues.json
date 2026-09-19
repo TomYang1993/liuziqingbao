@@ -110,32 +110,32 @@
   },
   {
     "id": "h1b-fee",
-    "title": "$103,265 H-1B cap fee",
+    "title": "$100k proclamation + $103,265 fee",
     "topics": [
       "H-1B",
       "F-1",
       "OPT"
     ],
-    "status": "Proposed rule, comments open through Sep 24",
+    "status": "Proclamation renewed to Sep 2027 (court-blocked); fee NPRM comments close Sep 24",
     "status_kind": "proposed",
-    "summary": "Round two. The $100,000 proclamation (Sep 2025, entry-only, cap-exempt employers spared) was vacated by a federal court on June 8, 2026 as an unconstitutional tax; the First Circuit refused to stay that ruling. DHS answered with a rulemaking: a $103,265 fee on every cap-subject H-1B petition, including change-of-status filings by F-1/OPT students and cap-exempt universities, on top of existing fees. Comments close Sep 24, 2026. Not in effect until a final rule.",
+    "summary": "Two tracks. (1) Proclamation 10973's $100,000 payment on H-1B workers entering from abroad was vacated by a federal court on June 8, 2026 and the First Circuit refused to stay that ruling, so it is not being collected; on Sep 18, 2026 Trump renewed it anyway through Sep 21, 2027 while the appeal runs. (2) DHS separately proposed a $103,265 fee on every cap-subject H-1B petition, including F-1/OPT change-of-status filings and cap-exempt employers; comments close Sep 24, 2026, not in effect until a final rule. A companion Sep 18 order tells DOL/DHS/State to weigh an employer's recent or planned layoffs of U.S. workers when adjudicating H-1B petitions.",
     "timeline": [
       {
         "date": "2025-09-19",
-        "label": "Proclamation 10973: $100,000 payment on new H-1B entries",
+        "label": "Proclamation 10973: $100,000 payment on new H-1B entries; 12-month term",
         "url": "https://www.federalregister.gov/documents/2025/09/24/2025-18601/restriction-on-entry-of-certain-nonimmigrant-workers"
       },
       {
         "date": "2026-06-08",
-        "label": "Judge Sorokin (D. Mass.) vacates the proclamation's payment as an unconstitutional tax and APA violation",
-        "url": "https://ifp.org/explaining-the-proposed-103k-fee-on-h-1bs/",
-        "note": "Court order via IFP explainer"
+        "label": "Judge Sorokin (D. Mass.) vacates the payment requirement as an unconstitutional tax and APA violation",
+        "url": "https://www.klaskolaw.com/august-2026-100000-h-1b-fee-blocked-again/",
+        "note": "Law firm summary"
       },
       {
         "date": "2026-07-24",
-        "label": "First Circuit denies stay pending appeal (California v. Mullin, No. 26-1699); vacatur stands",
-        "url": "https://ifp.org/explaining-the-proposed-103k-fee-on-h-1bs/",
-        "note": "Via IFP explainer"
+        "label": "First Circuit denies stay pending appeal (California v. Mullin, No. 26-1699); fee stays blocked",
+        "url": "https://www.littler.com/news-analysis/asap/appellate-court-pauses-100000-h-1b-fee-policy-appeal-continues",
+        "note": "Law firm summary"
       },
       {
         "date": "2026-08-24",
@@ -144,13 +144,23 @@
       },
       {
         "date": "2026-08-25",
-        "label": "NPRM 'Fee for Certain H-1B Petitions' published; comments through Sep 24, 2026",
+        "label": "NPRM 'Fee for Certain H-1B Petitions' (Docket USCIS-2026-0298); comments through Sep 24, 2026",
         "url": "https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions"
       },
       {
         "date": "2026-09-10",
         "label": "Correction notice to the NPRM",
         "url": "https://www.federalregister.gov/documents/2026/09/10/C1-2026-17324/fee-for-certain-h-1b-petitions"
+      },
+      {
+        "date": "2026-09-18",
+        "label": "Proclamation renewed: $100,000 entry restriction extended to Sep 21, 2027, national-interest waivers only",
+        "url": "https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/"
+      },
+      {
+        "date": "2026-09-18",
+        "label": "Order: agencies must consider employer layoffs of U.S. workers in H-1B adjudications; DOL/DHS/State data sharing",
+        "url": "https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/"
       }
     ]
   },
