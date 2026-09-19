@@ -68,8 +68,18 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       .sans { font-family: ui-sans-serif, system-ui, sans-serif; }
       .wrap { max-width: 1120px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
       header h1 { font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-weight: 400; font-size: 2.9rem; margin: 0; letter-spacing: 0.02em; }
-      header h1 { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
-      header h1 small { font-size: 0.8rem; font-weight: 400; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.04em; }
+      .fresh { display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 0.7rem; padding: 0.4rem 0.85rem 0.4rem 0.6rem; border: 1px solid var(--line); border-radius: 999px; background: var(--card); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.86rem; color: var(--muted); }
+      .fresh b { color: var(--fg); font-weight: 600; }
+      .pulse { color: var(--accent); flex: none; }
+      .pulse .dot { fill: currentColor; }
+      .pulse .arc { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; opacity: 0.35; }
+      @media (prefers-reduced-motion: no-preference) {
+        .pulse .dot { animation: beat 2.4s ease-in-out infinite; transform-origin: 12px 12px; }
+        .pulse .a1 { animation: ripple 2.4s ease-out infinite 0.25s; }
+        .pulse .a2 { animation: ripple 2.4s ease-out infinite 0.55s; }
+      }
+      @keyframes beat { 0%, 100% { transform: scale(1); } 12% { transform: scale(1.25); } 24% { transform: scale(1); } }
+      @keyframes ripple { 0% { opacity: 0.15; } 20% { opacity: 1; } 60%, 100% { opacity: 0.15; } }
       header p { color: var(--muted); margin: 0.9rem 0 0; max-width: 720px; }
       .grid { display: grid; grid-template-columns: 340px 1fr; gap: 3rem; margin-top: 2.5rem; align-items: start; }
       @media (max-width: 860px) { .grid { grid-template-columns: 1fr; gap: 2rem; } }
@@ -154,7 +164,17 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
   <body>
     <div class="wrap">
       <header>
-        <h1>北美留子今天还活着<small>Last checked {checked}</small></h1>
+        <h1>北美留子今天还活着</h1>
+        <div class="fresh" title="Sources are re-checked every 4 hours">
+          <svg class="pulse" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <circle class="dot" cx="12" cy="12" r="2.6" />
+            <path class="arc a1" d="M8.2 15.8a5.4 5.4 0 0 1 0-7.6" />
+            <path class="arc a1" d="M15.8 8.2a5.4 5.4 0 0 1 0 7.6" />
+            <path class="arc a2" d="M5.4 18.6a9.4 9.4 0 0 1 0-13.2" />
+            <path class="arc a2" d="M18.6 5.4a9.4 9.4 0 0 1 0 13.2" />
+          </svg>
+          <span>Last checked <b>{checked}</b></span>
+        </div>
         <p>
           Official updates on H-1B, F-1, OPT, CPT, STEM OPT, PERM and I-140, pulled from USCIS, the Federal Register, ICE/SEVP, DOL, and the White House.
         </p>
