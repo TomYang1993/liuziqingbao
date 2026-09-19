@@ -7,9 +7,12 @@
     "source": "White House",
     "first_seen": "2026-09-19T04:21:12.627Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A presidential executive order directs agencies to strengthen program integrity and interagency coordination in administering the H-1B visa program, citing concerns about misuse of the program. It affects H-1B visa holders, applicants, and sponsoring employers.",
+    "ai": true,
+    "doc_type": "executive action"
   },
   {
     "title": "Restriction on Entry of Certain Nonimmigrant Workers",
@@ -19,9 +22,12 @@
     "source": "White House",
     "first_seen": "2026-09-19T04:21:12.627Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A presidential proclamation continues and extends the September 19, 2025 restriction on entry for certain H-1B nonimmigrant workers, citing continued program abuse. It affects H-1B visa holders and applicants seeking to enter the United States.",
+    "ai": true,
+    "doc_type": "executive action"
   },
   {
     "title": "Agency Information Collection Activities; Extension, Without Change, of a Currently Approved Collection: Immigrant Petition for Alien Workers",
