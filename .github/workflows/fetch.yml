@@ -2,7 +2,7 @@ name: Fetch sources
 
 on:
   schedule:
-    - cron: '23 2,14 * * *'   # 19:23 / 07:23 Pacific (PDT)
+    - cron: '23 */4 * * *'   # every 4h at :23; routine classifies at :23 one hour later
   workflow_dispatch:
 
 permissions:

@@ -3,8 +3,8 @@
 US student & work visa policy watch. Static site on GitHub Pages, no server, no DB.
 
 ```
-07:23 / 19:23 PT  GitHub Actions (fetch.yml): scripts/fetch.mjs, CLASSIFIER=none → items.json (ai:false) → push → deploy
-08:23 / 20:23 PT  Claude cloud routine (subscription): pending.mjs → classify → apply.mjs → push → deploy
+Every 4h (xx:23 UTC)  GitHub Actions (fetch.yml): scripts/fetch.mjs, CLASSIFIER=none → items.json (ai:false) → push → deploy
++1h (xx:23 UTC)       Claude cloud routine (subscription): pending.mjs → classify → apply.mjs → push → deploy
 ```
 No local machine involved. Actions can reach .gov but has no Claude login; the Claude sandbox has the login but no .gov egress.
 
