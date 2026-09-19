@@ -42,6 +42,7 @@ const desc = iss.summary.length > 155 ? iss.summary.slice(0, 152).replace(/\s+\S
       '@type': 'Article',
       headline: iss.title,
       description: desc,
+      inLanguage: ['en', 'zh'],
       datePublished: first,
       dateModified: updated,
       url,
@@ -75,6 +76,8 @@ const desc = iss.summary.length > 155 ? iss.summary.slice(0, 152).replace(/\s+\S
       .meta { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; color: var(--muted); margin: 0.4rem 0 1.6rem; display: flex; gap: 0.7rem; flex-wrap: wrap; }
       .chips span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.72rem; background: var(--chip); padding: 0.15rem 0.55rem; border-radius: 4px; margin-right: 0.3rem; }
       .summary { font-size: 1.08rem; margin: 0 0 1.4rem; }
+      .summary.zh { font-size: 1rem; color: var(--fg); padding: 0.9rem 1rem; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+      .zh-tag { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; color: var(--accent); margin-right: 0.6rem; vertical-align: 0.1em; }
       .links { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.8rem; }
       .linkbtn { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; font-weight: 600; text-decoration: none; color: var(--bg); background: var(--fg); border-radius: 999px; padding: 0.35rem 0.85rem; }
       .linkbtn:hover { background: var(--accent); }
@@ -106,6 +109,7 @@ const desc = iss.summary.length > 155 ? iss.summary.slice(0, 152).replace(/\s+\S
         <span class="chips">{iss.topics.map((t) => <span>{t}</span>)}</span>
       </div>
       <p class="summary">{iss.summary}</p>
+      {iss.summary_zh && <p class="summary zh" lang="zh"><span class="zh-tag">中文</span>{iss.summary_zh}</p>}
       {iss.links?.length > 0 && (
         <div class="links">{iss.links.map((l) => <a class="linkbtn" href={l.url} target="_blank" rel="noopener">{l.label} ↗</a>)}</div>
       )}

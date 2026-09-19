@@ -31,7 +31,8 @@
         "label": "CPT Map: school-by-school policies",
         "url": "https://cptmap.com/"
       }
-    ]
+    ],
+    "summary_zh": "SEVP 在 2026 年 8 月 12 日和 24 日连发两条 broadcast message，要求 DSO 只在实习是课程体系中「必修、不可或缺」的一部分、且对该专业所有学生（不分身份）都强制要求、并且是毕业必要条件时，才能批 CPT。仅仅给学分不算。这不是新法规，但 SEVP 可能要学校出示课程依据。Day-1 CPT 项目和选修性质的实习首当其冲。"
   },
   {
     "id": "f1-ds",
@@ -76,7 +77,8 @@
         "url": "https://nepyork.com/2026/09/14/federal-judge-blocks-dhs-rule-ending-duration-of-status-for-international-students/",
         "note": "News report; court order not yet linked"
       }
-    ]
+    ],
+    "summary_zh": "DHS 最终规则把 F/J/I 签证的「duration of status」改成固定停留期，到期需申请延期。2026 年 9 月 14 日，马萨诸塞州联邦法院在生效前一天发出全国范围的初步禁令，规则被叫停。诉讼期间 D/S 维持原样，学生身份暂时不受影响。"
   },
   {
     "id": "grace-period",
@@ -106,7 +108,8 @@
         "url": "https://www.rnlawgroup.com/dhs-proposes-to-eliminate-the-60-day-grace-period-for-h-1b-l-1-o-1-e-and-tn-workers/",
         "note": "Law firm summary"
       }
-    ]
+    ],
+    "summary_zh": "DHS 提议删除 8 CFR 214.1(l)(2)，即失业后最长 60 天的 grace period，涉及 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属（H-4、L-2、O-3 等）。若最终生效，失业当天身份即终止，除非有其他合法身份依据；签证有效期前后的 10 天 grace period 不受影响。目前仍是提案，评论期至 2026 年 11 月 10 日，规则尚未生效。"
   },
   {
     "id": "h1b-fee",
@@ -162,7 +165,8 @@
         "label": "Order: agencies must consider employer layoffs of U.S. workers in H-1B adjudications; DOL/DHS/State data sharing",
         "url": "https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/"
       }
-    ]
+    ],
+    "summary_zh": "两条线并行。（1）2025 年 9 月的总统公告对从海外入境的新 H-1B 收取 10 万美元，2026 年 6 月 8 日被联邦法院判定为违宪税收而撤销，第一巡回法院也拒绝暂缓执行该判决，目前不收；但 2026 年 9 月 18 日特朗普仍将公告延长至 2027 年 9 月 21 日，等待上诉结果。（2）DHS 另行提议对所有 cap-subject H-1B 申请收取 103,265 美元，包括 F-1/OPT 境内转身份和 cap-exempt 雇主，评论期至 9 月 24 日，最终规则出台前不生效。同日另一行政命令要求 DOL/DHS/国务院审理 H-1B 时考虑雇主近期裁员美国员工的情况。"
   },
   {
     "id": "opt-fee",
@@ -193,7 +197,8 @@
         "url": "https://americanbazaaronline.com/2026/09/13/us-100k-opt-fee-proposal-white-house-review-indian-students-488044/",
         "note": "News report"
       }
-    ]
+    ],
+    "summary_zh": "DHS 正在起草对 OPT 收取 10 万美元费用的规则。2026 年 7 月媒体披露，8 月送白宫 OIRA 审查，9 月 13 日前审查完成。目前没有任何官方 DHS 文件，也没有生效：提案必须先在 Federal Register 公布并经过公众评论。"
   },
   {
     "id": "dol-wage-levels",
@@ -221,7 +226,8 @@
         "label": "Comment period closed",
         "url": "https://www.regulations.gov/docket/ETA-2026-0001"
       }
-    ]
+    ],
+    "summary_zh": "DOL 提议把 prevailing wage 四个等级从 OEWS 数据的第 17/34/50/67 百分位提高到第 34/52/70/88 百分位，适用于生效日之后提交的 H-1B、H-1B1、E-3 和 PERM（EB-2/EB-3）申请；已批准的 PWD、LCA 和 labor certification 不受影响。评论期已于 2026 年 5 月 26 日结束，最终规则尚未发布。"
   },
   {
     "id": "perm-modernization",
@@ -245,6 +251,7 @@
         "url": "https://badmuslaw.com/blog/dol-advances-major-perm-overhaul-what-employers-should-know-and-why-nothing-has-changed-yet/",
         "note": "Law firm summary"
       }
-    ]
+    ],
+    "summary_zh": "DOL 正在起草「Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program」（RIN 1205-AC29），据监管议程将重审招聘标准（网络招聘 vs 报纸广告）、对被裁美国员工的保护、非歧视招聘以及雇主记录保存要求。2026 年 9 月 14 日送 OIRA 审查，提案文本尚未公开，规则公布并最终生效前一切照旧。"
   }
 ]
