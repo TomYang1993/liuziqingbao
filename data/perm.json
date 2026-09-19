@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "tiers": [
     {
       "id": "s",
@@ -90,6 +90,11 @@
           "name": "Intel",
           "domain": "intel.com",
           "logo": "intel.svg"
+        },
+        {
+          "name": "LinkedIn",
+          "domain": "linkedin.com",
+          "note": "Day 1 PERM, but not guaranteed to pass"
         }
       ]
     },
