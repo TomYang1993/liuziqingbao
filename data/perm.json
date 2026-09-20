@@ -26,16 +26,16 @@
           "domain": "instacart.com"
         },
         {
-          "name": "Airbnb",
-          "domain": "airbnb.com"
-        },
-        {
           "name": "Waymo",
           "domain": "waymo.com"
         },
         {
           "name": "NVIDIA",
           "domain": "nvidia.com"
+        },
+        {
+          "name": "Microsoft",
+          "domain": "microsoft.com"
         }
       ]
     },
@@ -73,10 +73,6 @@
           "domain": "reddit.com"
         },
         {
-          "name": "Microsoft",
-          "domain": "microsoft.com"
-        },
-        {
           "name": "JPMorgan Chase",
           "domain": "jpmorganchase.com",
           "note": "slow PERM"
@@ -85,6 +81,15 @@
           "name": "Cisco",
           "domain": "cisco.com",
           "logo": "cisco.svg"
+        },
+        {
+          "name": "Airbnb",
+          "domain": "airbnb.com"
+        },
+        {
+          "name": "Intel",
+          "domain": "intel.com",
+          "logo": "intel.svg"
         }
       ]
     },
@@ -99,11 +104,6 @@
         {
           "name": "TikTok",
           "domain": "tiktok.com"
-        },
-        {
-          "name": "Intel",
-          "domain": "intel.com",
-          "logo": "intel.svg"
         },
         {
           "name": "LinkedIn",
