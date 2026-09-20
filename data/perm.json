@@ -83,7 +83,8 @@
         },
         {
           "name": "Cisco",
-          "domain": "cisco.com"
+          "domain": "cisco.com",
+          "logo": "cisco.svg"
         }
       ]
     },
