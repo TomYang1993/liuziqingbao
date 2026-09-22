@@ -6,10 +6,11 @@
     "excerpt": "U.S. Citizenship and Immigration Services provided vital assistance to an investigation that lead to the indictment of Miran Kostic, an alien and accused war criminal from Bosnia and Herzegovina.",
     "source": "USCIS",
     "first_seen": "2026-09-22T19:47:06.063Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "press release"
   },
   {
     "title": "Enhancing Program Integrity and Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program",
