@@ -4,26 +4,30 @@
     "url": "https://www.federalregister.gov/documents/2026/09/23/2026-19555/enhancing-program-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b",
     "published": "2026-09-23",
     "excerpt": "",
-    "doc_type": "Presidential Document",
+    "doc_type": "executive action",
     "source": "Federal Register",
     "first_seen": "2026-09-23T13:42:59.914Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A presidential action directs federal agencies to coordinate more closely and strengthen program integrity in how the H-1B nonimmigrant visa program is administered. It affects H-1B visa holders, applicants, and petitioning employers.",
+    "ai": true
   },
   {
     "title": "Restriction on Entry of Certain Nonimmigrant Workers",
     "url": "https://www.federalregister.gov/documents/2026/09/23/2026-19554/restriction-on-entry-of-certain-nonimmigrant-workers",
     "published": "2026-09-23",
     "excerpt": "",
-    "doc_type": "Presidential Document",
+    "doc_type": "executive action",
     "source": "Federal Register",
     "first_seen": "2026-09-23T13:42:59.914Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A presidential proclamation restricts entry into the United States for certain categories of nonimmigrant workers. It affects H-1B visa holders and applicants seeking to enter the country.",
+    "ai": true
   },
   {
     "title": "Bosnian Prisoner Abuser Charged with Lying to Get US Citizenship",
