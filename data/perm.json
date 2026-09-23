@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19",
+  "updated": "2026-09-22",
   "tiers": [
     {
       "id": "s",
@@ -18,24 +18,12 @@
           "domain": "bloomberg.com"
         },
         {
-          "name": "Rippling",
-          "domain": "rippling.com"
-        },
-        {
-          "name": "Instacart",
-          "domain": "instacart.com"
-        },
-        {
-          "name": "Waymo",
-          "domain": "waymo.com"
-        },
-        {
           "name": "NVIDIA",
           "domain": "nvidia.com"
         },
         {
-          "name": "Microsoft",
-          "domain": "microsoft.com"
+          "name": "Duolingo",
+          "domain": "duolingo.com"
         }
       ]
     },
@@ -52,30 +40,8 @@
           "domain": "pinterest.com"
         },
         {
-          "name": "Whatnot",
-          "domain": "whatnot.com"
-        },
-        {
-          "name": "DoorDash",
-          "domain": "doordash.com",
-          "logo": "doordash.svg"
-        },
-        {
           "name": "Roblox",
           "domain": "roblox.com"
-        },
-        {
-          "name": "Netflix",
-          "domain": "netflix.com"
-        },
-        {
-          "name": "Reddit",
-          "domain": "reddit.com"
-        },
-        {
-          "name": "JPMorgan Chase",
-          "domain": "jpmorganchase.com",
-          "note": "slow PERM"
         },
         {
           "name": "Cisco",
@@ -90,6 +56,26 @@
           "name": "Intel",
           "domain": "intel.com",
           "logo": "intel.svg"
+        },
+        {
+          "name": "Microsoft",
+          "domain": "microsoft.com"
+        },
+        {
+          "name": "Waymo",
+          "domain": "waymo.com"
+        },
+        {
+          "name": "Instacart",
+          "domain": "instacart.com"
+        },
+        {
+          "name": "Rippling",
+          "domain": "rippling.com"
+        },
+        {
+          "name": "TikTok",
+          "domain": "tiktok.com"
         }
       ]
     },
@@ -102,10 +88,6 @@
           "domain": "walmart.com"
         },
         {
-          "name": "TikTok",
-          "domain": "tiktok.com"
-        },
-        {
           "name": "LinkedIn",
           "domain": "linkedin.com",
           "note": "Day 1 PERM, but not guaranteed to pass"
@@ -113,6 +95,36 @@
         {
           "name": "Expedia",
           "domain": "expedia.com"
+        },
+        {
+          "name": "Whatnot",
+          "domain": "whatnot.com"
+        },
+        {
+          "name": "DoorDash",
+          "domain": "doordash.com",
+          "logo": "doordash.svg"
+        },
+        {
+          "name": "Reddit",
+          "domain": "reddit.com"
+        },
+        {
+          "name": "Netflix",
+          "domain": "netflix.com"
+        },
+        {
+          "name": "JPMorgan Chase",
+          "domain": "jpmorganchase.com",
+          "note": "slow PERM"
+        },
+        {
+          "name": "Intuit",
+          "domain": "intuit.com"
+        },
+        {
+          "name": "Lyft",
+          "domain": "lyft.com"
         }
       ]
     },
