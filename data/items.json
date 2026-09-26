@@ -142,7 +142,8 @@
       "H-1B"
     ],
     "summary": "DHS proposes a new $103,265 fee for all H-1B cap-subject petitions (including advanced degree exemption) payable at filing. Employers would pay this additional fee on top of existing H-1B fees to help fund federal immigration administration.",
-    "ai": true
+    "ai": true,
+    "duplicate_of": "https://www.uscis.gov/newsroom/news-releases/dhs-proposes-additional-h-1b-fee"
   },
   {
     "title": "DHS Proposes Additional H-1B Fee",

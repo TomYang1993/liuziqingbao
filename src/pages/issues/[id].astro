@@ -1,6 +1,7 @@
 ---
 import issues from '../../../data/issues.json';
 import items from '../../../data/items.json';
+import { feed } from '../../lib/feed.mjs';
 
 export function getStaticPaths() {
   return issues.map((iss) => ({ params: { id: iss.id }, props: { iss } }));
@@ -9,8 +10,8 @@ const { iss } = Astro.props;
 const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const updated = iss.timeline.at(-1)?.date ?? '2026-09-14';
 const first = iss.timeline[0]?.date ?? updated;
-const related = items
-  .filter((i) => i.relevant !== false && (i.topics ?? []).some((t) => iss.topics.includes(t)))
+const related = feed(items)
+  .filter((i) => (i.topics ?? []).some((t) => iss.topics.includes(t)))
   .slice(0, 8);
 const SITE = 'https://liuzi.win';
 const url = `${SITE}/issues/${iss.id}`;
