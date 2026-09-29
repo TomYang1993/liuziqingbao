@@ -6,10 +6,13 @@
     "excerpt": "By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered: Section 1.  Purpose.  For generations, Americans seeking essential services from the Federal Government have been required to navigate a system organized around the structure of Government rather than the needs of […]\nThe post Streamlining Access to Government Services Through America.gov appeared first on The White House.",
     "source": "White House",
     "first_seen": "2026-09-29T18:08:31.655Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "executive action"
   },
   {
     "title": "Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program",
