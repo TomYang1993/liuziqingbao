@@ -6,9 +6,9 @@
       "CPT",
       "F-1"
     ],
-    "status": "SEVP guidance in effect",
+    "status": "SEVP guidance in effect; challenged in court",
     "status_kind": "effective",
-    "summary": "Two SEVP broadcast messages (Aug 12 and Aug 24, 2026) tell DSOs that CPT may be authorized only when the training is an integral, required part of the established curriculum, required of all students in the program regardless of immigration status, and needed to complete the degree. Course credit alone is not enough. Not a new regulation, but SEVP may request documentation. Hits day-1 CPT programs and optional internships.",
+    "summary": "Two SEVP broadcast messages (Aug 12 and Aug 24, 2026) tell DSOs that CPT may be authorized only when the training is an integral, required part of the established curriculum, required of all students in the program regardless of immigration status, and needed to complete the degree. Course credit alone is not enough. Not a new regulation, but SEVP may request documentation. Hits day-1 CPT programs and optional internships. On Oct 5, 2026, higher-education groups sued DHS in federal court in Massachusetts, arguing the guidance is an unexplained reversal of past policy that violates the Administrative Procedure Act. The guidance stays in effect unless a court blocks it. The separate Sep 14 injunction against the duration-of-status rule does not cover CPT.",
     "timeline": [
       {
         "date": "2026-08-12",
@@ -24,6 +24,12 @@
         "date": "2026-08-24",
         "label": "Study in the States: F-1 CPT reference page",
         "url": "https://studyinthestates.dhs.gov/sevis-help-hub/student-records/fm-student-employment/f-1-curricular-practical-training-cpt"
+      },
+      {
+        "date": "2026-10-05",
+        "label": "Higher-education groups (incl. Association of American Universities) sue DHS in D. Mass., claiming the CPT guidance violates the APA",
+        "url": "https://news.bloombergtax.com/financial-accounting/ice-policy-tightening-student-work-option-challenged-by-colleges",
+        "note": "News report; complaint not yet linked"
       }
     ],
     "links": [
@@ -32,7 +38,7 @@
         "url": "https://cptmap.com/"
       }
     ],
-    "summary_zh": "SEVP 在 2026 年 8 月 12 日和 24 日连发两条 broadcast message，要求 DSO 只在实习是课程体系中「必修、不可或缺」的一部分、且对该专业所有学生（不分身份）都强制要求、并且是毕业必要条件时，才能批 CPT。仅仅给学分不算。这不是新法规，但 SEVP 可能要学校出示课程依据。Day-1 CPT 项目和选修性质的实习首当其冲。"
+    "summary_zh": "SEVP 在 2026 年 8 月 12 日和 24 日连发两条 broadcast message，要求 DSO 只在实习是课程体系中「必修、不可或缺」的一部分、且对该专业所有学生（不分身份）都强制要求、并且是毕业必要条件时，才能批 CPT。仅仅给学分不算。这不是新法规，但 SEVP 可能要学校出示课程依据。Day-1 CPT 项目和选修性质的实习首当其冲。2026 年 10 月 5 日，高校团体在马萨诸塞州联邦法院起诉 DHS，认为该指引在未作解释的情况下突然推翻以往政策，违反《行政程序法》。法院叫停之前指引继续有效；9 月 14 日针对 D/S 规则的禁令不涵盖 CPT。"
   },
   {
     "id": "f1-ds",
