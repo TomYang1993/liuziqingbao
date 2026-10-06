@@ -57,9 +57,12 @@
     "kind": "news",
     "first_seen": "2026-10-06T11:22:04.711Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal court issued a new order blocking the government from implementing the $100,000 H-1B visa fee, Ogletree Deakins reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Trump H-1B Fee Proposal Tees Up Fight Over Congress’ Authority",
