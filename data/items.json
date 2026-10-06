@@ -8,9 +8,14 @@
     "kind": "news",
     "first_seen": "2026-10-06T18:29:07.865Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "OPT",
+      "F-1"
+    ],
+    "summary": "Colleges have filed a legal challenge against an ICE/DHS policy tightening the student work-option program, Bloomberg Law reports. F-1 students relying on OPT or CPT work authorization are affected.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMWExZ2xyQU5jZmZPWW1jQ2JWdDljallROEZYTDltX3cwOVA4Z0FGcHJPcXJOX2FWdndzaGhvNGZ0MlZSYTdTNTZQdFAzVmk5QnRraGFGSGdQanMzcDdEMWN6a2I3UTloTjRXNGFNa1lSSnVuaGdSUEV0VVBUb0JuVlF4RDFpMkJHRU5vU2E3ZzQ3eVZOcWJSLUl6UVZXSmxLMV8zalJZcExPMWxkc0ZKRXN1SQ?oc=5"
   },
   {
     "title": "ICE Policy Tightening Student Work Option Challenged by Colleges",
@@ -53,10 +58,13 @@
     "source": "The Hill",
     "kind": "news",
     "first_seen": "2026-10-06T18:29:07.865Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "US appeals court weighs Trump's block on Harvard research funding",
@@ -83,9 +91,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T18:29:07.865Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "DHS has appealed a federal court order blocking its rule imposing fixed time limits on international students' stay, Inside Higher Ed reports. F-1 students' duration-of-status status remains in flux pending the appeal.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOWZrZ05BRDdrbllkWFhVVkFBV1kzNUZLblQ1ejh6Um5CZ1hoOVFxTjlsejJpcEpoRU94MjZ6dW0tRHl3ek5ES19VX0FMT1NfdlF5eUNLX1BMOUdQOEU1UWxoNS0xVVZPVE9hNFdSV1BvMzZWRlV3UXNRN0Q2QmtDaW9lUGVFNDM5QkRhMEN0N3BZSHZmUG1XSEhQNzRiSm9adUZ2MzF2d292S1EzSUhB?oc=5"
   },
   {
     "title": "Federal Court Issues New Order Blocking Agency Implementation of $100,000 H-1B Fee",
@@ -128,9 +140,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T18:29:07.865Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal judge in California vacated the Trump administration's $100,000 H-1B fee policies, Law360 reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmZCY0x1X3hGbGlfbG5QSF9rQy1CeGZDWjhQblRCWHRCd2hYZmRmaGlvTGZyS2dvbDE4Y2cweW5QNlpYRXFqaVlJWHRuVXVteWlQQjd6T3l5cURlX01kcS1IbVN3MmtPeURxaE5rSHNsQWttcTdVYUJlYWV6OUp1NXI1Sm5ScS15RVRGRk1ZVjFPTzhRaEdfdVhNRU9VLUFnMkdiWm02MHhPNG9QdHJockpLdw?oc=5"
   },
   {
     "title": "Calif. Judge Vacates Trump's $100K H-1B Fee Policies",
