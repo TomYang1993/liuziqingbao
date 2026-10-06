@@ -55,3 +55,6 @@ The Claude Code cloud routine "liuzi.win classify" does this twice daily on the 
 cd worker && npx wrangler d1 execute liuziqingbao --remote --command "SELECT ts, company, tier, note, link FROM perm_reports ORDER BY id DESC LIMIT 50"
 ```
 Candidate list: https://www.h1btrends.com/perm/companies (top PERM filers, DOL data). Diff against `data/perm.json` to find unplaced companies.
+
+## News
+`scripts/fetch.mjs` also pulls Google News searches around lawsuits/rulings (`NEWS_QUERIES`), kept only from `NEWS_OUTLETS`. News items are hidden until the classify routine judges them; it keeps only reports of new events and links repeat coverage via `duplicate_of`. Rendered with a grey NEWS label and a "News" filter.

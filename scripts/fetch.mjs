@@ -11,7 +11,22 @@ const CLASSIFIER = process.env.CLASSIFIER ?? 'cli'; // cli | none
 const cutoff = Date.now() - LOOKBACK_DAYS * 86400e3;
 const RELEVANT = /H-?1B|H-?4|OPT\b|CPT\b|F-?1\b|STEM|practical training|specialty occupation|prevailing wage|labor condition|LCA\b|student visa|nonimmigrant|work authorization|EAD\b|grace period|cap-subject|registration|SEVP|SEVIS|DSO\b|student|PERM\b|I-140|labor certification|EB-?[123]\b|immigrant petition|priority date|visa bulletin/i;
 
-const rss = new Parser({ headers: { 'User-Agent': 'Mozilla/5.0 liuziqingbao' } });
+const rss = new Parser({ headers: { 'User-Agent': 'Mozilla/5.0 liuziqingbao' }, customFields: { item: ['source'] } });
+
+// News: Google News searches built around events (lawsuits, rulings), kept only from these outlets.
+// Edit freely; matched as a case-insensitive substring of the outlet name Google reports.
+const NEWS_OUTLETS = ['Reuters', 'Associated Press', 'AP News', 'Bloomberg', 'Inside Higher Ed', 'Forbes', 'NAFSA', "Presidents' Alliance", 'The PIE', 'Times Higher Education', 'Chronicle of Higher Education', 'Higher Ed Dive', 'University World News', 'New York Times', 'Wall Street Journal', 'Washington Post', 'Politico', 'Axios', 'CNBC', 'NPR', 'Law360', 'The Hill', 'Fortune', 'Semafor', 'Fragomen', 'Ogletree', 'Littler'];
+const NEWS_BLOCK = ['TV18']; // regional syndication that rides on an allowlisted name
+const EVENT = '(lawsuit OR sue OR sued OR court OR judge OR injunction OR ruling OR blocks)';
+const NEWS_QUERIES = [
+  `(CPT OR "curricular practical training") ${EVENT}`,
+  `("optional practical training" OR "OPT program" OR "STEM OPT") (${EVENT.slice(1, -1)} OR fee OR rule)`,
+  `"duration of status" ${EVENT}`,
+  `H-1B ${EVENT}`,
+  `H-1B ("grace period" OR fee OR proclamation OR layoffs)`,
+  `(PERM OR "labor certification" OR "prevailing wage") (rule OR ${EVENT.slice(1, -1)})`,
+  `("international students" OR "F-1 visa") ${EVENT}`,
+];
 
 const sources = [
   {
@@ -35,6 +50,22 @@ const sources = [
         const u = `https://www.federalregister.gov/api/v1/documents.json?${q}&order=newest&per_page=100`;
         const { results } = await (await fetch(u)).json();
         for (const r of results) out.push({ title: r.title, url: r.html_url, published: r.publication_date, excerpt: r.abstract ?? '', doc_type: r.type });
+      }
+      return out;
+    },
+  },
+  {
+    name: 'News',
+    fetch: async () => {
+      const out = [];
+      for (const q of NEWS_QUERIES) {
+        const u = `https://news.google.com/rss/search?q=${encodeURIComponent(q + ' when:7d')}&hl=en-US&gl=US&ceid=US:en`;
+        for (const i of (await rss.parseURL(u)).items) {
+          const outlet = typeof i.source === 'string' ? i.source : i.source?._ ?? '';
+          const o = outlet.toLowerCase();
+          if (!NEWS_OUTLETS.some((n) => o.includes(n.toLowerCase())) || NEWS_BLOCK.some((b) => o.includes(b.toLowerCase()))) continue;
+          out.push({ ...rssItem(i), title: i.title.replace(/\s+-\s+[^-]+$/, ''), excerpt: '', source: outlet, kind: 'news' });
+        }
       }
       return out;
     },
@@ -93,10 +124,11 @@ For each item below return a JSON object keyed by "url" with:
   topics: array from ["H-1B","H-4","F-1","OPT","STEM OPT","CPT","PERM","I-140","Other"]
   doc_type: one of "proposed rule","final rule","policy alert","press release","executive action","court","other"
   summary: 1-2 plain-English sentences: what changed and who is affected. No advice.
+Items with kind "news" are press coverage, not official documents: relevant only if they report a new concrete event (lawsuit filed, court ruling or injunction, agency action, official announcement). Opinion, explainers, campus reactions and personal stories are not relevant.
 Output ONLY the JSON object, no prose, no code fences.
 
 ITEMS:
-${JSON.stringify(batch.map(({ url, title, excerpt, source }) => ({ url, title, source, excerpt })), null, 1)}`;
+${JSON.stringify(batch.map(({ url, title, excerpt, source, kind }) => ({ url, title, source, excerpt, kind })), null, 1)}`;
   const raw = await run('claude', ['-p', '--model', 'haiku', '--output-format', 'json'], prompt);
   const text = JSON.parse(raw).result;
   return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
@@ -110,9 +142,9 @@ for (const s of sources) {
   try {
     for (const it of await s.fetch()) {
       if (seen.has(it.url) || new Date(it.published) < cutoff) continue;
-      if (!RELEVANT.test(`${it.title} ${it.excerpt}`) || /H-2A|H-2B|CW-1/.test(it.title)) continue;
+      if ((!it.kind && !RELEVANT.test(`${it.title} ${it.excerpt}`)) || /H-2A|H-2B|CW-1/.test(it.title)) continue;
       seen.add(it.url);
-      fresh.push({ ...it, source: s.name, first_seen: new Date().toISOString() });
+      fresh.push({ ...it, source: it.source ?? s.name, first_seen: new Date().toISOString() });
     }
   } catch (e) {
     console.error(`[${s.name}] ${e.message}`);

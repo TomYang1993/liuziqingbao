@@ -11,7 +11,8 @@ const similar = (a, b) => {
 };
 
 export function feed(items) {
-  const sorted = items.filter((i) => i.relevant !== false).sort((a, b) => new Date(a.published) - new Date(b.published));
+  // unjudged news stays hidden until the classifier has looked at it
+  const sorted = items.filter((i) => i.relevant !== false && !(i.kind === 'news' && !i.ai)).sort((a, b) => new Date(a.published) - new Date(b.published));
   const groups = [];
   for (const it of sorted) {
     const t = new Date(it.published);
@@ -23,6 +24,7 @@ export function feed(items) {
     g ? g.push(it) : groups.push([it]);
   }
   return groups
+    .map((g) => [g.find((m) => m.kind !== 'news') ?? g[0], ...g.filter((m) => m !== (g.find((x) => x.kind !== 'news') ?? g[0]))]) // official source leads its group
     .map(([head, ...rest]) => ({
       ...head,
       summary: head.summary ?? rest.find((r) => r.summary)?.summary ?? null,
@@ -42,9 +44,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     { url: 'uscis', title: 'DHS Proposes Additional H-1B Fee', published: '2026-08-24', source: 'USCIS' },
     { url: 'nprm', title: 'Fee for Certain H-1B Petitions', published: '2026-08-25', source: 'Federal Register', duplicate_of: 'uscis' },
     { url: 'corr', title: 'Fee for Certain H-1B Petitions', published: '2026-09-10', source: 'Federal Register' },
+    { url: 'raw-news', title: 'Unjudged', published: '2026-09-11', source: 'Reuters', kind: 'news' },
+    { url: 'n1', title: 'Judge blocks rule', published: '2026-09-12', source: 'Reuters', kind: 'news', ai: true },
+    { url: 'o1', title: 'Court order on rule', published: '2026-09-13', source: 'USCIS', duplicate_of: 'n1' },
   ]);
   const by = Object.fromEntries(out.map((o) => [o.url, o.also.map((a) => a.url)]));
-  console.assert(out.length === 4, 'groups', out.length);
+  console.assert(out.length === 5, 'groups', out.length);
+  console.assert(!out.some((o) => o.url === 'raw-news'), 'unjudged news hidden');
+  console.assert(out.find((o) => o.url === 'o1')?.also.map((a) => a.url).join() === 'n1', 'official leads over news');
   console.assert(by.wh?.join() === 'fr' && by.wh && out.find((o) => o.url === 'wh').summary === 's', 'wh+fr merged, summary inherited');
   console.assert(by.old && by.new, '2025 and 2026 same title stay separate');
   console.assert(by.uscis?.join() === 'nprm,corr', 'duplicate_of + correction chain');

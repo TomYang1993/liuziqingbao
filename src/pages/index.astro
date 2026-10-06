@@ -6,14 +6,14 @@ import { feed } from '../lib/feed.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const visible = feed(items);
-const topics = [...new Set(visible.flatMap((i) => i.topics ?? []))].sort();
+const topics = [...new Set(visible.flatMap((i) => i.topics ?? []))].sort().concat(visible.some((i) => i.kind === 'news') ? ['News'] : []);
 const fmt = (d) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const checked = new Date(meta.checked).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', hour12: true }) + ' PT';
 const latest = (iss) => iss.timeline.at(-1)?.date;
 const kindOf = (t = '') => /proposed/.test(t) ? 'proposed' : /final rule/.test(t) ? 'final' : /court/.test(t) ? 'blocked' : /policy alert|executive/.test(t) ? 'effective' : 'unverified';
 const VOTES_URL = import.meta.env.PUBLIC_VOTES_URL ?? '';
 const SITE = 'https://liuzi.win/';
-const DESC = 'Daily-updated tracker of US immigration policy for international students and H-1B workers: F-1, OPT, CPT, STEM OPT, H-1B, H-4, PERM, I-140. Sourced from USCIS, the Federal Register, ICE/SEVP and the White House. 留学生 H1B OPT CPT 政策追踪.';
+const DESC = 'Daily-updated tracker of US immigration policy for international students and H-1B workers: F-1, OPT, CPT, STEM OPT, H-1B, H-4, PERM, I-140. Sourced from USCIS, the Federal Register, ICE/SEVP and the White House, plus major news on lawsuits and court rulings. 留学生 H1B OPT CPT 政策追踪.';
 // stable short id per news URL; issues use their own id
 const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCodeAt(0)) >>> 0; return 'n' + h.toString(36); };
 ---
@@ -123,6 +123,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       article { padding: 1.3rem 0; border-top: 1px solid var(--line); }
       article[hidden] { display: none; }
       .meta { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.78rem; color: var(--muted); display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.35rem; }
+      .meta .type.news { color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 0.35rem; }
       .meta .also { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--muted); }
       .meta .also:hover { color: var(--fg); }
       .meta .type { font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
@@ -179,7 +180,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
           <span>Last checked <b>{checked}</b></span>
         </div>
         <p>
-          Official updates on H-1B, F-1, OPT, CPT, STEM OPT, PERM and I-140, pulled from USCIS, the Federal Register, ICE/SEVP, DOL, and the White House.
+          Official updates on H-1B, F-1, OPT, CPT, STEM OPT, PERM and I-140, pulled from USCIS, the Federal Register, ICE/SEVP, DOL, and the White House, plus major news on lawsuits and court rulings.
         </p>
         <div class="links hero-links">
           <a class="linkbtn" href="/perm">PERM: who still files green cards ↗</a>
@@ -240,9 +241,11 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
           {visible.length === 0 && <p class="empty">No items yet. The worker hasn't run.</p>}
 
           {visible.map((i) => (
-            <article data-topics={(i.topics ?? []).join('|')}>
+            <article data-topics={[...(i.topics ?? []), ...(i.kind === 'news' ? ['News'] : [])].join('|')}>
               <div class="meta">
-                <span class={`type ${kindOf(i.doc_type)}`}>{i.doc_type ?? 'update'}</span>
+                {i.kind === 'news'
+                  ? <span class="type news">news</span>
+                  : <span class={`type ${kindOf(i.doc_type)}`}>{i.doc_type ?? 'update'}</span>}
                 <span>{i.source}</span>
                 <span>{fmt(i.published)}</span>
                 {i.also.map((a) => <a class="also" href={a.url} target="_blank" rel="noopener">also {a.source}, {fmt(a.published).replace(/, \d{4}$/, "")} ↗</a>)}
