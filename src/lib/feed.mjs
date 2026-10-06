@@ -29,7 +29,9 @@ export function feed(items) {
       ...head,
       summary: head.summary ?? rest.find((r) => r.summary)?.summary ?? null,
       topics: head.topics?.length ? head.topics : rest.find((r) => r.topics?.length)?.topics ?? [],
-      also: rest.map(({ source, url, published }) => ({ source, url, published })),
+      also: rest
+        .filter((r, k) => r.kind !== 'news' || (r.source !== head.source && rest.findIndex((x) => x.source === r.source) === k)) // one link per news outlet
+        .map(({ source, url, published }) => ({ source, url, published })),
     }))
     .sort((a, b) => new Date(b.published) - new Date(a.published));
 }

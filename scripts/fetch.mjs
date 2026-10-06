@@ -63,8 +63,9 @@ const sources = [
         for (const i of (await rss.parseURL(u)).items) {
           const outlet = typeof i.source === 'string' ? i.source : i.source?._ ?? '';
           const o = outlet.toLowerCase();
-          if (!NEWS_OUTLETS.some((n) => o.includes(n.toLowerCase())) || NEWS_BLOCK.some((b) => o.includes(b.toLowerCase()))) continue;
-          out.push({ ...rssItem(i), title: i.title.replace(/\s+-\s+[^-]+$/, ''), excerpt: '', source: outlet, kind: 'news' });
+          const name = NEWS_OUTLETS.find((n) => o.includes(n.toLowerCase()));
+          if (!name || NEWS_BLOCK.some((b) => o.includes(b.toLowerCase()))) continue;
+          out.push({ ...rssItem(i), title: i.title.replace(/\s+-\s+[^-]+$/, ''), excerpt: '', source: name, kind: 'news' });
         }
       }
       return out;
