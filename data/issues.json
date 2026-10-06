@@ -48,9 +48,9 @@
       "OPT",
       "CPT"
     ],
-    "status": "Blocked by court",
+    "status": "Blocked by court; government appealing",
     "status_kind": "blocked",
-    "summary": "DHS final rule replaces open-ended 'duration of status' for F/J/I visa holders with a fixed admission period and an extension-of-stay process. On Sep 14, 2026, a federal judge in Massachusetts granted a nationwide preliminary injunction, one day before the rule's effective date. D/S stays in place while the lawsuit continues.",
+    "summary": "DHS final rule replaces open-ended 'duration of status' for F/J/I visa holders with a fixed admission period and an extension-of-stay process. On Sep 14, 2026, a federal judge in Massachusetts granted a nationwide preliminary injunction, one day before the rule's effective date. The government appealed to the First Circuit on Sep 30 and wants it expedited; the rule stays blocked and D/S stays in place while the appeal runs.",
     "timeline": [
       {
         "date": "2025-08-28",
@@ -82,9 +82,14 @@
         "label": "Judge Saylor grants nationwide preliminary injunction; rule blocked during litigation",
         "url": "https://nepyork.com/2026/09/14/federal-judge-blocks-dhs-rule-ending-duration-of-status-for-international-students/",
         "note": "News report; court order not yet linked"
+      },
+      {
+        "date": "2026-09-30",
+        "label": "Government appeals the injunction to the First Circuit; seeks expedited review",
+        "url": "https://www.nafsa.org/legal-defense-DS"
       }
     ],
-    "summary_zh": "DHS 最终规则把 F/J/I 签证的「duration of status」改成固定停留期，到期需申请延期。2026 年 9 月 14 日，马萨诸塞州联邦法院在生效前一天发出全国范围的初步禁令，规则被叫停。诉讼期间 D/S 维持原样，学生身份暂时不受影响。"
+    "summary_zh": "DHS 最终规则把 F/J/I 签证的「duration of status」改成固定停留期，到期需申请延期。2026 年 9 月 14 日，马萨诸塞州联邦法院在生效前一天发出全国范围的初步禁令，规则被叫停。政府已于 9 月 30 日向第一巡回上诉法院上诉并要求加速审理；上诉期间规则仍被冻结，D/S 维持原样。"
   },
   {
     "id": "grace-period",
@@ -125,9 +130,9 @@
       "F-1",
       "OPT"
     ],
-    "status": "Renewed to Sep 2027; blocked in court; new fee rule proposed",
+    "status": "Blocked by two courts; renewed to Sep 2027; new fee rule proposed",
     "status_kind": "proposed",
-    "summary": "Two tracks. (1) Proclamation 10973's $100,000 payment on H-1B workers entering from abroad was vacated by a federal court on June 8, 2026 and the First Circuit refused to stay that ruling, so it is not being collected; on Sep 18, 2026 Trump renewed it anyway through Sep 21, 2027 while the appeal runs. (2) DHS separately proposed a $103,265 fee on every cap-subject H-1B petition, including F-1/OPT change-of-status filings and cap-exempt employers; comments close Sep 24, 2026, not in effect until a final rule. A companion Sep 18 order tells DOL/DHS/State to weigh an employer's recent or planned layoffs of U.S. workers when adjudicating H-1B petitions.",
+    "summary": "Two tracks. (1) Proclamation 10973's $100,000 payment on H-1B workers entering from abroad is blocked by two federal courts: Massachusetts vacated it on June 8, 2026 (the First Circuit refused to stay that ruling), and on Sep 30, 2026 a California judge vacated the agencies' implementing policies and barred enforcement until DHS does proper notice-and-comment rulemaking. Trump renewed the proclamation through Sep 21, 2027 on Sep 18 while the appeals run. (2) DHS separately proposed a $103,265 fee on every cap-subject H-1B petition, including F-1/OPT change-of-status filings and cap-exempt employers; comments closed Sep 24, 2026, not in effect until a final rule. A companion Sep 18 order tells DOL/DHS/State to weigh an employer's recent or planned layoffs of U.S. workers when adjudicating H-1B petitions.",
     "timeline": [
       {
         "date": "2025-09-19",
@@ -170,9 +175,15 @@
         "date": "2026-09-18",
         "label": "Order: agencies must consider employer layoffs of U.S. workers in H-1B adjudications; DOL/DHS/State data sharing",
         "url": "https://www.whitehouse.gov/presidential-actions/2026/09/enhancing-program-integrity-and-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b-nonimmigrant-visa-program/"
+      },
+      {
+        "date": "2026-09-30",
+        "label": "Judge Gilliam (N.D. Cal.) vacates the agencies' $100K fee policies and bars enforcement pending proper rulemaking (Global Nurse Force v. Trump, No. 4:25-cv-08454)",
+        "url": "https://www.jurist.org/news/2026/10/second-federal-judge-blocks-president-trumps-100k-h-1b-visa-fee-and-orders-dhs-to-complete-proper-rulemaking/",
+        "note": "News report"
       }
     ],
-    "summary_zh": "两条线并行。（1）2025 年 9 月的总统公告对从海外入境的新 H-1B 收取 10 万美元，2026 年 6 月 8 日被联邦法院判定为违宪税收而撤销，第一巡回法院也拒绝暂缓执行该判决，目前不收；但 2026 年 9 月 18 日特朗普仍将公告延长至 2027 年 9 月 21 日，等待上诉结果。（2）DHS 另行提议对所有 cap-subject H-1B 申请收取 103,265 美元，包括 F-1/OPT 境内转身份和 cap-exempt 雇主，评论期至 9 月 24 日，最终规则出台前不生效。同日另一行政命令要求 DOL/DHS/国务院审理 H-1B 时考虑雇主近期裁员美国员工的情况。"
+    "summary_zh": "两条线并行。（1）2025 年 9 月总统公告对从海外入境的新 H-1B 收取 10 万美元，目前被两家联邦法院叫停：马萨诸塞州法院 2026 年 6 月 8 日撤销（第一巡回法院拒绝暂缓），加州法院 9 月 30 日又撤销了各机关的执行政策，并禁止在完成正式的通知与评论程序前执行。特朗普 9 月 18 日仍将公告延长至 2027 年 9 月 21 日，等待上诉结果。（2）DHS 另行提议对所有 cap-subject H-1B 申请收取 103,265 美元，包括 F-1/OPT 境内转身份和 cap-exempt 雇主，评论期已于 9 月 24 日结束，最终规则出台前不生效。同日另一行政命令要求 DOL/DHS/国务院审理 H-1B 时考虑雇主近期裁员美国员工的情况。"
   },
   {
     "id": "opt-fee",
