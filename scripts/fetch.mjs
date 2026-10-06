@@ -15,7 +15,7 @@ const rss = new Parser({ headers: { 'User-Agent': 'Mozilla/5.0 liuziqingbao' }, 
 
 // News: Google News searches built around events (lawsuits, rulings), kept only from these outlets.
 // Edit freely; matched as a case-insensitive substring of the outlet name Google reports.
-const NEWS_OUTLETS = ['Reuters', 'Associated Press', 'AP News', 'Bloomberg', 'Inside Higher Ed', 'Forbes', 'NAFSA', "Presidents' Alliance", 'The PIE', 'Times Higher Education', 'Chronicle of Higher Education', 'Higher Ed Dive', 'University World News', 'New York Times', 'Wall Street Journal', 'Washington Post', 'Politico', 'Axios', 'CNBC', 'NPR', 'Law360', 'The Hill', 'Fortune', 'Semafor', 'Fragomen', 'Ogletree', 'Littler'];
+const NEWS_OUTLETS = ['Reuters', 'Associated Press', 'AP News', 'Bloomberg', 'Inside Higher Ed', 'Forbes', 'NAFSA', "Presidents' Alliance", 'The PIE', 'Times Higher Education', 'Chronicle of Higher Education', 'Higher Ed Dive', 'University World News', 'New York Times', 'Wall Street Journal', 'Washington Post', 'Politico', 'Axios', 'CNBC', 'NPR', 'Law360', 'The Hill', 'Fortune', 'Semafor', 'Fragomen', 'Ogletree', 'Littler', 'Association of American Universities', 'Boundless', 'National Law Review', 'Jurist', 'Newsweek', 'Boston Globe', 'Mealey', 'American Bazaar'];
 const NEWS_BLOCK = ['TV18']; // regional syndication that rides on an allowlisted name
 const EVENT = '(lawsuit OR sue OR sued OR court OR judge OR injunction OR ruling OR blocks)';
 const NEWS_QUERIES = [
