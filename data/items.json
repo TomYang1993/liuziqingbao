@@ -7,10 +7,11 @@
     "source": "Chronicle of Higher Education",
     "kind": "news",
     "first_seen": "2026-10-07T15:37:42.737Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump Admin Proposes $70,000 Fee for Foreign Graduates to Work in US",
@@ -21,9 +22,14 @@
     "kind": "news",
     "first_seen": "2026-10-07T15:37:42.737Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "Newsweek reports the Trump administration proposed a new $70,000 fee for foreign graduates to work in the US under the OPT program; the same proposal was reported by Bloomberg citing a $100,000 figure.",
+    "ai": true,
+    "doc_type": "press release",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcTkwRDhyeWNNWTlKcjZCVWthcEhmc2xSMXdfOWdjQmlZRDJzMzFuby1GdlNHVUo4cDBrQzhiTUhHMWxTZnQ0bUpfUUlvTHFqTmJiWjZSOGNCODdzaEkwZFQ4RmVYQUhxUE9KZ2hKeEI1QnpxVkxpdlVIbHRCVTFJYzFqdDZ2RTdKXzRVczdrVm9udk5ZaHRmbzY4dnFPVkZYa21RNjVKcE4talZVaTZB?oc=5"
   },
   {
     "title": "DHS Proposes New $100,000 Fee on Foreign Grad Work Program (1)",
@@ -34,9 +40,13 @@
     "kind": "news",
     "first_seen": "2026-10-07T15:37:42.737Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS proposed a new fee, reported as $100,000, on the foreign-graduate work program (OPT), which would affect F-1 international students seeking post-completion work authorization, Bloomberg reports.",
+    "ai": true,
+    "doc_type": "press release"
   },
   {
     "title": "Higher ed leaders sue Trump administration over limitations on international student internships",
