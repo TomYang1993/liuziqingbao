@@ -8,9 +8,14 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
+    "summary": "Higher education leaders sued the Trump administration over new restrictions on international students' curricular practical training (CPT) internships, the Boston Globe reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMWExZ2xyQU5jZmZPWW1jQ2JWdDljallROEZYTDltX3cwOVA4Z0FGcHJPcXJOX2FWdndzaGhvNGZ0MlZSYTdTNTZQdFAzVmk5QnRraGFGSGdQanMzcDdEMWN6a2I3UTloTjRXNGFNa1lSSnVuaGdSUEV0VVBUb0JuVlF4RDFpMkJHRU5vU2E3ZzQ3eVZOcWJSLUl6UVZXSmxLMV8zalJZcExPMWxkc0ZKRXN1SQ?oc=5"
   },
   {
     "title": "Trump administration continues to try to ban international students from attending Harvard",
@@ -20,10 +25,11 @@
     "source": "Boston Globe",
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "AAU, Other Educational Organizations File Lawsuit Challenging Sudden Change of Curricular Practical Training Policy",
@@ -34,9 +40,14 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
+    "summary": "AAU and other higher education organizations announced they filed a lawsuit challenging the Trump administration's sudden policy change restricting curricular practical training (CPT) for international students.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMWExZ2xyQU5jZmZPWW1jQ2JWdDljallROEZYTDltX3cwOVA4Z0FGcHJPcXJOX2FWdndzaGhvNGZ0MlZSYTdTNTZQdFAzVmk5QnRraGFGSGdQanMzcDdEMWN6a2I3UTloTjRXNGFNa1lSSnVuaGdSUEV0VVBUb0JuVlF4RDFpMkJHRU5vU2E3ZzQ3eVZOcWJSLUl6UVZXSmxLMV8zalJZcExPMWxkc0ZKRXN1SQ?oc=5"
   },
   {
     "title": "Statement Regarding Legal Action by AAU and Other Educational…",
@@ -47,9 +58,14 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
+    "summary": "AAU issued a statement describing the legal action it and other higher education organizations took against the Trump administration's new restrictions on international students' CPT internships.",
+    "ai": true,
+    "doc_type": "press release",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMWExZ2xyQU5jZmZPWW1jQ2JWdDljallROEZYTDltX3cwOVA4Z0FGcHJPcXJOX2FWdndzaGhvNGZ0MlZSYTdTNTZQdFAzVmk5QnRraGFGSGdQanMzcDdEMWN6a2I3UTloTjRXNGFNa1lSSnVuaGdSUEV0VVBUb0JuVlF4RDFpMkJHRU5vU2E3ZzQ3eVZOcWJSLUl6UVZXSmxLMV8zalJZcExPMWxkc0ZKRXN1SQ?oc=5"
   },
   {
     "title": "ICE Policy Tightening Student Work Option Challenged by Colleges",
@@ -127,9 +143,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A California federal judge vacated the Trump administration's H-1B fee policies and barred their enforcement, Mealey reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmZCY0x1X3hGbGlfbG5QSF9rQy1CeGZDWjhQblRCWHRCd2hYZmRmaGlvTGZyS2dvbDE4Y2cweW5QNlpYRXFqaVlJWHRuVXVteWlQQjd6T3l5cURlX01kcS1IbVN3MmtPeURxaE5rSHNsQWttcTdVYUJlYWV6OUp1NXI1Sm5ScS15RVRGRk1ZVjFPTzhRaEdfdVhNRU9VLUFnMkdiWm02MHhPNG9QdHJockpLdw?oc=5"
   },
   {
     "title": "California Federal Judge Vacates Agencies’ H-1B Fee Policies, Bars Enforcement",
@@ -140,9 +160,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A California federal judge vacated the Trump administration's H-1B fee policies and barred their enforcement, Mealey reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmZCY0x1X3hGbGlfbG5QSF9rQy1CeGZDWjhQblRCWHRCd2hYZmRmaGlvTGZyS2dvbDE4Y2cweW5QNlpYRXFqaVlJWHRuVXVteWlQQjd6T3l5cURlX01kcS1IbVN3MmtPeURxaE5rSHNsQWttcTdVYUJlYWV6OUp1NXI1Sm5ScS15RVRGRk1ZVjFPTzhRaEdfdVhNRU9VLUFnMkdiWm02MHhPNG9QdHJockpLdw?oc=5"
   },
   {
     "title": "US appeals court weighs Trump's block on Harvard research funding",
@@ -169,9 +193,12 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A new bill introduced in Congress would hit employers with fines of up to $250,000 for misusing the H-1B visa program, Newsweek reports.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "DHS Appeals Block on International Student Time Limits",
@@ -199,9 +226,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal court issued a new order blocking the government from implementing the $100,000 H-1B visa fee, National Law Review reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObG5zVWkyM3E2OWpQZFpjeVFmWDZDdkNlVVkycVhoOThMQTI1ZVdaNFFtenBRSVFvcWhCT3dFU2pkTnRjRlhrTG5kYjYxMEV4bURYZFNUNnlBMmc0ZjdxSDF0b1k5aHZEUU1RbmJSU05pTk9QMUFGXy1iTXdXeWlfb0ZLajBIS2pJTENkY3VFaUtkZXdjbzkzRGZWQUVfblB2c0NwV1hSTGQ3TFB5TE1lQWl5OFpJWGg5dm5HR3NxcHk2MVdMb21neE9KczI?oc=5"
   },
   {
     "title": "Federal Court Issues New Order Blocking Agency Implementation of $100,000 H-1B Fee",
@@ -228,9 +259,12 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "A federal judge in Boston ordered higher education leaders and the Trump administration to submit a scheduling 'roadmap' in the international student visa case, the Boston Globe reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "JD Vance says H-1B program is ‘completely broken’ and backs eliminating it",
@@ -240,10 +274,11 @@
     "source": "American Bazaar",
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump H-1B Fee Proposal Tees Up Fight Over Congress’ Authority",
@@ -269,10 +304,11 @@
     "source": "Boundless",
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Beltway Buzz, October 2, 2026",
@@ -282,10 +318,11 @@
     "source": "National Law Review",
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Second federal judge blocks Trump’s $100K H-1B visa fee",
@@ -296,9 +333,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A second federal judge blocked the Trump administration's $100,000 H-1B visa fee, Jurist reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmZCY0x1X3hGbGlfbG5QSF9rQy1CeGZDWjhQblRCWHRCd2hYZmRmaGlvTGZyS2dvbDE4Y2cweW5QNlpYRXFqaVlJWHRuVXVteWlQQjd6T3l5cURlX01kcS1IbVN3MmtPeURxaE5rSHNsQWttcTdVYUJlYWV6OUp1NXI1Sm5ScS15RVRGRk1ZVjFPTzhRaEdfdVhNRU9VLUFnMkdiWm02MHhPNG9QdHJockpLdw?oc=5"
   },
   {
     "title": "Calif. Judge Vacates Trump's $100K H-1B Fee Policies",
@@ -360,9 +401,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A second federal judge blocked the Trump administration's $100,000 H-1B fee, American Bazaar reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmZCY0x1X3hGbGlfbG5QSF9rQy1CeGZDWjhQblRCWHRCd2hYZmRmaGlvTGZyS2dvbDE4Y2cweW5QNlpYRXFqaVlJWHRuVXVteWlQQjd6T3l5cURlX01kcS1IbVN3MmtPeURxaE5rSHNsQWttcTdVYUJlYWV6OUp1NXI1Sm5ScS15RVRGRk1ZVjFPTzhRaEdfdVhNRU9VLUFnMkdiWm02MHhPNG9QdHJockpLdw?oc=5"
   },
   {
     "title": "United States: California Federal Court Issues Preliminary Injunction Against the $100,000 H-1B Fee",
@@ -407,9 +452,13 @@
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A second federal court blocked the Trump administration's $100,000 H-1B fee, Boundless reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmZCY0x1X3hGbGlfbG5QSF9rQy1CeGZDWjhQblRCWHRCd2hYZmRmaGlvTGZyS2dvbDE4Y2cweW5QNlpYRXFqaVlJWHRuVXVteWlQQjd6T3l5cURlX01kcS1IbVN3MmtPeURxaE5rSHNsQWttcTdVYUJlYWV6OUp1NXI1Sm5ScS15RVRGRk1ZVjFPTzhRaEdfdVhNRU9VLUFnMkdiWm02MHhPNG9QdHJockpLdw?oc=5"
   },
   {
     "title": "Second judge blocks Trump's $100,000 fee for new H-1B worker visas",
@@ -452,10 +501,11 @@
     "source": "American Bazaar",
     "kind": "news",
     "first_seen": "2026-10-06T23:53:39.920Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "SHRM: Proposed $103,265 H-1B Is Changing Talent Acquisition Strategy",
