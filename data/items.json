@@ -8,9 +8,14 @@
     "kind": "news",
     "first_seen": "2026-10-07T21:22:55.254Z",
     "relevant": true,
-    "topics": [],
+    "topics": [
+      "OPT",
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMWxNd0ZDVkoyWi1ERFlYNGk4V0R0cmdNRnp1NUNhREVWeTdiMzZWc3R5Skx6M09hb2ROU0Q1MkdUazZEcm04NE16cjRrZUZaZDZMZXBOVkhwenh3WHpRc25TTHJ3d1paYVIyV3JsRmVKTVA5MW82dDV4VnZyUjV6SHhNWXBWMGtfcTJHZ1VGdDJLaTYtUHpyNXRyZ3FacTdmVHhqNWRURTg0Qnd0VWZGVw?oc=5"
   },
   {
     "title": "United States: DHS Proposes $70,000 Fee for Initial OPT and $30,000 Fee for Subsequent OPT Periods",
@@ -21,9 +26,14 @@
     "kind": "news",
     "first_seen": "2026-10-07T21:22:55.254Z",
     "relevant": true,
-    "topics": [],
+    "topics": [
+      "OPT",
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMWxNd0ZDVkoyWi1ERFlYNGk4V0R0cmdNRnp1NUNhREVWeTdiMzZWc3R5Skx6M09hb2ROU0Q1MkdUazZEcm04NE16cjRrZUZaZDZMZXBOVkhwenh3WHpRc25TTHJ3d1paYVIyV3JsRmVKTVA5MW82dDV4VnZyUjV6SHhNWXBWMGtfcTJHZ1VGdDJLaTYtUHpyNXRyZ3FacTdmVHhqNWRURTg0Qnd0VWZGVw?oc=5"
   },
   {
     "title": "$70,000 for OPT? DHS proposes massive new fee for F-1 international students",
@@ -34,9 +44,13 @@
     "kind": "news",
     "first_seen": "2026-10-07T21:22:55.254Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "OPT",
+      "F-1"
+    ],
+    "summary": "DHS is proposing a new $70,000 fee for an international student's initial period of Optional Practical Training and a $30,000 fee for subsequent OPT periods, American Bazaar reports. The proposal would affect F-1 students seeking to work in the US after graduation under OPT.",
+    "ai": true,
+    "doc_type": "proposed rule"
   },
   {
     "title": "Subject: Latitudes: Will international-ed policy be decided from the bench?",
