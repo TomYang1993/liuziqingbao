@@ -143,9 +143,13 @@
     "kind": "news",
     "first_seen": "2026-10-07T06:10:58.192Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal judge in California vacated the H-1B fee policies issued by DHS, State, and Labor and barred their enforcement, Mealey reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmZCY0x1X3hGbGlfbG5QSF9rQy1CeGZDWjhQblRCWHRCd2hYZmRmaGlvTGZyS2dvbDE4Y2cweW5QNlpYRXFqaVlJWHRuVXVteWlQQjd6T3l5cURlX01kcS1IbVN3MmtPeURxaE5rSHNsQWttcTdVYUJlYWV6OUp1NXI1Sm5ScS15RVRGRk1ZVjFPTzhRaEdfdVhNRU9VLUFnMkdiWm02MHhPNG9QdHJockpLdw?oc=5"
   },
   {
     "title": "California Federal Judge Vacates Agencies’ H-1B Fee Policies, Bars Enforcement",
