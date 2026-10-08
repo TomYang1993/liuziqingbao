@@ -1,14 +1,10 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-10-08",
   "tiers": [
     {
       "id": "s",
       "label": "夯(S)",
       "companies": [
-        {
-          "name": "Adobe",
-          "domain": "adobe.com"
-        },
         {
           "name": "Snowflake",
           "domain": "snowflake.com"
@@ -60,10 +56,6 @@
           "name": "Intel",
           "domain": "intel.com",
           "logo": "intel.svg"
-        },
-        {
-          "name": "Microsoft",
-          "domain": "microsoft.com"
         },
         {
           "name": "Waymo",
@@ -183,6 +175,14 @@
         {
           "name": "Zillow",
           "domain": "zillow.com"
+        },
+        {
+          "name": "Microsoft",
+          "domain": "microsoft.com"
+        },
+        {
+          "name": "Adobe",
+          "domain": "adobe.com"
         }
       ]
     }
