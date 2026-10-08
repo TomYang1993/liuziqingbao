@@ -8,9 +8,14 @@
     "kind": "news",
     "first_seen": "2026-10-08T06:18:35.163Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS is reportedly considering a fee of up to $100,000 for the foreign-student work program (OPT), which would affect F-1 international students seeking post-completion work authorization, Law360 reports.",
+    "ai": true,
+    "doc_type": "press release",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcTkwRDhyeWNNWTlKcjZCVWthcEhmc2xSMXdfOWdjQmlZRDJzMzFuby1GdlNHVUo4cDBrQzhiTUhHMWxTZnQ0bUpfUUlvTHFqTmJiWjZSOGNCODdzaEkwZFQ4RmVYQUhxUE9KZ2hKeEI1QnpxVkxpdlVIbHRCVTFJYzFqdDZ2RTdKXzRVczdrVm9udk5ZaHRmbzY4dnFPVkZYa21RNjVKcE4talZVaTZB?oc=5"
   },
   {
     "title": "DHS proposes $70K fee for international student work program",
