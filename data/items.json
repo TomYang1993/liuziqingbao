@@ -8,9 +8,15 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration, with Vice President JD Vance citing H-1B fraud claims, blocked Microsoft and other tech companies (including Adobe) from using the PERM program to sponsor green cards for their H-1B workers, multiple outlets report.",
+    "ai": true,
+    "doc_type": "executive action",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "Trump administration freezes green cards for Microsoft, IT firms, probes universities",
@@ -21,9 +27,15 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration, with Vice President JD Vance citing H-1B fraud claims, blocked Microsoft and other tech companies (including Adobe) from using the PERM program to sponsor green cards for their H-1B workers, multiple outlets report.",
+    "ai": true,
+    "doc_type": "executive action",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "The skilled foreign tech workers' green card program under attack from Trump",
@@ -33,10 +45,13 @@
     "source": "Reuters",
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "H-1B visas aren't suspended. Here's what Vance is really targeting",
@@ -46,10 +61,13 @@
     "source": "Axios",
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "DHS Proposes Significant New OPT Fees for F-1 Students",
@@ -60,9 +78,14 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS published a proposed rule imposing new fees on Optional Practical Training (OPT) work authorization for F-1 students, reported as up to $70,000 for initial OPT and additional fees for renewals.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
   },
   {
     "title": "Feds Bar Microsoft, Adobe, Others From Visa Program",
@@ -73,9 +96,15 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration, with Vice President JD Vance citing H-1B fraud claims, blocked Microsoft and other tech companies (including Adobe) from using the PERM program to sponsor green cards for their H-1B workers, multiple outlets report.",
+    "ai": true,
+    "doc_type": "executive action",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "Trump administration blocks tech companies from visa program",
@@ -86,9 +115,15 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration, with Vice President JD Vance citing H-1B fraud claims, blocked Microsoft and other tech companies (including Adobe) from using the PERM program to sponsor green cards for their H-1B workers, multiple outlets report.",
+    "ai": true,
+    "doc_type": "executive action",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "L-1A to EB-1C: Requirements, Timing, and the One-Year Rule (2026)",
@@ -98,10 +133,13 @@
     "source": "National Law Review",
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "I-140"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Vance suspends Microsoft from green card program over H-1B fraud claims",
@@ -112,9 +150,15 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration, with Vice President JD Vance citing H-1B fraud claims, blocked Microsoft and other tech companies (including Adobe) from using the PERM program to sponsor green cards for their H-1B workers, multiple outlets report.",
+    "ai": true,
+    "doc_type": "executive action",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "Vance says foreign workers at Microsoft will no longer be able to apply for permanent status",
@@ -125,9 +169,15 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration, with Vice President JD Vance citing H-1B fraud claims, blocked Microsoft and other tech companies (including Adobe) from using the PERM program to sponsor green cards for their H-1B workers, multiple outlets report.",
+    "ai": true,
+    "doc_type": "executive action",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "Trump admin bars 8 tech companies from sponsoring H-1B workers for green cards",
@@ -138,9 +188,15 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration, with Vice President JD Vance citing H-1B fraud claims, blocked Microsoft and other tech companies (including Adobe) from using the PERM program to sponsor green cards for their H-1B workers, multiple outlets report.",
+    "ai": true,
+    "doc_type": "executive action",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "US associations sue over ICE changes to international student internships",
@@ -243,9 +299,14 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS published a proposed rule imposing new fees on Optional Practical Training (OPT) work authorization for F-1 students, reported as up to $70,000 for initial OPT and additional fees for renewals.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
   },
   {
     "title": "Fighting Back on Restrictions to Internships for International Students",
@@ -288,9 +349,14 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS published a proposed rule imposing new fees on Optional Practical Training (OPT) work authorization for F-1 students, reported as up to $70,000 for initial OPT and additional fees for renewals.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
   },
   {
     "title": "DHS Eyes Up To $100K Foreign Student Work Program Fee",
@@ -337,9 +403,14 @@
     "kind": "news",
     "first_seen": "2026-10-08T21:23:54.709Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS published a proposed rule imposing new fees on Optional Practical Training (OPT) work authorization for F-1 students, reported as up to $70,000 for initial OPT and additional fees for renewals.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
   },
   {
     "title": "DHS proposes $70K fee for international student work program",
