@@ -7,10 +7,14 @@
     "source": "Fortune",
     "kind": "news",
     "first_seen": "2026-10-09T15:22:17.483Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B",
+      "PERM"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "US Bars Microsoft, Indian Firms From Visa Program in Blow (2)",
