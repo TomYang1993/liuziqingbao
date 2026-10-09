@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-10-09T21:01:05.690Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "The Trump administration is seeking an expedited appeal of the court order blocking its rule setting fixed time limits on international students' stay in the U.S., The PIE News reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Should US barring 8 IT firms from participating in PERM worry H1-B holders?",
@@ -184,9 +187,14 @@
     "kind": "news",
     "first_seen": "2026-10-09T21:01:05.690Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS published a proposed rule imposing new fees on Optional Practical Training (OPT) work authorization for F-1 students, reported as up to $70,000 for initial OPT and additional fees for renewals.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
   },
   {
     "title": "DHS Proposes Significant New OPT Fees for F-1 Students",
