@@ -8,9 +8,15 @@
     "kind": "news",
     "first_seen": "2026-10-09T06:20:45.314Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140",
+      "H-1B"
+    ],
+    "summary": "The Trump administration barred Microsoft and several Indian IT outsourcing firms from the PERM green-card sponsorship program over alleged H-1B visa fraud, Bloomberg reports, affecting employers' ability to sponsor foreign workers for permanent residency.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVTJ0R2IwVDVTX1BXRFZnNUVtbUxwY0RtSUc2TVV5c0ctVG1wNjB2UEItOHpobFVpM3Y1RzQ3aHdOaWRhMU5PdVUyOVphSzMtWHJhaFhKOWdyQ3ZKdllKVE5ySUkzNERKYjNWSTJaVXV0THBCVHkzbXp5bHZBdkpQb2Nn0gGHAUFVX3lxTFBsX3VPb0NhdHFjYm9CcVlzU1JOdU5rcHhvX0xreGRjVjZmcG9NczZVMkpOal8yMVBLdnk5eWRpdmJUeFhlcXRzQmhOLW9CUk0xV0NYeGY2Zm9oVVI3bmJHMWNtQkM0M3ByX1ZJQXlLdWhIYlhaYmRKV2x2WHI2NlRhZGZTaWQ4Yw?oc=5"
   },
   {
     "title": "The Trump administration is suspending Microsoft from a green card program, alleging fraud",
@@ -21,9 +27,15 @@
     "kind": "news",
     "first_seen": "2026-10-09T06:20:45.314Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140",
+      "H-1B"
+    ],
+    "summary": "The Trump administration is suspending Microsoft from the PERM green-card sponsorship program, alleging visa fraud tied to its H-1B workforce, AP News reports.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVTJ0R2IwVDVTX1BXRFZnNUVtbUxwY0RtSUc2TVV5c0ctVG1wNjB2UEItOHpobFVpM3Y1RzQ3aHdOaWRhMU5PdVUyOVphSzMtWHJhaFhKOWdyQ3ZKdllKVE5ySUkzNERKYjNWSTJaVXV0THBCVHkzbXp5bHZBdkpQb2Nn0gGHAUFVX3lxTFBsX3VPb0NhdHFjYm9CcVlzU1JOdU5rcHhvX0xreGRjVjZmcG9NczZVMkpOal8yMVBLdnk5eWRpdmJUeFhlcXRzQmhOLW9CUk0xV0NYeGY2Zm9oVVI3bmJHMWNtQkM0M3ByX1ZJQXlLdWhIYlhaYmRKV2x2WHI2NlRhZGZTaWQ4Yw?oc=5"
   },
   {
     "title": "Microsoft faces PERM suspension over H-1B allegations",
@@ -34,9 +46,15 @@
     "kind": "news",
     "first_seen": "2026-10-09T06:20:45.314Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140",
+      "H-1B"
+    ],
+    "summary": "Microsoft faces suspension from the PERM green-card sponsorship program over allegations tied to its H-1B hiring, American Bazaar reports.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVTJ0R2IwVDVTX1BXRFZnNUVtbUxwY0RtSUc2TVV5c0ctVG1wNjB2UEItOHpobFVpM3Y1RzQ3aHdOaWRhMU5PdVUyOVphSzMtWHJhaFhKOWdyQ3ZKdllKVE5ySUkzNERKYjNWSTJaVXV0THBCVHkzbXp5bHZBdkpQb2Nn0gGHAUFVX3lxTFBsX3VPb0NhdHFjYm9CcVlzU1JOdU5rcHhvX0xreGRjVjZmcG9NczZVMkpOal8yMVBLdnk5eWRpdmJUeFhlcXRzQmhOLW9CUk0xV0NYeGY2Zm9oVVI3bmJHMWNtQkM0M3ByX1ZJQXlLdWhIYlhaYmRKV2x2WHI2NlRhZGZTaWQ4Yw?oc=5"
   },
   {
     "title": "Microsoft faces foreign worker crackdown as Vance blasts layoffs",
@@ -47,9 +65,15 @@
     "kind": "news",
     "first_seen": "2026-10-09T06:20:45.314Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140",
+      "H-1B"
+    ],
+    "summary": "Vice President Vance announced a crackdown suspending Microsoft from the PERM green-card program for foreign workers amid criticism of the company's layoffs, Axios reports.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVTJ0R2IwVDVTX1BXRFZnNUVtbUxwY0RtSUc2TVV5c0ctVG1wNjB2UEItOHpobFVpM3Y1RzQ3aHdOaWRhMU5PdVUyOVphSzMtWHJhaFhKOWdyQ3ZKdllKVE5ySUkzNERKYjNWSTJaVXV0THBCVHkzbXp5bHZBdkpQb2Nn0gGHAUFVX3lxTFBsX3VPb0NhdHFjYm9CcVlzU1JOdU5rcHhvX0xreGRjVjZmcG9NczZVMkpOal8yMVBLdnk5eWRpdmJUeFhlcXRzQmhOLW9CUk0xV0NYeGY2Zm9oVVI3bmJHMWNtQkM0M3ByX1ZJQXlLdWhIYlhaYmRKV2x2WHI2NlRhZGZTaWQ4Yw?oc=5"
   },
   {
     "title": "Trump officials block Microsoft’s access to program for employee green cards",
@@ -240,9 +264,15 @@
     "kind": "news",
     "first_seen": "2026-10-09T06:20:45.314Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140",
+      "H-1B"
+    ],
+    "summary": "Vice President Vance said the U.S. will suspend green-card sponsorship for Microsoft's H-1B visa workers, Forbes reports.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVTJ0R2IwVDVTX1BXRFZnNUVtbUxwY0RtSUc2TVV5c0ctVG1wNjB2UEItOHpobFVpM3Y1RzQ3aHdOaWRhMU5PdVUyOVphSzMtWHJhaFhKOWdyQ3ZKdllKVE5ySUkzNERKYjNWSTJaVXV0THBCVHkzbXp5bHZBdkpQb2Nn0gGHAUFVX3lxTFBsX3VPb0NhdHFjYm9CcVlzU1JOdU5rcHhvX0xreGRjVjZmcG9NczZVMkpOal8yMVBLdnk5eWRpdmJUeFhlcXRzQmhOLW9CUk0xV0NYeGY2Zm9oVVI3bmJHMWNtQkM0M3ByX1ZJQXlLdWhIYlhaYmRKV2x2WHI2NlRhZGZTaWQ4Yw?oc=5"
   },
   {
     "title": "Trump admin bars 8 tech companies from sponsoring H-1B workers for green cards",
@@ -606,9 +636,12 @@
     "kind": "news",
     "first_seen": "2026-10-09T06:20:45.314Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "A federal appeals court questioned the Trump administration's attempt to block Harvard University from enrolling international students, Politico reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Higher ed leaders sue Trump administration over limitations on international student internships",
