@@ -277,9 +277,15 @@
     "kind": "news",
     "first_seen": "2026-10-10T06:02:46.739Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration barred Microsoft, Adobe, and other tech companies from using the PERM green-card sponsorship program for H-1B workers, Law360 reports.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "Vance suspends Microsoft from green card program over H-1B fraud claims",
