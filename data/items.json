@@ -602,9 +602,14 @@
     "kind": "news",
     "first_seen": "2026-10-11T06:00:16.031Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "OPT"
+    ],
+    "summary": "DHS proposed a rule that would charge F-1 students a $70,000 fee for initial OPT participation and $30,000 for OPT extensions, Higher Ed Dive reports.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
   },
   {
     "title": "Trump administration plans to charge international students $70,000 for work authorization",
@@ -704,9 +709,14 @@
     "kind": "news",
     "first_seen": "2026-10-11T06:00:16.031Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
+    "summary": "Higher education associations sued DHS over guidance that restricts Curricular Practical Training (CPT) for international students, Higher Ed Dive reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMWExZ2xyQU5jZmZPWW1jQ2JWdDljallROEZYTDltX3cwOVA4Z0FGcHJPcXJOX2FWdndzaGhvNGZ0MlZSYTdTNTZQdFAzVmk5QnRraGFGSGdQanMzcDdEMWN6a2I3UTloTjRXNGFNa1lSSnVuaGdSUEV0VVBUb0JuVlF4RDFpMkJHRU5vU2E3ZzQ3eVZOcWJSLUl6UVZXSmxLMV8zalJZcExPMWxkc0ZKRXN1SQ?oc=5"
   },
   {
     "title": "Subject: Latitudes: Will international-ed policy be decided from the bench?",
