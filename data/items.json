@@ -24,9 +24,13 @@
     "kind": "news",
     "first_seen": "2026-10-13T02:06:59.605Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal appeals court ruled against the Trump administration, upholding a block on the proposed $100,000 H-1B visa fee policy, Bloomberg reports. H-1B employers and workers are affected by the continued block on the fee.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcmtlLW9VeGk3M0NtdjlpcDEtMkNJWkc2UkNDeERHNEtQaTh4X1dDWmgxSHBJY0RjZGJPOGp1R3UtS3c3OTB1aWsxY25oUVRCa3AxTHBad1BfUnctcTJ5WWNZbVNXT3FoazJzNE5lSm5XOFV2NDZXRG9HT2RVVWhxa3RSOXI2dG12cFR5WnM1RW9IU3dWUHhXbTByaWxVUWk2NWZUbml1ZGFGTG13czJ6Yk1R?oc=5"
   },
   {
     "title": "Trump Appeals Court Loss That Blocked $100,000 H-1B Fee Policies",
@@ -37,9 +41,13 @@
     "kind": "news",
     "first_seen": "2026-10-13T02:06:59.605Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal appeals court ruled against the Trump administration, upholding a block on the proposed $100,000 H-1B visa fee policy, Bloomberg reports. H-1B employers and workers are affected by the continued block on the fee.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcmtlLW9VeGk3M0NtdjlpcDEtMkNJWkc2UkNDeERHNEtQaTh4X1dDWmgxSHBJY0RjZGJPOGp1R3UtS3c3OTB1aWsxY25oUVRCa3AxTHBad1BfUnctcTJ5WWNZbVNXT3FoazJzNE5lSm5XOFV2NDZXRG9HT2RVVWhxa3RSOXI2dG12cFR5WnM1RW9IU3dWUHhXbTByaWxVUWk2NWZUbml1ZGFGTG13czJ6Yk1R?oc=5"
   },
   {
     "title": "Trump Appeals Court Loss That Blocked $100,000 H-1B Fee Policies",
@@ -97,10 +105,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-13T02:06:59.605Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "US to seek expedited appeal over blocked int’l student time limits",
@@ -176,10 +185,11 @@
     "source": "Boundless",
     "kind": "news",
     "first_seen": "2026-10-13T02:06:59.605Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "US Bars Microsoft, Indian Firms From Visa Program in Blow (2)",
@@ -957,10 +967,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-13T02:06:59.605Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "AAU, Other Educational Organizations File Lawsuit Challenging Sudden Change of Curricular Practical Training Policy",
