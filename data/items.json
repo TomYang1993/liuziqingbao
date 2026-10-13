@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-10-13T19:22:25.015Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "DHS proposed ending the long-standing policy of deferring to prior approvals when USCIS adjudicates H-1B extension and amendment petitions, Bloomberg reports. Employers would need to resubmit full supporting evidence with each extension request, even for workers previously approved in the same role.",
+    "ai": true,
+    "doc_type": "proposed rule"
   },
   {
     "title": "DHS Rule Nixes Automatic Extension of Immigrant Work Permits",
@@ -21,9 +24,12 @@
     "kind": "news",
     "first_seen": "2026-10-13T19:22:25.015Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "Other"
+    ],
+    "summary": "DHS issued a rule ending automatic extensions of expiring employment authorization documents for immigrant (green-card-track) applicants, Bloomberg reports, which could leave affected applicants without valid work authorization while renewals are pending.",
+    "ai": true,
+    "doc_type": "final rule"
   },
   {
     "title": "Anupam Mittal recalls surrendering his US green card as American immigration uncertainty grows",
