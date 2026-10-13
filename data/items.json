@@ -105,10 +105,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-13T11:56:09.158Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "IEC Group Gets Spreadsheet Leak Lawsuit Revived on Appeal (1)",
@@ -342,10 +345,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-13T11:56:09.158Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "H-1B visas aren't suspended. Here's what Vance is really targeting",
