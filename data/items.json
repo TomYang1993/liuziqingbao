@@ -8,9 +8,13 @@
     "kind": "news",
     "first_seen": "2026-10-14T05:03:35.342Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-4",
+      "Other"
+    ],
+    "summary": "DHS has finalized a rule ending the automatic extension of expiring employment authorization documents (EADs) for workers with timely-filed renewal applications, Law360 reports. The change removes a safety net that let H-4 dependent spouses and other EAD holders keep working while their renewal was pending, raising the risk of employment gaps.",
+    "ai": true,
+    "doc_type": "final rule"
   },
   {
     "title": "Deference to Prior H-1B Worker Approvals Nixed in DHS Proposal",
