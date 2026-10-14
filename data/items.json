@@ -7,10 +7,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-14T20:15:06.893Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "CPT crackdown threatens America’s student appeal",
@@ -20,10 +23,13 @@
     "source": "The PIE",
     "kind": "news",
     "first_seen": "2026-10-14T20:15:06.892Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "CPT"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "DHS Finalizes Rule Ending Automatic Work Permit Extensions",
@@ -82,10 +88,13 @@
     "source": "Fragomen",
     "kind": "news",
     "first_seen": "2026-10-14T20:15:06.893Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "PERM"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Deference to Prior H-1B Worker Approvals Nixed in DHS Proposal",
@@ -271,10 +280,13 @@
     "source": "Forbes",
     "kind": "news",
     "first_seen": "2026-10-14T20:15:06.892Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Should US barring 8 IT firms from participating in PERM worry H1-B holders?",
@@ -840,10 +852,13 @@
     "source": "Inside Higher Ed",
     "kind": "news",
     "first_seen": "2026-10-14T20:15:06.893Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Fighting Back on Restrictions to Internships for International Students",
