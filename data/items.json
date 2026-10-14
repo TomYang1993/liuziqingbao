@@ -21,26 +21,32 @@
     "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20955/removal-of-automatic-extensions-for-certain-employment-authorization-documents",
     "published": "2026-10-14",
     "excerpt": "On October 30, 2025, DHS published an interim final rule (IFR) that amended DHS regulations to end the practice of automatically extending the validity of employment authorization documents (Forms I- 766 or EADs) for aliens who have timely filed an application to renew their EAD in certain employment authorization categories. This final rule responds to comments received on the IFR and reaffirms and finalizes the provisions of the IFR. Ending the automatic extension of EADs enhances benefit integrity and prioritizes the proper vetting and screening of aliens before granting a new period of employment authorization and/or a new EAD.",
-    "doc_type": "Rule",
+    "doc_type": "final rule",
     "source": "Federal Register",
     "first_seen": "2026-10-14T13:51:05.336Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "OPT",
+      "STEM OPT",
+      "H-4"
+    ],
+    "summary": "DHS finalized a rule ending automatic extensions of Employment Authorization Documents (EADs) for people who timely filed a renewal application in certain categories, which can affect F-1 OPT/STEM OPT and H-4 EAD holders awaiting renewal.",
+    "ai": true
   },
   {
     "title": "Removing Deference to Prior USCIS Determinations of Eligibility",
     "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility",
     "published": "2026-10-14",
     "excerpt": "The U.S. Department of Homeland Security (DHS), U.S. Citizenship and Immigration Services (USCIS), proposes to remove 8 CFR 214.1(c)(5), which generally provides that USCIS gives deference to a prior approval involving the same facts when adjudicating a request to extend a petition for an alien's employment or stay. This change would better align DHS regulations with the statute, which places the burden of proving eligibility for all immigration benefits on the petitioner, applicant, or beneficiary; strengthen adjudicatory review; and support agency priorities to improve the integrity of the immigration system and better protect the interests of U.S. workers.",
-    "doc_type": "Proposed Rule",
+    "doc_type": "proposed rule",
     "source": "Federal Register",
     "first_seen": "2026-10-14T13:51:05.336Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "DHS proposes removing the longstanding policy of deference to prior USCIS approvals involving the same facts when adjudicating extension requests, which would require H-1B and other nonimmigrant worker extension petitions to be re-proven from scratch each time.",
+    "ai": true
   },
   {
     "title": "Deference to Prior H-1B Worker Approvals Nixed in DHS Proposal",
@@ -276,10 +282,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-14T13:51:08.425Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "OPT"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "This Week in Immigration: October 9, 2026",
