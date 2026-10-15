@@ -23,10 +23,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-14T23:18:45.908Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "CPT crackdown threatens America’s student appeal",
@@ -149,10 +152,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-14T23:18:45.908Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Anupam Mittal recalls surrendering his US green card as American immigration uncertainty grows",
