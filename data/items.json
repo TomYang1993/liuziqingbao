@@ -538,10 +538,11 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-10-15T13:32:07.215Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trade Court Certifies Importer Class Seeking Tariff Refunds (1)",
@@ -568,9 +569,15 @@
     "kind": "news",
     "first_seen": "2026-10-15T13:32:07.215Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B",
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration froze Microsoft, Adobe and Infosys green-card (PERM) applications over alleged fraud, Bloomberg reports.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRUZxUkUtaVNDdnIwenZKandKOE9LOWEtVEprdERHMEFCMU5DZzNIbkVSNnZGbHZFaHNCM2dPSm5fSTRjaktQTW16bERXMkdZaE1qdjdiaEkyZlh0V1VZV3RmQ0ZJcEk4VUx1NzBkZVVhSkdTWEtMOWdldVBKNTkzOEtWRHB4dHVtUy1MOE5ldU9qMWgzZlBHd3UxUkVDakhud2VYeGQ1WnMwcHZZRmNXbjg4Y2NySHJldVE?oc=5"
   },
   {
     "title": "H-1B visas aren't suspended. Here's what Vance is really targeting",
