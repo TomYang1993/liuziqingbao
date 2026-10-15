@@ -55,10 +55,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-15T19:56:10.782Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Minimum Salary Changes Announced",
@@ -68,10 +69,11 @@
     "source": "Fragomen",
     "kind": "news",
     "first_seen": "2026-10-15T19:56:10.782Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "DHS Finalizes Rule Ending Automatic Work Permit Extensions",
@@ -147,9 +149,13 @@
     "kind": "news",
     "first_seen": "2026-10-15T19:56:10.782Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "DHS proposed removing the deference previously given to prior USCIS approvals when adjudicating H-1B extension petitions, which could lead to increased scrutiny on renewals, Bloomberg reports.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility"
   },
   {
     "title": "Deference to Prior H-1B Worker Approvals Nixed in DHS Proposal",
@@ -305,10 +311,11 @@
     "source": "Ogletree",
     "kind": "news",
     "first_seen": "2026-10-15T19:56:10.782Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Judge Corrects Claim About NY Attorney in Disciplinary Row (1)",
@@ -574,10 +581,11 @@
     "source": "National Law Review",
     "kind": "news",
     "first_seen": "2026-10-15T19:56:10.782Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "The skilled foreign tech workers' green card program under attack from Trump",
