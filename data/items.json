@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-10-16T13:20:37.360Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A new bill introduced in Congress would raise the required H-1B wage threshold to as much as $140,000, Newsweek reports. If enacted, it would significantly raise the cost of sponsoring H-1B workers for employers.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Security Cos. Failed To Pay For Shift Handoffs, Guard Says",
@@ -84,10 +87,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-16T13:20:37.360Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Labor Solicitor Doubles Down on Bypassing Unionized Workplaces",
@@ -97,10 +103,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T13:20:37.360Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump Anti-DEI Contractor Order Survives Early Court Block (1)",
