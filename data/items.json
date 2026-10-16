@@ -7,10 +7,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-16T04:43:21.363Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump admin reignites court battle over student deportations based on speech",
@@ -52,10 +55,13 @@
     "source": "New York Times",
     "kind": "news",
     "first_seen": "2026-10-16T04:43:21.363Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump Anti-DEI Contractor Order Survives Early Court Block (1)",
@@ -81,10 +87,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-16T04:43:21.363Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Court Vacates DOL Rulings In Trucker Prevailing Wage Case",
@@ -219,10 +228,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T04:43:21.363Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "H-1B Visa renewals face tougher reviews under Trump proposal",
