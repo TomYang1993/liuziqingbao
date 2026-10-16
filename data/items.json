@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal appeals court rejected the appeal of Dr. Rasha Alawieh, a Rhode Island kidney transplant physician who was deported in 2025 despite holding a valid H-1B visa, the Boston Globe reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "H-1B Visa Salary Threshold Could Hit $140,000 Under New Bill",
@@ -68,10 +71,11 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Union Illegally Rejected Member's Resignation, Ruling Says",
@@ -145,10 +149,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Supreme Court Again Gives Republicans a Win in Ad Rate Dispute",
@@ -158,10 +163,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Trump Anti-DEI Contractor Order Survives Early Court Block (1)",
@@ -235,10 +241,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Judge Extends Ban on Trump Taxpayer-Funded Ads Past Election Day",
@@ -248,10 +255,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Appeals Court Debates Its Ability to Hear Immigration Challenge",
@@ -261,10 +269,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "CPT crackdown threatens America’s student appeal",
@@ -304,10 +313,11 @@
     "source": "Boundless",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Minimum Salary Changes Announced",
@@ -494,10 +504,11 @@
     "source": "The Hill",
     "kind": "news",
     "first_seen": "2026-10-16T19:36:16.493Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Hawaii Judge Weighs Fate of Trump’s LA Prosecutor in Removal Bid",
