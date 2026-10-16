@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-10-15T23:06:55.610Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "Higher Ed Dive reports the Trump administration has revived legal action over the deportation of international students based on their speech, escalating an ongoing court fight affecting F-1 visa holders.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Union Illegally Rejected Member's Resignation, Ruling Says",
@@ -20,10 +23,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-15T23:06:55.610Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Trump Anti-DEI Contractor Order Survives Early Court Block (1)",
@@ -33,10 +39,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-15T23:06:55.610Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Court Vacates DOL Rulings In Trucker Prevailing Wage Case",
@@ -172,9 +181,13 @@
     "kind": "news",
     "first_seen": "2026-10-15T23:06:55.610Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "Newsweek reports that H-1B visa renewals will face tougher USCIS reviews under a Trump administration proposal to end the agency's deference to prior approvals of H-1B workers.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/14/2026-20941/removing-deference-to-prior-uscis-determinations-of-eligibility"
   },
   {
     "title": "Lidl Must Face ‘Time-Shaving’ Wage Lawsuit, Split Court Says (1)",
@@ -184,10 +197,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-15T23:06:55.610Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "What Employers Need to Know About the Government’s New PERM Investigations and Program Suspensions",
@@ -262,10 +278,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-15T23:06:55.610Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "H&R Block Units Sue Liberty Mutual Over Intuit Litigation Costs",
@@ -291,10 +310,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-15T23:06:55.610Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Anupam Mittal recalls surrendering his US green card as American immigration uncertainty grows",
