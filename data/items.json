@@ -8,9 +8,13 @@
     "kind": "news",
     "first_seen": "2026-10-17T12:15:54.289Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140"
+    ],
+    "summary": "Bloomberg reports the U.S. Department of Labor barred Cloudera from filing PERM green card applications for two years, affecting employees relying on the company's employment-based green card sponsorship.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Delta Accused of Race, Somali Bias in Forced Resignation Lawsuit",
@@ -162,10 +166,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-10-17T12:15:54.289Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Warehouse Workers Win $1.55M Settlement In Wage Suit",
