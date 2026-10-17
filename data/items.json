@@ -269,10 +269,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-16T22:54:05.613Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Appeals Court Debates Its Ability to Hear Immigration Challenge",
@@ -563,10 +566,13 @@
     "source": "Fortune",
     "kind": "news",
     "first_seen": "2026-10-16T22:54:05.613Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Luxury NYC Co-Op Sued Over ‘Commandeered’ Central Park Terrace",
