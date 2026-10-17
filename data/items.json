@@ -455,9 +455,15 @@
     "kind": "news",
     "first_seen": "2026-10-17T15:43:44.942Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "OPT",
+      "STEM OPT",
+      "H-4"
+    ],
+    "summary": "DHS published a final rule ending automatic extensions of expired Employment Authorization Documents for applicants with timely-filed renewals, Law360 reports, affecting OPT, STEM OPT, H-4, and other EAD-dependent workers who may face work-authorization gaps.",
+    "ai": true,
+    "doc_type": "final rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/10/14/2026-20955/removal-of-automatic-extensions-for-certain-employment-authorization-documents"
   },
   {
     "title": "DHS Finalizes Rule Ending Automatic Work Permit Extensions",
@@ -614,10 +620,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-17T15:43:44.941Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "DHS Rule Nixes Automatic Extension of Immigrant Work Permits",
