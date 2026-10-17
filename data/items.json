@@ -8,9 +8,14 @@
     "kind": "news",
     "first_seen": "2026-10-17T18:35:22.158Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140"
+    ],
+    "summary": "Newsweek reports a tech company was barred from filing employment-based green card applications amid the broader H-1B crackdown, matching an earlier Bloomberg report that the Labor Department barred Cloudera from PERM filings for two years.",
+    "ai": true,
+    "doc_type": "other",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWmwtS1hlUVRGSmNFWFo3bE5tMW9LVUpxQV9KRjgxUkFNVkJ1bGhKOGEzVGt6ZS1UZHpaV1I1REFJWFJEeUx2eDA0VWtGeUs5WEdYNndBZ0tHcXQwNFduckJkalNZeS1wTHJYVG53bkpOWl95OHgxNWdkR2poLVhxcHFhaHV1RjVPbFloTGRNMnloZS1zUmljWmI3Q09WUV9pMnlwYnA3emdNVTg0dkZnNlVB?oc=5"
   },
   {
     "title": "DOJ Official Requests New Judge in Golf Course Case After Rebuke",
@@ -20,10 +25,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-17T18:35:22.158Z",
-    "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
+    "summary": "A DOJ official requested a new judge in an unrelated golf-course-related case after a judicial rebuke; not related to employment-based visa categories.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Tech Firm Cloudera Barred from Green Card Filings for Two Years",
@@ -422,10 +430,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-17T18:35:22.158Z",
-    "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
+    "summary": "Bloomberg reports the White House is reviewing possible fast-track visa processing for foreign workers; no concrete agency action or rule has been announced yet.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "CPT crackdown threatens America’s student appeal",
