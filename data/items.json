@@ -308,10 +308,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-18T04:46:10.733Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Trump Anti-DEI Contractor Order Survives Early Court Block (1)",
