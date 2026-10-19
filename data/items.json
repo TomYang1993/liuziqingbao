@@ -7,10 +7,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-19T21:09:26.868Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Top US Court Rejects Fired NLRB Member’s Challenge to Removal",
@@ -82,10 +85,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-19T21:09:26.868Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Tech Firm Cloudera Barred from Green Card Filings for Two Years",
@@ -318,10 +324,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-19T21:09:26.868Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Employers Avoid Knee-Jerk Reactions to Green Card Sponsor Bans",
