@@ -278,10 +278,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-18T18:42:40.260Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Clinics Violated Labor Law During Union Vote, NLRB Judge Says",
