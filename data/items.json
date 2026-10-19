@@ -7,10 +7,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-19T15:44:47.463Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "This Week in Chancery Court: Albertsons, Kroger Play Blame Game",
@@ -20,10 +21,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-19T15:44:47.463Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Tech Company Barred From Green Card Filings Amid H-1B Visa Crackdown",
@@ -488,10 +490,11 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-10-19T15:44:47.463Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "White House Reviewing Fast-Track Processing for Foreign Workers",
@@ -547,10 +550,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-19T15:44:47.463Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Current Status of U.S. Visa Services By Country - October 2026",
