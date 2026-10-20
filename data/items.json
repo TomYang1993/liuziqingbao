@@ -7,10 +7,13 @@
     "source": "American Bazaar",
     "kind": "news",
     "first_seen": "2026-10-20T05:01:24.981Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "BSNF Railway Sued by EEOC Over Disabled Worker’s Tool Request",
