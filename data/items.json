@@ -7,10 +7,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-10-20T20:02:09.712Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Home Care Aide's Wage Suit Returns To State Court",
@@ -20,10 +23,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-20T20:02:09.712Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Over 12,000 Indian tech professionals leave US as visa uncertainty, layoffs mount",
