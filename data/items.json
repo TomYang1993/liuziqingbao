@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-10-20T23:14:03.359Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM"
+    ],
+    "summary": "Cloudera settled a lawsuit with the Trump administration, agreeing to pay $2 million and accept a two-year ban on filing PERM labor certifications for green card sponsorship, American Bazaar reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Higher Education Institution Guidance to Submit Comments for Optional Practical Training Fees",
@@ -20,10 +23,14 @@
     "source": "Presidents' Alliance",
     "kind": "news",
     "first_seen": "2026-10-20T23:14:03.359Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "OPT",
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Instacart Agrees to $5 Million Settlement After Newsweek Green Card Report",
@@ -49,10 +56,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-20T23:14:03.359Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Home Care Aide's Wage Suit Returns To State Court",
