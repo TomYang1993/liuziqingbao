@@ -55,10 +55,13 @@
     "source": "Chronicle of Higher Education",
     "kind": "news",
     "first_seen": "2026-10-22T13:54:47.028Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Cloudera settles lawsuit with Trump administration, agrees to pay $2 million and face a two-year PERM ban",
@@ -133,10 +136,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-22T13:54:47.028Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Home Care Aide's Wage Suit Returns To State Court",
@@ -162,10 +168,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-22T13:54:47.028Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Over 12,000 Indian tech professionals leave US as visa uncertainty, layoffs mount",
@@ -223,10 +232,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-22T13:54:47.028Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Top US Court Rejects Fired NLRB Member’s Challenge to Removal",
