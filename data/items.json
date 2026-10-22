@@ -7,10 +7,13 @@
     "source": "American Bazaar",
     "kind": "news",
     "first_seen": "2026-10-22T05:03:09.703Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "DOJ Urges Appeals Court Not to Punish Lawyers for Agency Actions",
