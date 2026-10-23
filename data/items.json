@@ -7,10 +7,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-23T05:03:09.869Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Ex-Brooklyn Nets Exec Says Parental Leave Got Him Fired",
