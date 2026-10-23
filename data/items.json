@@ -55,10 +55,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-23T13:35:43.306Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Fired Law Firm Worker Sidesteps Arbitration Under #MeToo Law",
@@ -68,10 +71,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-10-23T13:35:43.306Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "DOJ Urges Appeals Court Not to Punish Lawyers for Agency Actions",
