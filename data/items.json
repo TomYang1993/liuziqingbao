@@ -7,10 +7,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-24T12:46:35.235Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "H-1B layoff leaves Indian worker in India unsure if he can reenter US",
@@ -164,10 +167,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-24T12:46:35.235Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "press release"
   },
   {
     "title": "Cloudera settles lawsuit with Trump administration, agrees to pay $2 million and face a two-year PERM ban",
@@ -226,10 +232,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-24T12:46:35.235Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Staffing App Will Pay $2.3M, Treat Drivers As Employees",
