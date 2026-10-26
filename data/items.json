@@ -7,10 +7,13 @@
     "source": "The PIE",
     "kind": "news",
     "first_seen": "2026-10-26T21:05:35.329Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "United States: Rule Proposing PERM Changes Clears Federal Review",
