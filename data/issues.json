@@ -27,9 +27,9 @@
       },
       {
         "date": "2026-10-05",
-        "label": "Higher-education groups (incl. Association of American Universities) sue DHS in D. Mass., claiming the CPT guidance violates the APA",
-        "url": "https://news.bloombergtax.com/financial-accounting/ice-policy-tightening-student-work-option-challenged-by-colleges",
-        "note": "News report; complaint not yet linked"
+        "label": "Higher-education groups (AAU, Presidents' Alliance, AICUM, NAFSA) sue DHS and ICE in D. Mass., claiming the CPT guidance violates the APA (Association of American Universities v. DHS, No. 1:26-cv-14520)",
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.1.0_2.pdf",
+        "note": "Complaint (Dkt. 1)"
       }
     ],
     "links": [
@@ -50,7 +50,7 @@
     ],
     "status": "Blocked by court; government appealing",
     "status_kind": "blocked",
-    "summary": "DHS final rule replaces open-ended 'duration of status' for F/J/I visa holders with a fixed admission period and an extension-of-stay process. On Sep 14, 2026, a federal judge in Massachusetts granted a nationwide preliminary injunction, one day before the rule's effective date. The government appealed to the First Circuit on Sep 30 and wants it expedited; the rule stays blocked and D/S stays in place while the appeal runs.",
+    "summary": "DHS final rule replaces open-ended 'duration of status' for F/J/I visa holders with a fixed admission period and an extension-of-stay process. On Sep 14, 2026, a federal judge in Massachusetts postponed the rule's effective date under the APA and enjoined DHS from implementing it, one day before the rule's effective date. The government appealed to the First Circuit on Sep 30 and wants it expedited; the rule stays blocked and D/S stays in place while the appeal runs.",
     "timeline": [
       {
         "date": "2025-08-28",
@@ -70,7 +70,8 @@
       {
         "date": "2026-08-18",
         "label": "NAFSA, Presidents' Alliance, AFT, UAW and others sue in D. Mass. (Judge Saylor); motion for preliminary injunction filed",
-        "url": "https://www.nafsa.org/legal-defense-DS"
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.1.0.pdf",
+        "note": "Complaint (Dkt. 1), Presidents' Alliance v. DHS, No. 1:26-cv-13799"
       },
       {
         "date": "2026-09-03",
@@ -79,17 +80,18 @@
       },
       {
         "date": "2026-09-14",
-        "label": "Judge Saylor grants nationwide preliminary injunction; rule blocked during litigation",
-        "url": "https://nepyork.com/2026/09/14/federal-judge-blocks-dhs-rule-ending-duration-of-status-for-international-students/",
-        "note": "News report; court order not yet linked"
+        "label": "Judge Saylor postpones the rule's effective date under APA §705 and enjoins DHS from implementing it while the case proceeds",
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.50.0_3.pdf",
+        "note": "Court opinion (Dkt. 50); injunction order Dkt. 51"
       },
       {
         "date": "2026-09-30",
         "label": "Government appeals the injunction to the First Circuit; seeks expedited review",
-        "url": "https://www.nafsa.org/legal-defense-DS"
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.53.0.pdf",
+        "note": "Notice of appeal (Dkt. 53)"
       }
     ],
-    "summary_zh": "DHS 最终规则把 F/J/I 签证的「duration of status」改成固定停留期，到期需申请延期。2026 年 9 月 14 日，马萨诸塞州联邦法院在生效前一天发出全国范围的初步禁令，规则被叫停。政府已于 9 月 30 日向第一巡回上诉法院上诉并要求加速审理；上诉期间规则仍被冻结，D/S 维持原样。"
+    "summary_zh": "DHS 最终规则把 F/J/I 签证的「duration of status」改成固定停留期，到期需申请延期。2026 年 9 月 14 日，马萨诸塞州联邦法院在生效前一天依据《行政程序法》第 705 条推迟规则生效并禁止 DHS 实施，规则被叫停。政府已于 9 月 30 日向第一巡回上诉法院上诉并要求加速审理；上诉期间规则仍被冻结，D/S 维持原样。"
   },
   {
     "id": "grace-period",
@@ -123,6 +125,35 @@
     "summary_zh": "DHS 提议删除 8 CFR 214.1(l)(2)，即失业后最长 60 天的 grace period，涉及 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属（H-4、L-2、O-3 等）。若最终生效，失业当天身份即终止，除非有其他合法身份依据；签证有效期前后的 10 天 grace period 不受影响。目前仍是提案，评论期至 2026 年 11 月 10 日，规则尚未生效。"
   },
   {
+    "id": "ead-auto-extension",
+    "title": "EAD automatic extension ended",
+    "topics": [
+      "H-4"
+    ],
+    "status": "Final rule in effect since Oct 14, 2026 (interim rule since Oct 30, 2025)",
+    "status_kind": "effective",
+    "summary": "DHS finalized, without changes, its interim rule ending the automatic extension of work permits (EADs) while a renewal is pending. For renewals filed on or after Oct 30, 2025, work authorization no longer continues past the card's expiration date (it used to continue for up to 540 days), so a gap is possible if USCIS has not approved the renewal in time. It covers categories that used to get the extension, including H-4 spouses and green-card applicants with a pending I-485 (alongside pending-asylum cases, the largest groups). Extensions that came with renewals filed before Oct 30, 2025 are not affected, and TPS-related documents follow their own Federal Register notices. The rule text does not mention F-1 OPT or STEM OPT EADs.",
+    "summary_zh": "2026 年 10 月 14 日，DHS 原样确认了此前的临时最终规则：EAD 续期申请待批期间，工作许可不再自动延长。2025 年 10 月 30 日及之后递交的续期申请，工作许可到卡片到期日即止（此前最长可自动延长 540 天），如果 USCIS 没有及时批准续期，就可能出现工作空档。受影响的是过去享有自动延期的类别，包括 H-4 配偶和已递交 I-485 的绿卡申请人（与待决庇护申请并列为最大的两类）。2025 年 10 月 30 日之前递交的续期所获得的延期不受影响，TPS 相关文件按各自的 Federal Register 公告处理。规则正文未提及 F-1 OPT / STEM OPT 的 EAD。",
+    "links": [
+      {
+        "label": "Docket USCIS-2025-0271",
+        "url": "https://www.regulations.gov/docket/USCIS-2025-0271"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2025-10-30",
+        "label": "Interim final rule 'Removal of the Automatic Extension of Employment Authorization Documents' (90 FR 48799): no automatic extension for renewals filed on or after this date",
+        "url": "https://www.federalregister.gov/documents/2025/10/30/2025-19702/removal-of-the-automatic-extension-of-employment-authorization-documents"
+      },
+      {
+        "date": "2026-10-14",
+        "label": "Final rule 'Removal of Automatic Extensions for Certain Employment Authorization Documents' (91 FR 65306); effective immediately, no changes from the interim rule",
+        "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20955/removal-of-automatic-extensions-for-certain-employment-authorization-documents"
+      }
+    ]
+  },
+  {
     "id": "h1b-fee",
     "title": "$100,000 H-1B fee",
     "topics": [
@@ -130,9 +161,9 @@
       "F-1",
       "OPT"
     ],
-    "status": "Blocked by two courts; renewed to Sep 2027; new fee rule proposed",
+    "status": "Blocked by two courts, both appealed; renewed to Sep 2027; new fee rule proposed",
     "status_kind": "proposed",
-    "summary": "Two tracks. (1) Proclamation 10973's $100,000 payment on H-1B workers entering from abroad is blocked by two federal courts: Massachusetts vacated it on June 8, 2026 (the First Circuit refused to stay that ruling), and on Sep 30, 2026 a California judge vacated the agencies' implementing policies and barred enforcement until DHS does proper notice-and-comment rulemaking. Trump renewed the proclamation through Sep 21, 2027 on Sep 18 while the appeals run. (2) DHS separately proposed a $103,265 fee on every cap-subject H-1B petition, including F-1/OPT change-of-status filings and cap-exempt employers; comments closed Sep 24, 2026, not in effect until a final rule. A companion Sep 18 order tells DOL/DHS/State to weigh an employer's recent or planned layoffs of U.S. workers when adjudicating H-1B petitions.",
+    "summary": "Two tracks. (1) Proclamation 10973's $100,000 payment on H-1B workers entering from abroad is blocked by two federal courts: Massachusetts vacated it on June 8, 2026 (the First Circuit refused to stay that ruling), and on Sep 30, 2026 a California judge vacated the agencies' implementing policies and barred enforcement until DHS does proper notice-and-comment rulemaking; the government appealed that order to the Ninth Circuit on Oct 9. Trump renewed the proclamation through Sep 21, 2027 on Sep 18 while the appeals run. (2) DHS separately proposed a $103,265 fee on every cap-subject H-1B petition, including F-1/OPT change-of-status filings and cap-exempt employers; comments closed Sep 24, 2026, not in effect until a final rule. A companion Sep 18 order tells DOL/DHS/State to weigh an employer's recent or planned layoffs of U.S. workers when adjudicating H-1B petitions.",
     "timeline": [
       {
         "date": "2025-09-19",
@@ -141,15 +172,15 @@
       },
       {
         "date": "2026-06-08",
-        "label": "Judge Sorokin (D. Mass.) vacates the payment requirement as an unconstitutional tax and APA violation",
-        "url": "https://www.klaskolaw.com/august-2026-100000-h-1b-fee-blocked-again/",
-        "note": "Law firm summary"
+        "label": "Judge Sorokin (D. Mass.) grants summary judgment to 20 states and vacates the agencies' implementing policies as APA violations and ultra vires (State of California v. Mullin, No. 1:25-cv-13829)",
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.293201/gov.uscourts.mad.293201.106.0.pdf",
+        "note": "Court opinion (Dkt. 106); judgment Dkt. 107"
       },
       {
         "date": "2026-07-24",
         "label": "First Circuit denies stay pending appeal (California v. Mullin, No. 26-1699); fee stays blocked",
-        "url": "https://www.littler.com/news-analysis/asap/appellate-court-pauses-100000-h-1b-fee-policy-appeal-continues",
-        "note": "Law firm summary"
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.293201/gov.uscourts.mad.293201.117.0.pdf",
+        "note": "Court order (entered Jul 24; Dkt. 117 in the D. Mass. docket)"
       },
       {
         "date": "2026-08-24",
@@ -178,27 +209,33 @@
       },
       {
         "date": "2026-09-30",
-        "label": "Judge Gilliam (N.D. Cal.) vacates the agencies' $100K fee policies and bars enforcement pending proper rulemaking (Global Nurse Force v. Trump, No. 4:25-cv-08454)",
-        "url": "https://www.jurist.org/news/2026/10/second-federal-judge-blocks-president-trumps-100k-h-1b-visa-fee-and-orders-dhs-to-complete-proper-rulemaking/",
-        "note": "News report"
+        "label": "Judge Gilliam (N.D. Cal.) vacates the agencies' $100K fee policies, including for the renewed proclamation (No. 11069), and bars enforcement pending notice-and-comment rulemaking (Global Nurse Force v. Trump, No. 4:25-cv-08454)",
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.130.0.pdf",
+        "note": "Court order (Dkt. 130)"
+      },
+      {
+        "date": "2026-10-09",
+        "label": "Government appeals the N.D. Cal. order to the Ninth Circuit (No. 26-6667) and asks the district court to stay proceedings",
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.132.0.pdf",
+        "note": "Notice of appeal (Dkt. 132); stay motion Dkt. 133"
       }
     ],
-    "summary_zh": "两条线并行。（1）2025 年 9 月总统公告对从海外入境的新 H-1B 收取 10 万美元，目前被两家联邦法院叫停：马萨诸塞州法院 2026 年 6 月 8 日撤销（第一巡回法院拒绝暂缓），加州法院 9 月 30 日又撤销了各机关的执行政策，并禁止在完成正式的通知与评论程序前执行。特朗普 9 月 18 日仍将公告延长至 2027 年 9 月 21 日，等待上诉结果。（2）DHS 另行提议对所有 cap-subject H-1B 申请收取 103,265 美元，包括 F-1/OPT 境内转身份和 cap-exempt 雇主，评论期已于 9 月 24 日结束，最终规则出台前不生效。同日另一行政命令要求 DOL/DHS/国务院审理 H-1B 时考虑雇主近期裁员美国员工的情况。"
+    "summary_zh": "两条线并行。（1）2025 年 9 月总统公告对从海外入境的新 H-1B 收取 10 万美元，目前被两家联邦法院叫停：马萨诸塞州法院 2026 年 6 月 8 日撤销（第一巡回法院拒绝暂缓），加州法院 9 月 30 日又撤销了各机关的执行政策，并禁止在完成正式的通知与评论程序前执行。政府已于 10 月 9 日就加州裁决向第九巡回上诉法院上诉。特朗普 9 月 18 日仍将公告延长至 2027 年 9 月 21 日，等待上诉结果。（2）DHS 另行提议对所有 cap-subject H-1B 申请收取 103,265 美元，包括 F-1/OPT 境内转身份和 cap-exempt 雇主，评论期已于 9 月 24 日结束，最终规则出台前不生效。同日另一行政命令要求 DOL/DHS/国务院审理 H-1B 时考虑雇主近期裁员美国员工的情况。"
   },
   {
     "id": "opt-fee",
-    "title": "$100,000 OPT fee",
+    "title": "$70,000 OPT fee",
     "topics": [
       "OPT",
       "STEM OPT"
     ],
-    "status": "Cleared White House review; not yet published",
-    "status_kind": "pending",
-    "summary": "DHS is drafting a rule that would attach a $100,000 fee to Optional Practical Training. Reported July 2026, sent to the White House (OIRA) for review in August, review completed by Sep 13. Nothing is in effect: the proposed rule still has to be published in the Federal Register for public comment. No official DHS document yet.",
+    "status": "Proposed rule; comments open through Nov 9",
+    "status_kind": "proposed",
+    "summary": "DHS (ICE) published a proposed rule on Oct 8, 2026 that would charge SEVP-certified schools, not students directly, a one-time $70,000 fee the first time a student is recommended for any OPT (pre- or post-completion), and $30,000 before each later OPT recommendation, including STEM OPT. The school must pay before the DSO enters the recommendation in SEVIS, and USCIS would not issue the EAD until it is paid. Refunds are case-by-case, and only before the EAD is issued. The fee would start for recommendations dated 60 days after a final rule is published. Nothing is in effect yet. Comments close Nov 9, 2026 (information-collection comments Dec 7). The earlier $100,000 reports match the rule's combined $70,000 + $30,000 for a student who uses initial OPT and then STEM OPT.",
     "timeline": [
       {
         "date": "2026-07-31",
-        "label": "Reports: administration weighing $100,000 fee on OPT",
+        "label": "Reports: administration weighing a $100,000 fee on OPT",
         "url": "https://americanbazaaronline.com/2026/07/30/trump-100000-opt-fee-international-students-485508/",
         "note": "News report"
       },
@@ -213,9 +250,24 @@
         "label": "OIRA completes review; Federal Register publication expected next",
         "url": "https://americanbazaaronline.com/2026/09/13/us-100k-opt-fee-proposal-white-house-review-indian-students-488044/",
         "note": "News report"
+      },
+      {
+        "date": "2026-10-08",
+        "label": "NPRM 'Optional Practical Training Fees' (91 FR 64566, Docket ICEB-2026-0100): $70,000 initial, $30,000 subsequent, paid by the school; comments through Nov 9, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
       }
     ],
-    "summary_zh": "DHS 正在起草对 OPT 收取 10 万美元费用的规则。2026 年 7 月媒体披露，8 月送白宫 OIRA 审查，9 月 13 日前审查完成。目前没有任何官方 DHS 文件，也没有生效：提案必须先在 Federal Register 公布并经过公众评论。"
+    "summary_zh": "2026 年 10 月 8 日，DHS（ICE）在 Federal Register 公布拟议规则：向 SEVP 认证学校（而非学生本人）收费。学生首次被推荐任何类型的 OPT（毕业前或毕业后）时一次性收 7 万美元，之后每次再被推荐 OPT（包括 STEM OPT）收 3 万美元。学校必须在 DSO 于 SEVIS 中录入推荐之前缴费，缴费前 USCIS 不会发放 EAD；退款仅限 EAD 发放前、逐案决定。费用从最终规则公布 60 天后签发的推荐开始适用。目前尚未生效。公众评论截止 2026 年 11 月 9 日（信息收集部分 12 月 7 日）。此前媒体报道的 10 万美元，对应的是先用初始 OPT 再用 STEM OPT 的合计 7 万 + 3 万。",
+    "links": [
+      {
+        "label": "Comment on regulations.gov (ICEB-2026-0100)",
+        "url": "https://www.regulations.gov/commenton/ICEB-2026-0100-0001"
+      },
+      {
+        "label": "Federal Register notice (91 FR 64566)",
+        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
+      }
+    ]
   },
   {
     "id": "dol-wage-levels",
