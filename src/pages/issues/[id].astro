@@ -1,4 +1,5 @@
 ---
+import Analytics from '../../components/Analytics.astro';
 import issues from '../../../data/issues.json';
 import items from '../../../data/items.json';
 import { feed } from '../../lib/feed.mjs';
@@ -99,6 +100,7 @@ const desc = iss.summary.length > 155 ? iss.summary.slice(0, 152).replace(/\s+\S
       footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; font-family: ui-sans-serif, system-ui, sans-serif; }
       footer a { color: inherit; }
     </style>
+    <Analytics />
   </head>
   <body>
     <div class="wrap">

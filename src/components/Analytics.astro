@@ -1,0 +1,5 @@
+---
+// Cloudflare Web Analytics beacon. No-op until PUBLIC_CF_BEACON_TOKEN is set in .env.
+const token = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
+---
+{token && <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token })}></script>}

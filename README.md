@@ -25,6 +25,7 @@ Regex prefilter runs before AI. AI failure never blocks publish; item goes out w
 ```bash
 npm run dev
 ```
+Analytics: Cloudflare Web Analytics beacon (`src/components/Analytics.astro`). Set `PUBLIC_CF_BEACON_TOKEN=` in `.env` (token from Cloudflare → Web Analytics → Add a site); empty = no script.
 Deploys on push to `main` via `.github/workflows/deploy.yml`. Repo Settings → Pages → Source: GitHub Actions.
 
 ## Tracked issues
