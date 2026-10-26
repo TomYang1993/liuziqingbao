@@ -8,9 +8,13 @@
     "kind": "news",
     "first_seen": "2026-10-26T15:17:40.765Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM"
+    ],
+    "summary": "A proposed rule revising the PERM labor certification process for employment-based green cards has cleared federal (OIRA) review, Fragomen reports, clearing the way for formal publication.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMHJhSWRmalJsRjRoYkFGVHpRS0lvcFFFeXlxOWd2ZzI5S3VnWmtIRXBQcDh2TFYwb3FrNnJXN0lwMEhDT0N0MjJpTUFKbHBpNk9HSjVXTkxpQ0VIS0lpdXlpemJjOElwYlhOTzcyVHdpUVRHVXcwYnBVZzhJaGUtYTlKR1FCck5FTTkwOGV0cTdWbUx6LWVQNFpWSTJhUGJLbXNubXl2QnVoR1pBczExQ01kMA?oc=5"
   },
   {
     "title": "DOL Overhaul of Work-Based Green Card Program Clears White House",
@@ -21,9 +25,12 @@
     "kind": "news",
     "first_seen": "2026-10-26T15:17:40.765Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM"
+    ],
+    "summary": "A Department of Labor rule overhauling the PERM labor certification process for employment-based green cards has cleared White House (OIRA) review, Bloomberg reports, a procedural step that clears the way for the proposed rule to be published.",
+    "ai": true,
+    "doc_type": "proposed rule"
   },
   {
     "title": "DOD Contractor Says Ex-Worker Lacks Evidence For Trial Win",
