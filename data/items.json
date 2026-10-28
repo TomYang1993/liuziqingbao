@@ -7,10 +7,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-10-28T21:10:53.931Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "From the Court to Kitchen: Nigel Hayes-Davis’ Mamba Mentality in Business",
@@ -20,10 +23,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-10-28T21:10:53.931Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump's immigration policy is so harmful to talent that Anthropic mentioned it as a risk factor in its historic IPO",
