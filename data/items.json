@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-10-29T06:00:27.601Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A federal court struck down the Trump administration's $100,000 fee on H-1B visa petitions for highly skilled workers, The Washington Post reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "ICE picks up Dominican criminal suspected of voter fraud",
@@ -19,10 +22,13 @@
     "excerpt": "A citizen of the Dominican Republic and U.S. lawful permanent resident,  Randy Pierre-Louis, was charged with making false statements related to voter registration and visa fraud Oct. 23.",
     "source": "ICE",
     "first_seen": "2026-10-29T06:00:27.813Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "press release"
   },
   {
     "title": "Supreme Court says Trump can continue ballroom work as it weighs case",
@@ -48,10 +54,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-10-29T06:00:27.601Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Lindsay Clancy murder trial ends in mistrial despite dramatic appeal from defense",
@@ -61,10 +70,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-10-29T06:00:27.601Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "From the Court to Kitchen: Nigel Hayes-Davis’ Mamba Mentality in Business",
