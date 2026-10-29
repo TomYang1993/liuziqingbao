@@ -164,10 +164,19 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       @keyframes splat { 0% { transform: scale(0.3); opacity: 1; } 18% { transform: scale(1.1); } 30% { transform: scale(1); } 100% { transform: scale(1) translateY(6px); opacity: 0; } }
       @keyframes bloom { 0% { transform: translate(0, 0) scale(0.6); opacity: 1; } 100% { transform: translate(var(--dx), -70px) scale(1.4) rotate(var(--rot)); opacity: 0; } }
       @media (prefers-reduced-motion: reduce) { .fx { display: none; } }
+
+      /* rubber stamp: red ink, double rule, grain via #ink filter */
+      .stamp { position: absolute; pointer-events: none; display: inline-flex; flex-direction: column; align-items: center; gap: 0.1rem; color: #c21f1a; border: 3px double currentColor; border-radius: 5px; padding: 0.22rem 0.6rem 0.18rem; transform: rotate(-9deg); opacity: 0.92; mix-blend-mode: multiply; filter: url(#ink); text-transform: uppercase; line-height: 1; }
+      .stamp b { font: 900 1rem/1 'Courier New', ui-monospace, monospace; letter-spacing: 0.18em; }
+      .stamp small { font: 700 0.62rem/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.3em; }
+      @media (prefers-color-scheme: dark) { .stamp { color: #ff5a4e; mix-blend-mode: normal; opacity: 0.8; } }
+      .card-stamp { right: 2.5rem; bottom: 0.7rem; padding: 0.22rem 0.55rem 0.18rem; border-width: 3px; }
+      .card-stamp b { font-size: 0.95rem; }
     </style>
     <Analytics />
   </head>
   <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="ink" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="7" result="n" /><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.45" result="m" /><feComposite in="SourceGraphic" in2="m" operator="in" result="t" /><feDisplacementMap in="t" in2="n" scale="1.8" /></filter></svg>
     <div class="wrap">
       <header>
         <h1>北美留子今天还活着</h1>
@@ -198,6 +207,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
               <summary>
                 <h3>{iss.title}</h3>
                 <span class={`status ${iss.status_kind}`}>{iss.status}</span>
+                {iss.stamp && <span class="stamp card-stamp"><b>{iss.stamp}</b></span>}
                 {latest(iss) && <span class="when">{fmt(latest(iss))}</span>}
               </summary>
               <div class="body">

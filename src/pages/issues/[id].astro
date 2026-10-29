@@ -99,14 +99,29 @@ const desc = iss.summary.length > 155 ? iss.summary.slice(0, 152).replace(/\s+\S
       article p { margin: 0; font-size: 0.9rem; color: var(--fg); }
       footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; font-family: ui-sans-serif, system-ui, sans-serif; }
       footer a { color: inherit; }
+
+      /* rubber stamp: red ink, double rule, grain via #ink filter */
+      .stamp { position: absolute; pointer-events: none; display: inline-flex; flex-direction: column; align-items: center; gap: 0.1rem; color: #c21f1a; border: 3px double currentColor; border-radius: 5px; padding: 0.22rem 0.6rem 0.18rem; transform: rotate(-9deg); opacity: 0.92; mix-blend-mode: multiply; filter: url(#ink); text-transform: uppercase; line-height: 1; }
+      .stamp b { font: 900 1rem/1 'Courier New', ui-monospace, monospace; letter-spacing: 0.18em; }
+      .stamp small { font: 700 0.62rem/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.3em; }
+      @media (prefers-color-scheme: dark) { .stamp { color: #ff5a4e; mix-blend-mode: normal; opacity: 0.8; } }
+      .hero { position: relative; padding-right: 14rem; }
+      .hero-stamp { right: 0.4rem; top: 0.1rem; padding: 0.5rem 1rem 0.4rem; border-width: 5px; }
+      .hero-stamp b { font-size: 2rem; }
+      .hero-stamp small { font-size: 0.8rem; }
+      @media (max-width: 560px) { .hero { padding-right: 0; padding-top: 4.2rem; } .hero-stamp { top: 0; right: 0.5rem; } }
     </style>
     <Analytics />
   </head>
   <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="ink" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="7" result="n" /><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.45" result="m" /><feComposite in="SourceGraphic" in2="m" operator="in" result="t" /><feDisplacementMap in="t" in2="n" scale="1.8" /></filter></svg>
     <div class="wrap">
       <div class="crumb"><a href="/" class="brand">北美留子今天还活着</a> &nbsp;/&nbsp; <a href="/#tracking">Tracking</a> &nbsp;/&nbsp; {iss.title}</div>
-      <h1>{iss.title}</h1>
-      <span class="status">{iss.status}</span>
+      <div class="hero">
+        <h1>{iss.title}</h1>
+        <span class="status">{iss.status}</span>
+        {iss.stamp && <span class="stamp hero-stamp"><b>{iss.stamp}</b></span>}
+      </div>
       <div class="meta">
         <span>Updated {fmt(updated)}</span>
         <span class="chips">{iss.topics.map((t) => <span>{t}</span>)}</span>
