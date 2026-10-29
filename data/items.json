@@ -7,11 +7,11 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-10-29T06:00:27.601Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [
       "H-1B"
     ],
-    "summary": "A federal court struck down the Trump administration's $100,000 fee on H-1B visa petitions for highly skilled workers, The Washington Post reports.",
+    "summary": null,
     "ai": true,
     "doc_type": "court"
   },
