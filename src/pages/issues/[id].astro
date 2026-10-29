@@ -105,7 +105,7 @@ const desc = iss.summary.length > 155 ? iss.summary.slice(0, 152).replace(/\s+\S
       .stamp b { font: 900 1rem/1 'Courier New', ui-monospace, monospace; letter-spacing: 0.18em; }
       .stamp small { font: 700 0.62rem/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.3em; }
       @media (prefers-color-scheme: dark) { .stamp { color: #ff5a4e; mix-blend-mode: normal; opacity: 0.8; } }
-      .hero { position: relative; padding-right: 12rem; }
+      .hero { position: relative; padding-right: 14rem; }
       .hero-stamp { right: 0.4rem; top: 0.1rem; padding: 0.5rem 1rem 0.4rem; border-width: 5px; }
       .hero-stamp b { font-size: 2rem; }
       .hero-stamp small { font-size: 0.8rem; }
@@ -120,7 +120,7 @@ const desc = iss.summary.length > 155 ? iss.summary.slice(0, 152).replace(/\s+\S
       <div class="hero">
         <h1>{iss.title}</h1>
         <span class="status">{iss.status}</span>
-        {iss.stamp && <span class="stamp hero-stamp" aria-label={iss.stamp.en}><b>{iss.stamp.en}</b><small>{iss.stamp.zh}</small></span>}
+        {iss.stamp && <span class="stamp hero-stamp"><b>{iss.stamp}</b></span>}
       </div>
       <div class="meta">
         <span>Updated {fmt(updated)}</span>

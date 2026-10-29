@@ -170,8 +170,8 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
       .stamp b { font: 900 1rem/1 'Courier New', ui-monospace, monospace; letter-spacing: 0.18em; }
       .stamp small { font: 700 0.62rem/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.3em; }
       @media (prefers-color-scheme: dark) { .stamp { color: #ff5a4e; mix-blend-mode: normal; opacity: 0.8; } }
-      .card-stamp { right: 2.2rem; top: -0.85rem; padding: 0.28rem 0.7rem 0.22rem; z-index: 2; }
-      .card-stamp b { font-size: 1.2rem; }
+      .card-stamp { right: 2.5rem; bottom: 0.7rem; padding: 0.22rem 0.55rem 0.18rem; border-width: 3px; }
+      .card-stamp b { font-size: 0.95rem; }
     </style>
     <Analytics />
   </head>
@@ -207,7 +207,7 @@ const vid = (s) => { let h = 5381; for (const c of s) h = ((h * 33) ^ c.charCode
               <summary>
                 <h3>{iss.title}</h3>
                 <span class={`status ${iss.status_kind}`}>{iss.status}</span>
-                {iss.stamp && <span class="stamp card-stamp" aria-label={iss.stamp.en}><b>{iss.stamp.en}</b><small>{iss.stamp.zh}</small></span>}
+                {iss.stamp && <span class="stamp card-stamp"><b>{iss.stamp}</b></span>}
                 {latest(iss) && <span class="when">{fmt(latest(iss))}</span>}
               </summary>
               <div class="body">
