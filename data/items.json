@@ -38,10 +38,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-10-30T06:01:29.303Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Supreme Court says Trump can continue ballroom work as it weighs case",
@@ -276,10 +279,13 @@
     "source": "Inside Higher Ed",
     "kind": "news",
     "first_seen": "2026-10-30T06:01:29.303Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "OPT"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Supreme Court Backs Republicans in New Hampshire Voter-ID Clash",
