@@ -7,10 +7,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-10-30T15:07:01.366Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Trump’s $100,000 fee on H-1B visas for highly skilled workers is struck down",
@@ -147,10 +150,13 @@
     "source": "Fortune",
     "kind": "news",
     "first_seen": "2026-10-30T15:07:01.366Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "International students dump Australia as visa uncertainty bites",
