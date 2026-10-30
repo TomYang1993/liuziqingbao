@@ -7,10 +7,13 @@
     "source": "Fortune",
     "kind": "news",
     "first_seen": "2026-10-30T20:53:34.497Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Stay Denied In Federal Suit Challenging H-1B Fee Policy As Agencies Appeal Vacatur",
@@ -21,9 +24,13 @@
     "kind": "news",
     "first_seen": "2026-10-30T20:53:34.497Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A court denied a stay sought in the federal lawsuit challenging the H-1B $100,000 fee policy, while the agencies' appeal of the vacatur continues, Mealey's reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9GZFR0TmQxbHpLcTRkRG1EMDY1dTNodEd4OUJCbWlXMndId1BGUGxjZzF1VjEyVVBFVjZTTUkzWnctamZLeEttSXhFbC10akJUN3VOZ1E4U2JUMmR0SFVPWUNB0gFiQVVfeXFMT0ZkVHROZDFsektxNGREbUQwNjV1M2h0R3g5QkJtaVcyd0h3UEZQbGNnMXVWMTJVUEVWNlNNSTNady1qZkt4S21JeEVsLXRqQlQ3dU5nUThTYlQyZHRIVU9ZQ0E?oc=5"
   },
   {
     "title": "Stay Denied In Federal Suit Challenging H-1B Fee Policy As Agencies Appeal Vacatur",
@@ -34,9 +41,13 @@
     "kind": "news",
     "first_seen": "2026-10-30T20:53:34.497Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A court denied a stay sought in the federal lawsuit challenging the H-1B $100,000 fee policy, while the agencies' appeal of the vacatur continues, Mealey's reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9GZFR0TmQxbHpLcTRkRG1EMDY1dTNodEd4OUJCbWlXMndId1BGUGxjZzF1VjEyVVBFVjZTTUkzWnctamZLeEttSXhFbC10akJUN3VOZ1E4U2JUMmR0SFVPWUNB0gFiQVVfeXFMT0ZkVHROZDFsektxNGREbUQwNjV1M2h0R3g5QkJtaVcyd0h3UEZQbGNnMXVWMTJVUEVWNlNNSTNady1qZkt4S21JeEVsLXRqQlQ3dU5nUThTYlQyZHRIVU9ZQ0E?oc=5"
   },
   {
     "title": "Stay Denied In Federal Suit Challenging H-1B Fee Policy As Agencies Appeal Vacatur",
@@ -47,9 +58,12 @@
     "kind": "news",
     "first_seen": "2026-10-30T20:53:34.497Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "A court denied a stay sought in the federal lawsuit challenging the H-1B $100,000 fee policy, while the agencies' appeal of the vacatur continues, Mealey's reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Green Card Update: Judge Freezes Reopening of Diversity Visa Lottery",
