@@ -7,10 +7,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-31T05:56:59.455Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Microsoft’s 60,000-person buyout offer hints at a future with fewer workers and more equipment",
@@ -102,10 +105,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-10-31T05:56:59.456Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump’s $100,000 fee on H-1B visas for highly skilled workers is struck down",
@@ -146,10 +152,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-10-31T05:56:59.456Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Mangione admits to shooting insurance CEO, pleads guilty to federal charges",
