@@ -7,10 +7,13 @@
     "source": "Law360",
     "kind": "news",
     "first_seen": "2026-11-01T06:25:09.712Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "States Say Trump Can't Limit Funding Freeze Injunction",
@@ -181,10 +184,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-11-01T06:25:09.712Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Alaska voters weigh key issues in closely contested Senate race",
