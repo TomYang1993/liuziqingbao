@@ -137,10 +137,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-10-31T23:28:41.835Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "ICE picks up Dominican criminal suspected of voter fraud",
