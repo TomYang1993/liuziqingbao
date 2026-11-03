@@ -1,5 +1,17 @@
 [
   {
+    "title": "ICE requests transfer of criminal illegal aliens, California jail chooses lockdown instead",
+    "url": "https://www.ice.gov/news/releases/ice-requests-transfer-criminal-illegal-aliens-california-jail-chooses-lockdown",
+    "published": "2026-11-03T14:17:59.000Z",
+    "excerpt": "On Oct. 27, six ICE agents arrived at the Monterey County Jail in Salinas requesting custody transfer of three suspected criminal illegal aliens. What should have been a simple, routine operation quickly went sideways.",
+    "source": "ICE",
+    "first_seen": "2026-11-03T19:37:33.763Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
+  },
+  {
     "title": "US visa revocations cross 300,000; H-1B approvals hit 97%",
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUExrYzZCS0J0OUhSTVpCV2NJckVqSWZjZlJXWTk2NW4yd1o0c25pVF8tbGg4VUtzejlaTi1YeUFXSk1tTjJ3YXBfYWNONF9GNV9hV3lPREdQbFVIb3JQZGZZTTZYMHhtYlpFT2prT2pmT0RPSzFGN21IMkhmOTBkdmtSaUVhWVJwdjJOWjZXLTNHQUlXVFhSQU9B?oc=5",
     "published": "2026-11-03T00:32:37.000Z",
@@ -466,6 +478,19 @@
     "summary": null,
     "ai": true,
     "doc_type": "other"
+  },
+  {
+    "title": "Trump faces stiff bipartisan pushback to Russian diesel import deal",
+    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOYndVOTF6X21oTHVLajZNUHhzRjNrTmRGbHpMdy1UTm1XQWgwczBvZzBQWVo5a3VUa3FGMjRNWm96UGNjTFFFRG1SclhYM3Zta3YxTFB4MzREbl85VHY0YnBXTzBLYjBWa1VXTmlxTnJLZTVvR0xjUG5Na0gxVDRDWGpHeW1WVTFLU2RuOTl0YkJFSEVMTlBnQTl5Wnhzc0lBLWk3V21RclBDV2NBaTRmSzdDeXZLRi1DcmZMM1hTZ0ZCRE83LVBKVkhmbTRXajM4V0xmWktmZXRGUTliRFp1YjRGYXluNDNxTWY3RmQ3dDhCVUlaYl96Qy1xSFEtdw?oc=5",
+    "published": "2026-10-27T19:34:00.000Z",
+    "excerpt": "",
+    "source": "Washington Post",
+    "kind": "news",
+    "first_seen": "2026-11-03T19:37:33.674Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
   },
   {
     "title": "Microsoft’s 60,000-Worker Buyout Adds to H-1B Visa Uncertainty",
