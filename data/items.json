@@ -7,10 +7,13 @@
     "source": "American Bazaar",
     "kind": "news",
     "first_seen": "2026-11-03T12:04:56.933Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Census Changes Will Undercount Colleges, Higher Ed Groups Say",
@@ -20,10 +23,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-03T12:04:56.933Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "U.S. judge dismisses Trump administration's Harvard admissions probe case",
@@ -33,10 +39,13 @@
     "source": "CNBC",
     "kind": "news",
     "first_seen": "2026-11-03T12:04:56.933Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "US judge dismisses Trump administration's Harvard admissions probe case",
@@ -368,10 +377,15 @@
     "source": "Presidents' Alliance",
     "kind": "news",
     "first_seen": "2026-11-03T12:04:56.933Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "F-1",
+      "OPT",
+      "CPT"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "From the Court to Kitchen: Nigel Hayes-Davis’ Mamba Mentality in Business",
