@@ -6,10 +6,13 @@
     "excerpt": "BY THE PRESIDENT OF THE UNITED STATES OF AMERICA A PROCLAMATION It is America’s destiny to explore and expand our frontiers beyond Earth to the farthest depths of space.  Today, my Administration reaffirms that our solar system and all of outer space beyond Earth are the province of all humans, and that our Nation will lead […]\nThe post THE AMERICAN DECLARATION OF FREEDOM IN SPACE appeared first on The White House.",
     "source": "White House",
     "first_seen": "2026-11-04T00:41:25.584Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "executive action"
   },
   {
     "title": "ICE requests transfer of criminal illegal aliens, California jail chooses lockdown instead",
@@ -18,10 +21,13 @@
     "excerpt": "On Oct. 27, six ICE agents arrived at the Monterey County Jail in Salinas requesting custody transfer of three suspected criminal illegal aliens. What should have been a simple, routine operation quickly went sideways.",
     "source": "ICE",
     "first_seen": "2026-11-03T19:37:33.763Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "press release"
   },
   {
     "title": "California Requires Mid-Project Prevailing Wage Increases on Public Works Contracts of $35 Million or More",
@@ -31,10 +37,13 @@
     "source": "Littler",
     "kind": "news",
     "first_seen": "2026-11-04T00:41:30.181Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "US visa revocations cross 300,000; H-1B approvals hit 97%",
@@ -414,10 +423,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-11-04T00:41:30.181Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Ongoing Challenges to Experiential Learning for International Students",
@@ -525,10 +537,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-11-03T19:37:33.674Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Microsoft’s 60,000-Worker Buyout Adds to H-1B Visa Uncertainty",
