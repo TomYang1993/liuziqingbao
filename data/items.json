@@ -1,11 +1,36 @@
 [
   {
+    "title": "THE AMERICAN DECLARATION OF FREEDOM IN SPACE",
+    "url": "https://www.whitehouse.gov/presidential-actions/2026/11/the-american-declaration-of-freedom-in-space/",
+    "published": "2026-11-03T21:50:59.000Z",
+    "excerpt": "BY THE PRESIDENT OF THE UNITED STATES OF AMERICA A PROCLAMATION It is America’s destiny to explore and expand our frontiers beyond Earth to the farthest depths of space.  Today, my Administration reaffirms that our solar system and all of outer space beyond Earth are the province of all humans, and that our Nation will lead […]\nThe post THE AMERICAN DECLARATION OF FREEDOM IN SPACE appeared first on The White House.",
+    "source": "White House",
+    "first_seen": "2026-11-04T00:41:25.584Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
+  },
+  {
     "title": "ICE requests transfer of criminal illegal aliens, California jail chooses lockdown instead",
     "url": "https://www.ice.gov/news/releases/ice-requests-transfer-criminal-illegal-aliens-california-jail-chooses-lockdown",
     "published": "2026-11-03T14:17:59.000Z",
     "excerpt": "On Oct. 27, six ICE agents arrived at the Monterey County Jail in Salinas requesting custody transfer of three suspected criminal illegal aliens. What should have been a simple, routine operation quickly went sideways.",
     "source": "ICE",
     "first_seen": "2026-11-03T19:37:33.763Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
+  },
+  {
+    "title": "California Requires Mid-Project Prevailing Wage Increases on Public Works Contracts of $35 Million or More",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWklnRnR5cE1ZWXgtdXcyMUxwVm10WDVvUmNua194ZGEzczduMmN2TThoSlFpRmR4dDcxeU9aZHV0UEpkMTZaUVBTQjcwRDgwclZjdDgzbmI0ZUNRT1lkSXI1VmJQM0F5MmI1dGhGUkpfaDcwbjFVVFNZVWxQb2hBSzNPR0E0Q2ZwTzBILWxxVU9JTk01QUpEVDd0eVhMMHFZcXAtYkpYM2NxbXpGQ2wtejVNYnJmTTVkNDU1X2x3X0Y?oc=5",
+    "published": "2026-11-03T12:00:00.000Z",
+    "excerpt": "",
+    "source": "Littler",
+    "kind": "news",
+    "first_seen": "2026-11-04T00:41:30.181Z",
     "relevant": true,
     "topics": [],
     "summary": null,
@@ -380,6 +405,19 @@
     "summary": null,
     "ai": true,
     "doc_type": "other"
+  },
+  {
+    "title": "Trump promises $5,000 payouts if GOP wins midterms",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPLVk2dnJzVFI3ZGZVUmozTnNzeFVTSDFZdVA4Rjc4M1B3QnlHd2NPNHQxMnMtajNyNVR4VWgwNklKNmN6RGVvSzlqSmtCUG5MSXcxeUU0bTFYWEhnUVJ3MUo2WXFoYXV5dFFNbVNQWlUwRDl2SGZ5UzZjRlJNVWRwV1dBdDBySXR3MUNhMUpTWmVUNVg4Sjk1LTljc2kwRTFoaXZqTHR3ZzlLQmIwTnBXX1lSbzB2TE9jem93OWRoYzk2X19DdE1TeGFPMjAwMUdKSHZrTUxyQy0wdU03TnFqdXFmdHc?oc=5",
+    "published": "2026-10-28T16:13:00.000Z",
+    "excerpt": "",
+    "source": "Washington Post",
+    "kind": "news",
+    "first_seen": "2026-11-04T00:41:30.181Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
   },
   {
     "title": "Ongoing Challenges to Experiential Learning for International Students",
