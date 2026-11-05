@@ -133,10 +133,13 @@
     "source": "New York Times",
     "kind": "news",
     "first_seen": "2026-11-05T00:57:02.875Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "New Executive Order and PERM Suspensions Tie H-1B and Green Card Sponsorship to Layoff History: What Employers Should Know",
