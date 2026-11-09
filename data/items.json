@@ -7,10 +7,11 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-09T18:55:52.130Z",
-    "relevant": true,
+    "relevant": false,
     "topics": [],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "United States: DOL Final Rule on Prevailing Wages Now Under OMB Review",
@@ -21,9 +22,13 @@
     "kind": "news",
     "first_seen": "2026-11-09T18:55:52.130Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "H-1B"
+    ],
+    "summary": "The U.S. Department of Labor's final rule on prevailing wage methodology, which sets wage requirements used in PERM labor certifications and H-1B filings, has entered Office of Management and Budget review, Fragomen reports.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Is Your Company Ready for Greater PERM Scrutiny? DOL Proposal Clears Initial Review",
