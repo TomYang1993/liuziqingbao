@@ -7,10 +7,14 @@
     "source": "Presidents' Alliance",
     "kind": "news",
     "first_seen": "2026-11-10T02:47:45.400Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "OPT",
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Farm Union Gets Partial Win in DOL Prevailing Wage Challenge",
@@ -51,10 +55,13 @@
     "source": "Fragomen",
     "kind": "news",
     "first_seen": "2026-11-10T02:47:45.400Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Is Your Company Ready for Greater PERM Scrutiny? DOL Proposal Clears Initial Review",
