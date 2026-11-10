@@ -7,10 +7,13 @@
     "source": "Association of American Universities",
     "kind": "news",
     "first_seen": "2026-11-10T12:47:06.838Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "OPT"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Presidents’ Alliance Submits Comments on DHS’s OPT Fee Proposed Rule",
