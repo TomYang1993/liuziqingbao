@@ -8,9 +8,13 @@
     "kind": "news",
     "first_seen": "2026-11-11T16:19:37.734Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Department of Labor is reportedly advancing a proposed rule to overhaul PERM labor certification requirements for 2027, Boundless reports.",
+    "ai": true,
+    "doc_type": "proposed rule"
   },
   {
     "title": "Colleges Say OPT Fee Would Cost Tens of Millions",
@@ -20,10 +24,13 @@
     "source": "Inside Higher Ed",
     "kind": "news",
     "first_seen": "2026-11-11T16:19:37.734Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "OPT"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "‘I don’t like the prospect of losing’: Supreme Court visa fine argument leaves DOJ worried",
