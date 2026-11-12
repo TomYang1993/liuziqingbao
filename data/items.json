@@ -56,10 +56,13 @@
     "source": "Fortune",
     "kind": "news",
     "first_seen": "2026-11-12T07:25:10.707Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "IBM to end visa, green card sponsorship for most roles in its Consulting arm",
