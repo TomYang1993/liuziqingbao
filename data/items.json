@@ -203,10 +203,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-11-12T16:53:53.230Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "What the 2026 Midterm Election Results Mean for U.S. Business Immigration and Employers",
