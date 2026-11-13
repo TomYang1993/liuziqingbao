@@ -7,10 +7,13 @@
     "source": "The PIE",
     "kind": "news",
     "first_seen": "2026-11-13T19:54:42.589Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Paxton Ends Chinese Visa Fraud Case With a Childcare Center Pact",
