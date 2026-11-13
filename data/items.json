@@ -7,10 +7,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-13T01:12:13.431Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Brown University suspends CPT for international undergraduates",
@@ -21,9 +24,13 @@
     "kind": "news",
     "first_seen": "2026-11-13T01:12:13.431Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
+    "summary": "Brown University suspended Curricular Practical Training (CPT) authorization for international undergraduate students, American Bazaar reports.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump Praises Hegseth at Veterans Day Event After House Blocks Impeachment",
@@ -198,10 +205,13 @@
     "source": "Ogletree",
     "kind": "news",
     "first_seen": "2026-11-13T01:12:13.431Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Farm Union Gets Partial Win in DOL Prevailing Wage Challenge",
