@@ -8,9 +8,12 @@
     "kind": "news",
     "first_seen": "2026-11-14T11:36:59.522Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "H-1B"
+    ],
+    "summary": "The Trump administration is questioning Microsoft's H-1B visa applications following a major Azure outage, Newsweek reports, as part of continued federal scrutiny of the company's foreign-worker filings.",
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "ICE issues immigration detainer against illegal alien who killed beloved college hockey player in Connecticut",
