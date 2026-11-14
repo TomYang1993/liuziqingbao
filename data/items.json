@@ -6,10 +6,13 @@
     "excerpt": "A 21-year-old college hockey player with dreams of becoming a police officer was killed in a head-on collision with a wrong-way driver who had been removed from the U.S. and unlawfully reentered multiple times.",
     "source": "ICE",
     "first_seen": "2026-11-14T00:55:35.842Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "press release"
   },
   {
     "title": "5 bizarre reasons international students have been refused visas",
