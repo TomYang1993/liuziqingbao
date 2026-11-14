@@ -87,10 +87,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-11-14T18:17:32.563Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump Praises Hegseth at Veterans Day Event After House Blocks Impeachment",
