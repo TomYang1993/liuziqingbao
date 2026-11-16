@@ -8,9 +8,13 @@
     "kind": "news",
     "first_seen": "2026-11-16T18:40:49.667Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "A federal judge in Boston blocked the Trump administration's rule limiting how long international students on F-1 visas may stay in the US, Bloomberg reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcXZnb0stalhRdy1JbmRIZkpBNmhhYU5aN0M4VDNVRnBpVTVnU19QdGFYeHNqRWRISHozQ1lCbEFZbmc4RUV2UVhERmlYUmJpSGhGQzZhLXhKNFhsc2ZJZ2dDVWxXR19wZDg2Q2E5SnBjVTZMOVVVRHg1X3pVVHI0ZHNsUmQzVzQ0Smd1RHdQMjNsZkt6OWNTNkZpbXpFRGgxOUxiN3FJYm1WYkNaQ2RQbg?oc=5"
   },
   {
     "title": "DHS Restrictions on F-1 Foreign Students’ Stay in US Overturned",
@@ -21,9 +25,12 @@
     "kind": "news",
     "first_seen": "2026-11-16T18:40:49.667Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "A federal judge blocked and overturned DHS restrictions limiting how long F-1 international students may remain in the US, Bloomberg reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Green Card Update: Labor Department Proposes Sweeping PERM Changes",
@@ -34,9 +41,12 @@
     "kind": "news",
     "first_seen": "2026-11-16T18:40:49.667Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM"
+    ],
+    "summary": "The Labor Department has proposed sweeping changes to the PERM labor certification process used for employment-based green card applications, Newsweek reports.",
+    "ai": true,
+    "doc_type": "proposed rule"
   },
   {
     "title": "International student enrollment drops sharply, putting more U.S. colleges in financial jeopardy",
@@ -46,10 +56,13 @@
     "source": "CNBC",
     "kind": "news",
     "first_seen": "2026-11-16T18:40:49.667Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "In Mass., international student population dipped 4% in 2025-26",
@@ -237,9 +250,13 @@
     "kind": "news",
     "first_seen": "2026-11-16T18:40:49.667Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM"
+    ],
+    "summary": "DOL advanced its proposed overhaul of PERM labor certification rules for 2027, Boundless reports.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTQURUN0ZCcjl0QW82ZUVNbndkX21vcFBqd09PSXR4OG5MZ25BUFg2Vm9GNnZESzBUbGVOUVM2QzZWb25rVWZ6TGFVMjBiazZTRnFud1FMTVVNQXZmUGZSYkJISW8ySjVGOWlTSGdOWkROWVpHQ0E?oc=5"
   },
   {
     "title": "IBM ends H-1B and green card sponsorship for most roles in IBM Consulting",
