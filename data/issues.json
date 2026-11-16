@@ -6,9 +6,9 @@
       "CPT",
       "F-1"
     ],
-    "status": "SEVP guidance in effect; challenged in court",
+    "status": "SEVP guidance in effect; court ruling on a pause pending",
     "status_kind": "effective",
-    "summary": "Two SEVP broadcast messages (Aug 12 and Aug 24, 2026) tell DSOs that CPT may be authorized only when the training is an integral, required part of the established curriculum, required of all students in the program regardless of immigration status, and needed to complete the degree. Course credit alone is not enough. Not a new regulation, but SEVP may request documentation. Hits day-1 CPT programs and optional internships. On Oct 5, 2026, higher-education groups sued DHS in federal court in Massachusetts, arguing the guidance is an unexplained reversal of past policy that violates the Administrative Procedure Act. The guidance stays in effect unless a court blocks it. The separate Sep 14 injunction against the duration-of-status rule does not cover CPT.",
+    "summary": "Two SEVP broadcast messages (Aug 12 and Aug 24, 2026) tell DSOs that CPT may be authorized only when the training is an integral, required part of the established curriculum, required of all students in the program regardless of immigration status, and needed to complete the degree. Course credit alone is not enough. Not a new regulation, but SEVP may request documentation. Hits day-1 CPT programs and optional internships. On Oct 5, 2026, higher-education groups sued DHS in federal court in Massachusetts, arguing the guidance is an unexplained reversal of past policy that violates the Administrative Procedure Act. Judge Julia Kobick heard the request to pause the guidance on Nov 6 and has not ruled yet; until she does, the guidance stays in effect. Schools are already narrowing CPT: Brown suspended it for international undergraduates in November. The separate Sep 14 injunction against the duration-of-status rule does not cover CPT.",
     "timeline": [
       {
         "date": "2026-08-12",
@@ -30,6 +30,18 @@
         "label": "Higher-education groups (AAU, Presidents' Alliance, AICUM, NAFSA) sue DHS and ICE in D. Mass., claiming the CPT guidance violates the APA (Association of American Universities v. DHS, No. 1:26-cv-14520)",
         "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.307243/gov.uscourts.mad.307243.1.0_2.pdf",
         "note": "Complaint (Dkt. 1)"
+      },
+      {
+        "date": "2026-11-06",
+        "label": "Hearing on the motion to pause the two SEVP broadcasts (Judge Kobick); taken under advisement",
+        "url": "https://immigration-analytics.com/2026/11/09/cpt-lawsuit-hearing-under-advisement/",
+        "note": "News report"
+      },
+      {
+        "date": "2026-11-12",
+        "label": "Brown University suspends CPT for international undergraduates",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdnotVWV1RkVVbExOT1pnS2JMS3diYlhxd2NfRmNKNk1EN2VsNUlqWEdKY3NMUFZPQ2tPdnpMN1gyaHVYVEFlSDl0ckJmOVVJbC03VG1TY2d5SVRkVHZfdUhrS200MWRFOTVXZzdVN1BCeXFKbGRZUWxnYXV2VU84YjJDeklBT2Z6aW02SHFkdTdJQlJqal9taHhoQjQtTVNpZzNsRmd4MjFUVDRyaXhNWVFB?oc=5",
+        "note": "News report"
       }
     ],
     "links": [
@@ -38,7 +50,7 @@
         "url": "https://cptmap.com/"
       }
     ],
-    "summary_zh": "SEVP 在 2026 年 8 月 12 日和 24 日连发两条 broadcast message，要求 DSO 只在实习是课程体系中「必修、不可或缺」的一部分、且对该专业所有学生（不分身份）都强制要求、并且是毕业必要条件时，才能批 CPT。仅仅给学分不算。这不是新法规，但 SEVP 可能要学校出示课程依据。Day-1 CPT 项目和选修性质的实习首当其冲。2026 年 10 月 5 日，高校团体在马萨诸塞州联邦法院起诉 DHS，认为该指引在未作解释的情况下突然推翻以往政策，违反《行政程序法》。法院叫停之前指引继续有效；9 月 14 日针对 D/S 规则的禁令不涵盖 CPT。"
+    "summary_zh": "SEVP 在 2026 年 8 月 12 日和 24 日连发两条 broadcast message，要求 DSO 只在实习是课程体系中「必修、不可或缺」的一部分、且对该专业所有学生（不分身份）都强制要求、并且是毕业必要条件时，才能批 CPT。仅仅给学分不算。这不是新法规，但 SEVP 可能要学校出示课程依据。Day-1 CPT 项目和选修性质的实习首当其冲。2026 年 10 月 5 日，高校团体在马萨诸塞州联邦法院起诉 DHS，认为该指引在未作解释的情况下突然推翻以往政策，违反《行政程序法》。法官 Julia Kobick 11 月 6 日就暂停指引的请求开庭，尚未裁决；裁决前指引继续有效。学校已在收紧 CPT，布朗大学 11 月暂停了国际本科生的 CPT。9 月 14 日针对 D/S 规则的禁令不涵盖 CPT。"
   },
   {
     "id": "f1-ds",
@@ -48,9 +60,9 @@
       "OPT",
       "CPT"
     ],
-    "status": "Blocked by court; government appealing",
+    "status": "Struck down by court (Nov 16); appeals pending",
     "status_kind": "blocked",
-    "summary": "DHS final rule replaces open-ended 'duration of status' for F/J/I visa holders with a fixed admission period and an extension-of-stay process. On Sep 14, 2026, a federal judge in Massachusetts postponed the rule's effective date under the APA and enjoined DHS from implementing it, one day before the rule's effective date. The government appealed to the First Circuit on Sep 30 and wants it expedited; the rule stays blocked and D/S stays in place while the appeal runs.",
+    "summary": "DHS final rule replaces open-ended 'duration of status' for F/J/I visa holders with a fixed admission period of up to four years and an extension-of-stay process. A federal judge in Massachusetts first blocked it on Sep 14, 2026, one day before it was to take effect, and on Nov 16, 2026 vacated the rule entirely, finding it arbitrary and capricious and in conflict with the F-1 statute. The rule never took effect; D/S stays in place. The government's appeal of the September order is pending at the First Circuit, and an appeal of the final ruling is expected.",
     "timeline": [
       {
         "date": "2025-08-28",
@@ -89,10 +101,16 @@
         "label": "Government appeals the injunction to the First Circuit; seeks expedited review",
         "url": "https://storage.courtlistener.com/recap/gov.uscourts.mad.305059/gov.uscourts.mad.305059.53.0.pdf",
         "note": "Notice of appeal (Dkt. 53)"
+      },
+      {
+        "date": "2026-11-16",
+        "label": "Judge Saylor grants summary judgment and vacates the rule: arbitrary and capricious, conflicts with the F-1 statute",
+        "url": "https://news.bloomberglaw.com/daily-labor-report/dhs-restrictions-on-f-1-foreign-students-stay-in-us-overturned",
+        "note": "News report; opinion not yet linked"
       }
     ],
-    "summary_zh": "DHS 最终规则把 F/J/I 签证的「duration of status」改成固定停留期，到期需申请延期。2026 年 9 月 14 日，马萨诸塞州联邦法院在生效前一天依据《行政程序法》第 705 条推迟规则生效并禁止 DHS 实施，规则被叫停。政府已于 9 月 30 日向第一巡回上诉法院上诉并要求加速审理；上诉期间规则仍被冻结，D/S 维持原样。",
-    "stamp": "Blocked"
+    "summary_zh": "DHS 最终规则把 F/J/I 签证的「duration of status」改成最长四年的固定停留期，到期需申请延期。马萨诸塞州联邦法院先于 2026 年 9 月 14 日（生效前一天）叫停规则，11 月 16 日又在实体判决中彻底撤销该规则，认定其武断任意、且与 F-1 法条冲突。规则从未生效，D/S 维持原样。政府针对 9 月裁定的上诉仍在第一巡回法院审理，预计还会对最终判决上诉。",
+    "stamp": "Struck down"
   },
   {
     "id": "grace-period",
@@ -102,9 +120,9 @@
       "H-4",
       "Other"
     ],
-    "status": "Proposed rule, comments open through Nov 10",
+    "status": "Proposed rule; comments closed Nov 10, final rule pending",
     "status_kind": "proposed",
-    "summary": "DHS proposes to delete 8 CFR 214.1(l)(2), the up-to-60-day grace period after job loss for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 and TN workers and their dependents (H-4, L-2, O-3, E, TD). If finalized, status ends the day employment ends unless another basis to stay exists. The 10-day grace periods before and after the petition validity window (214.1(l)(1)) are not touched. Still in effect until a final rule takes effect.",
+    "summary": "DHS proposes to delete 8 CFR 214.1(l)(2), the up-to-60-day grace period after job loss for E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1 and TN workers and their dependents (H-4, L-2, O-3, E, TD). If finalized, status ends the day employment ends unless another basis to stay exists. The 10-day grace periods before and after the petition validity window (214.1(l)(1)) are not touched. Comments closed Nov 10, 2026; the 60-day grace period stays in effect until a final rule takes effect.",
     "timeline": [
       {
         "date": "2016-11-18",
@@ -121,9 +139,14 @@
         "label": "Coverage: applies to H-1B, L-1, O-1, E, TN and dependents, not H-1B only",
         "url": "https://www.rnlawgroup.com/dhs-proposes-to-eliminate-the-60-day-grace-period-for-h-1b-l-1-o-1-e-and-tn-workers/",
         "note": "Law firm summary"
+      },
+      {
+        "date": "2026-11-10",
+        "label": "Comment period closed",
+        "url": "https://www.regulations.gov/docket/USCIS-2026-0364"
       }
     ],
-    "summary_zh": "DHS 提议删除 8 CFR 214.1(l)(2)，即失业后最长 60 天的 grace period，涉及 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属（H-4、L-2、O-3 等）。若最终生效，失业当天身份即终止，除非有其他合法身份依据；签证有效期前后的 10 天 grace period 不受影响。目前仍是提案，评论期至 2026 年 11 月 10 日，规则尚未生效。"
+    "summary_zh": "DHS 提议删除 8 CFR 214.1(l)(2)，即失业后最长 60 天的 grace period，涉及 E-1、E-2、E-3、H-1B、H-1B1、L-1、O-1、TN 及其家属（H-4、L-2、O-3 等）。若最终生效，失业当天身份即终止，除非有其他合法身份依据；签证有效期前后的 10 天 grace period 不受影响。评论期已于 2026 年 11 月 10 日结束，最终规则生效前 60 天 grace period 仍然有效。"
   },
   {
     "id": "ead-auto-extension",
@@ -164,7 +187,7 @@
     ],
     "status": "Blocked by two courts, both appealed; renewed to Sep 2027; new fee rule proposed",
     "status_kind": "proposed",
-    "summary": "Two tracks. (1) Proclamation 10973's $100,000 payment on H-1B workers entering from abroad is blocked by two federal courts: Massachusetts vacated it on June 8, 2026 (the First Circuit refused to stay that ruling), and on Sep 30, 2026 a California judge vacated the agencies' implementing policies and barred enforcement until DHS does proper notice-and-comment rulemaking; the government appealed that order to the Ninth Circuit on Oct 9. Trump renewed the proclamation through Sep 21, 2027 on Sep 18 while the appeals run. (2) DHS separately proposed a $103,265 fee on every cap-subject H-1B petition, including F-1/OPT change-of-status filings and cap-exempt employers; comments closed Sep 24, 2026, not in effect until a final rule. A companion Sep 18 order tells DOL/DHS/State to weigh an employer's recent or planned layoffs of U.S. workers when adjudicating H-1B petitions.",
+    "summary": "Two tracks. (1) Proclamation 10973's $100,000 payment on H-1B workers entering from abroad is blocked by two federal courts: Massachusetts vacated it on June 8, 2026 (the First Circuit refused to stay that ruling), and on Sep 30, 2026 a California judge vacated the agencies' implementing policies and barred enforcement until DHS does proper notice-and-comment rulemaking; the government appealed that order to the Ninth Circuit on Oct 9, and the judge refused to pause it during the appeal. Trump renewed the proclamation through Sep 21, 2027 on Sep 18 while the appeals run. (2) DHS separately proposed a $103,265 fee on every cap-subject H-1B petition, including F-1/OPT change-of-status filings and cap-exempt employers; comments closed Sep 24, 2026, not in effect until a final rule. A companion Sep 18 order tells DOL/DHS/State to weigh an employer's recent or planned layoffs of U.S. workers when adjudicating H-1B petitions.",
     "timeline": [
       {
         "date": "2025-09-19",
@@ -219,9 +242,15 @@
         "label": "Government appeals the N.D. Cal. order to the Ninth Circuit (No. 26-6667) and asks the district court to stay proceedings",
         "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.457426/gov.uscourts.cand.457426.132.0.pdf",
         "note": "Notice of appeal (Dkt. 132); stay motion Dkt. 133"
+      },
+      {
+        "date": "2026-10-30",
+        "label": "N.D. Cal. denies the government's request to pause its order while the appeal runs",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQbmZYMmdaaV9uWTJ0V3l5bENNV2pZRi1SSUNWdU14bkxTX2U5Yk03c2puYmYwRVBnZGRmaG5yNHkzN29qVEdTUzZfTC1QUjZ1amp3ZlVBV1NQWU9qOUlNQjItYlZESVAwdmwxbnJHNDRfTzUtNm1DdHJYOHItRHlELUc0RHRPaUo2OUxhMGFGdndVa1pMUVJtM1o5b1ZkZHZWaXVkZU1JbjBodmFfbnA1UURrazE2SXB4OWpwYVNQZ09FRnVGQWE4NnB3WkczNVYyLW12ZGdZTnAwcFU0RHVZQkh6c0nSAWJBVV95cUxPRmRUdE5kMWx6S3E0ZERtRDA2NXUzaHRHeDlCQm1pVzJ3SHdQRlBsY2cxdVYxMlVQRVY2U01JM1p3LWpmS3hLbUl4RWwtdGpCVDd1TmdROFNiVDJkdEhVT1lDQQ?oc=5",
+        "note": "News report"
       }
     ],
-    "summary_zh": "两条线并行。（1）2025 年 9 月总统公告对从海外入境的新 H-1B 收取 10 万美元，目前被两家联邦法院叫停：马萨诸塞州法院 2026 年 6 月 8 日撤销（第一巡回法院拒绝暂缓），加州法院 9 月 30 日又撤销了各机关的执行政策，并禁止在完成正式的通知与评论程序前执行。政府已于 10 月 9 日就加州裁决向第九巡回上诉法院上诉。特朗普 9 月 18 日仍将公告延长至 2027 年 9 月 21 日，等待上诉结果。（2）DHS 另行提议对所有 cap-subject H-1B 申请收取 103,265 美元，包括 F-1/OPT 境内转身份和 cap-exempt 雇主，评论期已于 9 月 24 日结束，最终规则出台前不生效。同日另一行政命令要求 DOL/DHS/国务院审理 H-1B 时考虑雇主近期裁员美国员工的情况。",
+    "summary_zh": "两条线并行。（1）2025 年 9 月总统公告对从海外入境的新 H-1B 收取 10 万美元，目前被两家联邦法院叫停：马萨诸塞州法院 2026 年 6 月 8 日撤销（第一巡回法院拒绝暂缓），加州法院 9 月 30 日又撤销了各机关的执行政策，并禁止在完成正式的通知与评论程序前执行。政府已于 10 月 9 日就加州裁决向第九巡回上诉法院上诉，法官拒绝在上诉期间暂停该裁决。特朗普 9 月 18 日仍将公告延长至 2027 年 9 月 21 日，等待上诉结果。（2）DHS 另行提议对所有 cap-subject H-1B 申请收取 103,265 美元，包括 F-1/OPT 境内转身份和 cap-exempt 雇主，评论期已于 9 月 24 日结束，最终规则出台前不生效。同日另一行政命令要求 DOL/DHS/国务院审理 H-1B 时考虑雇主近期裁员美国员工的情况。",
     "stamp": "Blocked"
   },
   {
@@ -231,9 +260,9 @@
       "OPT",
       "STEM OPT"
     ],
-    "status": "Proposed rule; comments open through Nov 9",
+    "status": "Proposed rule; comments closed Nov 9, final rule pending",
     "status_kind": "proposed",
-    "summary": "DHS (ICE) published a proposed rule on Oct 8, 2026 that would charge SEVP-certified schools, not students directly, a one-time $70,000 fee the first time a student is recommended for any OPT (pre- or post-completion), and $30,000 before each later OPT recommendation, including STEM OPT. The school must pay before the DSO enters the recommendation in SEVIS, and USCIS would not issue the EAD until it is paid. Refunds are case-by-case, and only before the EAD is issued. The fee would start for recommendations dated 60 days after a final rule is published. Nothing is in effect yet. Comments close Nov 9, 2026 (information-collection comments Dec 7). The earlier $100,000 reports match the rule's combined $70,000 + $30,000 for a student who uses initial OPT and then STEM OPT.",
+    "summary": "DHS (ICE) published a proposed rule on Oct 8, 2026 that would charge SEVP-certified schools, not students directly, a one-time $70,000 fee the first time a student is recommended for any OPT (pre- or post-completion), and $30,000 before each later OPT recommendation, including STEM OPT. The school must pay before the DSO enters the recommendation in SEVIS, and USCIS would not issue the EAD until it is paid. Refunds are case-by-case, and only before the EAD is issued. The fee would start for recommendations dated 60 days after a final rule is published. Nothing is in effect yet. Comments closed Nov 9, 2026 (information-collection comments run to Dec 7); DHS must publish a final rule before anything changes. The earlier $100,000 reports match the rule's combined $70,000 + $30,000 for a student who uses initial OPT and then STEM OPT.",
     "timeline": [
       {
         "date": "2026-07-31",
@@ -257,9 +286,14 @@
         "date": "2026-10-08",
         "label": "NPRM 'Optional Practical Training Fees' (91 FR 64566, Docket ICEB-2026-0100): $70,000 initial, $30,000 subsequent, paid by the school; comments through Nov 9, 2026",
         "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20660/optional-practical-training-fees"
+      },
+      {
+        "date": "2026-11-09",
+        "label": "Comment period closed",
+        "url": "https://www.regulations.gov/docket/ICEB-2026-0100"
       }
     ],
-    "summary_zh": "2026 年 10 月 8 日，DHS（ICE）在 Federal Register 公布拟议规则：向 SEVP 认证学校（而非学生本人）收费。学生首次被推荐任何类型的 OPT（毕业前或毕业后）时一次性收 7 万美元，之后每次再被推荐 OPT（包括 STEM OPT）收 3 万美元。学校必须在 DSO 于 SEVIS 中录入推荐之前缴费，缴费前 USCIS 不会发放 EAD；退款仅限 EAD 发放前、逐案决定。费用从最终规则公布 60 天后签发的推荐开始适用。目前尚未生效。公众评论截止 2026 年 11 月 9 日（信息收集部分 12 月 7 日）。此前媒体报道的 10 万美元，对应的是先用初始 OPT 再用 STEM OPT 的合计 7 万 + 3 万。",
+    "summary_zh": "2026 年 10 月 8 日，DHS（ICE）在 Federal Register 公布拟议规则：向 SEVP 认证学校（而非学生本人）收费。学生首次被推荐任何类型的 OPT（毕业前或毕业后）时一次性收 7 万美元，之后每次再被推荐 OPT（包括 STEM OPT）收 3 万美元。学校必须在 DSO 于 SEVIS 中录入推荐之前缴费，缴费前 USCIS 不会发放 EAD；退款仅限 EAD 发放前、逐案决定。费用从最终规则公布 60 天后签发的推荐开始适用。目前尚未生效。公众评论已于 2026 年 11 月 9 日截止（信息收集部分至 12 月 7 日），须等 DHS 发布最终规则才会生效。此前媒体报道的 10 万美元，对应的是先用初始 OPT 再用 STEM OPT 的合计 7 万 + 3 万。",
     "links": [
       {
         "label": "Comment on regulations.gov (ICEB-2026-0100)",
@@ -278,9 +312,9 @@
       "H-1B",
       "PERM"
     ],
-    "status": "Proposed rule; comments closed, final rule pending",
+    "status": "Final rule at White House review",
     "status_kind": "proposed",
-    "summary": "DOL proposes moving the four prevailing wage levels from the 17th/34th/50th/67th percentiles of OEWS data to the 34th/52nd/70th/88th. Applies to H-1B, H-1B1, E-3 and PERM (EB-2/EB-3) filings made after the effective date; already-approved PWDs, LCAs and labor certifications are not affected. Comment period closed May 26, 2026. No final rule yet.",
+    "summary": "DOL proposes moving the four prevailing wage levels from the 17th/34th/50th/67th percentiles of OEWS data to the 34th/52nd/70th/88th. Applies to H-1B, H-1B1, E-3 and PERM (EB-2/EB-3) filings made after the effective date; already-approved PWDs, LCAs and labor certifications are not affected. Comment period closed May 26, 2026. The final rule went to the White House (OIRA) for review in early November; it is not published and nothing has changed yet.",
     "timeline": [
       {
         "date": "2026-03-26",
@@ -296,9 +330,15 @@
         "date": "2026-05-26",
         "label": "Comment period closed",
         "url": "https://www.regulations.gov/docket/ETA-2026-0001"
+      },
+      {
+        "date": "2026-11-09",
+        "label": "Final rule sent to OIRA for White House review",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQXI1ZEZ2TmU4aVEtSnVoaklxWlRua2psd04zZnhuN2diLXNNMFZpZGROQWlFeWVRTk0yODktUDNTQ0tMSXA5c091OVRtVGNPb3pMbk95S3NUc3QzX3BpOTB1eHdaRlR5eWVaRDV6TnpISUV2dl9MOHFmdzRYbFdwblFmbmNGZEVaMS0tSng0ZHRpanBCRmFSRWEwdGl5YmtNM2ZzN3p4MmJQSkhX?oc=5",
+        "note": "Law firm summary"
       }
     ],
-    "summary_zh": "DOL 提议把 prevailing wage 四个等级从 OEWS 数据的第 17/34/50/67 百分位提高到第 34/52/70/88 百分位，适用于生效日之后提交的 H-1B、H-1B1、E-3 和 PERM（EB-2/EB-3）申请；已批准的 PWD、LCA 和 labor certification 不受影响。评论期已于 2026 年 5 月 26 日结束，最终规则尚未发布。"
+    "summary_zh": "DOL 提议把 prevailing wage 四个等级从 OEWS 数据的第 17/34/50/67 百分位提高到第 34/52/70/88 百分位，适用于生效日之后提交的 H-1B、H-1B1、E-3 和 PERM（EB-2/EB-3）申请；已批准的 PWD、LCA 和 labor certification 不受影响。评论期已于 2026 年 5 月 26 日结束；最终规则 11 月初已送白宫 OIRA 审查，尚未公布，目前一切照旧。"
   },
   {
     "id": "perm-modernization",
@@ -307,9 +347,9 @@
       "PERM",
       "I-140"
     ],
-    "status": "At White House review; not yet published",
-    "status_kind": "pending",
-    "summary": "DOL is drafting 'Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program' (RIN 1205-AC29). Per the regulatory agenda it revisits recruitment standards (online job boards vs. newspaper ads), protections for laid-off U.S. workers, nondiscriminatory hiring, and employer record retention. Sent to OIRA Sep 14, 2026. No proposed text is public; nothing changes until a rule is published and finalized.",
+    "status": "Proposed rule; comments open through Jan 16, 2027",
+    "status_kind": "proposed",
+    "summary": "DOL's proposed overhaul of PERM labor certification (RIN 1205-AC29, Docket ETA-2026-0133) publishes in the Federal Register on Nov 17, 2026, with comments due 60 days later (about Jan 16, 2027). It would end Schedule A (the shortcut that lets some occupations skip the labor market test), raise minimum recruitment standards and modernize them for online hiring, add protections for U.S. workers hit by layoffs (including layoffs through staffing companies) with a layoff-reporting standard, expand notice-of-filing requirements, and codify fully electronic filing for prevailing wage requests and PERM applications. Nothing changes until a final rule takes effect.",
     "timeline": [
       {
         "date": "2026-09-14",
@@ -321,8 +361,20 @@
         "label": "Law firm explainer: what the overhaul is expected to cover",
         "url": "https://badmuslaw.com/blog/dol-advances-major-perm-overhaul-what-employers-should-know-and-why-nothing-has-changed-yet/",
         "note": "Law firm summary"
+      },
+      {
+        "date": "2026-10-26",
+        "label": "OIRA completes review; publication cleared",
+        "url": "https://news.bloomberglaw.com/daily-labor-report/dol-overhaul-of-work-based-green-card-program-clears-white-house",
+        "note": "News report"
+      },
+      {
+        "date": "2026-11-17",
+        "label": "NPRM 'Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program' (Docket ETA-2026-0133); comments due ~Jan 16, 2027",
+        "url": "https://www.federalregister.gov/public-inspection/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-permanent-labor",
+        "note": "Public inspection copy, publishes Nov 17"
       }
     ],
-    "summary_zh": "DOL 正在起草「Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program」（RIN 1205-AC29），据监管议程将重审招聘标准（网络招聘 vs 报纸广告）、对被裁美国员工的保护、非歧视招聘以及雇主记录保存要求。2026 年 9 月 14 日送 OIRA 审查，提案文本尚未公开，规则公布并最终生效前一切照旧。"
+    "summary_zh": "DOL 的 PERM 劳工证改革提案（RIN 1205-AC29，Docket ETA-2026-0133）将于 2026 年 11 月 17 日在 Federal Register 正式公布，评论期 60 天（约至 2027 年 1 月 16 日）。主要内容：取消 Schedule A（部分职业可免劳动力市场测试的捷径）；提高并更新招聘最低标准以适应网络招聘；加强对被裁美国员工的保护（包括通过外包公司裁员的情况），并要求雇主报告裁员；扩大 notice of filing 要求；把 prevailing wage 申请和 PERM 的全电子化办理写入法规。最终规则生效前一切照旧。"
   }
 ]
