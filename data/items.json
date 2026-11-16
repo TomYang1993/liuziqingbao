@@ -7,10 +7,13 @@
     "source": "Axios",
     "kind": "news",
     "first_seen": "2026-11-16T06:48:26.501Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Number of new international college students in the U.S. drops 18 percent",
@@ -20,10 +23,13 @@
     "source": "Washington Post",
     "kind": "news",
     "first_seen": "2026-11-16T06:48:26.501Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump Admin Questions Microsoft’s H-1B Applications After Outage",
