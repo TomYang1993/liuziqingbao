@@ -8,9 +8,14 @@
     "kind": "news",
     "first_seen": "2026-11-17T23:34:11.366Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "CPT"
+    ],
+    "summary": "A federal court enjoined ICE's policy restricting CPT (curricular practical training) for international students, which had been announced via broadcast messages, Fragomen reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXJLQllwUGdhQ2xYUUVpTTY0YlMtNTUyTWRZS001SE5McXhWaVIwUE9CTHFQWUpTREpWSGhPdExpMEdCdEhJR24zVVZMeWZxbnYtUzFsY1cweHZ5ZV83NGxZcFFOMklDeEFvZzVwNnhlZkNsczRoRGxITFBEZ2llQk83R2lrVUpOR3lPd2dpYXBpT1hZbHRXLXk2bkppeDFQLWhCVA?oc=5"
   },
   {
     "title": "US judge blocks Trump policy restricting foreign student work options",
@@ -21,9 +26,14 @@
     "kind": "news",
     "first_seen": "2026-11-17T23:34:11.367Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "CPT"
+    ],
+    "summary": "A federal judge blocked a Trump administration policy restricting international students' work options tied to curricular practical training, Reuters reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXJLQllwUGdhQ2xYUUVpTTY0YlMtNTUyTWRZS001SE5McXhWaVIwUE9CTHFQWUpTREpWSGhPdExpMEdCdEhJR24zVVZMeWZxbnYtUzFsY1cweHZ5ZV83NGxZcFFOMklDeEFvZzVwNnhlZkNsczRoRGxITFBEZ2llQk83R2lrVUpOR3lPd2dpYXBpT1hZbHRXLXk2bkppeDFQLWhCVA?oc=5"
   },
   {
     "title": "DOL Proposes Major Changes to the PERM Labor Certification Process",
@@ -34,9 +44,14 @@
     "kind": "news",
     "first_seen": "2026-11-17T23:34:11.366Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140"
+    ],
+    "summary": "DOL proposed a rule overhauling the PERM labor certification process for employer-sponsored green cards, Ogletree reports.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant"
   },
   {
     "title": "Trump administration moves to restrict employer-sponsored green cards",
@@ -47,9 +62,14 @@
     "kind": "news",
     "first_seen": "2026-11-17T23:34:11.366Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140"
+    ],
+    "summary": "The Trump administration proposed restricting the employer-sponsored green card process via a new PERM labor certification rule, The Hill reports.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant"
   },
   {
     "title": "ICE Foreign Student Internship Limit Blocked as Case Proceeds",
@@ -60,9 +80,13 @@
     "kind": "news",
     "first_seen": "2026-11-17T23:34:11.366Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "CPT"
+    ],
+    "summary": "A federal court blocked ICE's limit on international student internships (CPT) while the underlying lawsuit proceeds, Bloomberg reports.",
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "New US court ruling protects 1.14 million international students from DHS rule",
@@ -73,9 +97,13 @@
     "kind": "news",
     "first_seen": "2026-11-17T23:34:11.366Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "A federal court ruling protects 1.14 million international students from a DHS rule limiting their duration of stay in the US, American Bazaar reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcXZnb0stalhRdy1JbmRIZkpBNmhhYU5aN0M4VDNVRnBpVTVnU19QdGFYeHNqRWRISHozQ1lCbEFZbmc4RUV2UVhERmlYUmJpSGhGQzZhLXhKNFhsc2ZJZ2dDVWxXR19wZDg2Q2E5SnBjVTZMOVVVRHg1X3pVVHI0ZHNsUmQzVzQ0Smd1RHdQMjNsZkt6OWNTNkZpbXpFRGgxOUxiN3FJYm1WYkNaQ2RQbg?oc=5"
   },
   {
     "title": "Federal court scraps Trump’s four-year limit on international students’ stays",
