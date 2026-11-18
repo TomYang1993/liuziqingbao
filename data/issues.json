@@ -349,7 +349,7 @@
     ],
     "status": "Proposed rule; comments open through Jan 16, 2027",
     "status_kind": "proposed",
-    "summary": "DOL's proposed overhaul of PERM labor certification (RIN 1205-AC29, Docket ETA-2026-0133) publishes in the Federal Register on Nov 17, 2026, with comments due 60 days later (about Jan 16, 2027). It would end Schedule A (the shortcut that lets some occupations skip the labor market test), raise minimum recruitment standards and modernize them for online hiring, add protections for U.S. workers hit by layoffs (including layoffs through staffing companies) with a layoff-reporting standard, expand notice-of-filing requirements, and codify fully electronic filing for prevailing wage requests and PERM applications. Nothing changes until a final rule takes effect.",
+    "summary": "DOL's proposed overhaul of PERM labor certification (RIN 1205-AC29, Docket ETA-2026-0133) was published in the Federal Register on Nov 17, 2026, with comments due 60 days later (about Jan 16, 2027). It would end Schedule A (the shortcut that lets some occupations skip the labor market test), raise minimum recruitment standards and modernize them for online hiring, add protections for U.S. workers hit by layoffs (including layoffs through staffing companies) with a layoff-reporting standard, expand notice-of-filing requirements, and codify fully electronic filing for prevailing wage requests and PERM applications. Nothing changes until a final rule takes effect.",
     "timeline": [
       {
         "date": "2026-09-14",
@@ -371,10 +371,9 @@
       {
         "date": "2026-11-17",
         "label": "NPRM 'Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program' (Docket ETA-2026-0133); comments due ~Jan 16, 2027",
-        "url": "https://www.federalregister.gov/public-inspection/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-permanent-labor",
-        "note": "Public inspection copy, publishes Nov 17"
+        "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant"
       }
     ],
-    "summary_zh": "DOL 的 PERM 劳工证改革提案（RIN 1205-AC29，Docket ETA-2026-0133）将于 2026 年 11 月 17 日在 Federal Register 正式公布，评论期 60 天（约至 2027 年 1 月 16 日）。主要内容：取消 Schedule A（部分职业可免劳动力市场测试的捷径）；提高并更新招聘最低标准以适应网络招聘；加强对被裁美国员工的保护（包括通过外包公司裁员的情况），并要求雇主报告裁员；扩大 notice of filing 要求；把 prevailing wage 申请和 PERM 的全电子化办理写入法规。最终规则生效前一切照旧。"
+    "summary_zh": "DOL 的 PERM 劳工证改革提案（RIN 1205-AC29，Docket ETA-2026-0133）已于 2026 年 11 月 17 日在 Federal Register 正式公布，评论期 60 天（约至 2027 年 1 月 16 日）。主要内容：取消 Schedule A（部分职业可免劳动力市场测试的捷径）；提高并更新招聘最低标准以适应网络招聘；加强对被裁美国员工的保护（包括通过外包公司裁员的情况），并要求雇主报告裁员；扩大 notice of filing 要求；把 prevailing wage 申请和 PERM 的全电子化办理写入法规。最终规则生效前一切照旧。"
   }
 ]
