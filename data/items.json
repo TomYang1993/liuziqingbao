@@ -145,9 +145,14 @@
     "kind": "news",
     "first_seen": "2026-11-20T07:29:42.990Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "PERM",
+      "I-140"
+    ],
+    "summary": "DOL proposed a rule overhauling the PERM labor certification process for employer-sponsored green cards, National Law Review reports.",
+    "ai": true,
+    "doc_type": "proposed rule",
+    "duplicate_of": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant"
   },
   {
     "title": "Trump administration moves to restrict employer-sponsored green cards",
