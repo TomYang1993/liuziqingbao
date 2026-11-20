@@ -7,10 +7,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-11-19T23:06:28.084Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump Green Card Proposal Fuels Doubt Over H-1B Worker Pipeline",
