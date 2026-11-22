@@ -7,10 +7,13 @@
     "source": "Fragomen",
     "kind": "news",
     "first_seen": "2026-11-22T16:26:11.045Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Is America losing Indian talent? H-1B delays and Trump’s rules drive workers to the exit",
@@ -117,10 +120,13 @@
     "source": "Ogletree",
     "kind": "news",
     "first_seen": "2026-11-22T16:26:11.045Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "PERM"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Texas H-1B Visa Holders Handed Boost as Hinojosa Vows Policy U-Turn",
