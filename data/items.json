@@ -1,5 +1,31 @@
 [
   {
+    "title": "Is America losing Indian talent? H-1B delays and Trump’s rules drive workers to the exit",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUXRfV2g5b3ZEbjlTSDJGWldGSTdKOWtKWTAwbG5PbEFkM2Y2YnZvbmVLSV8xWHlWb0pnbVFYLU56Wk1XMUxua2kxRnBUMlZmUFZCelNMMTBQYW9Bc25ZVUJZX3dYQW51MU12MkZac19YRzMweFRkcm5JY1BNdHBwX18tTTd5MExiTUhpa05CRHdEclRfTUhQY29WVVZ6dnBFcnN3TzRqY2oxQQ?oc=5",
+    "published": "2026-11-21T14:34:31.000Z",
+    "excerpt": "",
+    "source": "American Bazaar",
+    "kind": "news",
+    "first_seen": "2026-11-22T07:06:11.845Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
+  },
+  {
+    "title": "International Student Enrollment Plunged. Schools Are Bracing for More Losses.",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOV2F3SHZOb2ljcEF5VFpuR25ORV9XZ2M0M1loQ2Fmc2hFZTY4R0hQaUdOM1l6TzF2SUh5ci1obTE1OENZSjN0YXpsNldDOWVwWjlfWEVZd3F4dUtKOUF5ZFgyUDZlNk04NmVCUDNxamZ0enRsdllhSl9VQlVwRVk2cFRYeHU0OGdKU0NRZkVDTjBrN2JCUTVR?oc=5",
+    "published": "2026-11-21T10:00:31.000Z",
+    "excerpt": "",
+    "source": "New York Times",
+    "kind": "news",
+    "first_seen": "2026-11-22T07:06:11.845Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
+  },
+  {
     "title": "H-1B delays and fees are pushing tech workers out of the US, Bloomberg reports",
     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU2FHQjQyczJMaE1FclRxT09qa0gydnRVS254emYtMjFmSEpzbGp1UldZM0JrcmN3bHQ5S2ZiM2hRZkltSjBRbnlEbDk3MHRzSTJjOFNZS1QwTGxRUUIzV01JNjNMNmpIRE4tcVhSMlljTVB5VU85em9lYzdmc3dUc2pXT01KWTQzT3BmSFQzakNWMnV3RF95b1VrSjhjd2tvanBZdm9jZko?oc=5",
     "published": "2026-11-20T12:24:01.000Z",
@@ -14,6 +40,19 @@
     "summary": null,
     "ai": true,
     "doc_type": "other"
+  },
+  {
+    "title": "H-1B Visa Workers Are Fed Up and Abandoning American Tech Jobs",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRm9XeVRwWXJ0ZzVzNmw3eklTY05RMWVLdFJ0U0RJb3lCSk14VDhVaFRKbGJlNDFuemRqRFJ4YnZ1WHl3MHM5YVNtaUJHYWxWTnVGOE85cUxKX1MtRnBIWWNuMjVFQkd1MXRZNjViclQ3VHN1bmF2Wl9Sd3ZLZVhjc1E5RzQ4M3ZmcHk3MTMyY3lGU05IMFp5Ny1hbWFvZjhNM3hzQVZqUV9jeVN3MVFaNG40SkU?oc=5",
+    "published": "2026-11-20T11:30:02.000Z",
+    "excerpt": "",
+    "source": "Bloomberg",
+    "kind": "news",
+    "first_seen": "2026-11-22T07:06:11.845Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
   },
   {
     "title": "\"A major relief\": US stakeholders react to Duration of Status reprieve",
@@ -289,6 +328,19 @@
     "ai": true,
     "doc_type": "proposed rule",
     "duplicate_of": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant"
+  },
+  {
+    "title": "US Offers 15-Day Premium Processing for 27 Visa Categories, Indians to Benefit",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUzloUUp3MGNjRjZJWFpMTGxMZDA3MkFxUW1EbTExSEJlOUlJOVJGTVlISlBwRXFJWlVTeEplWHhLa2EyS18zTVV5UUZ2bFNONXNNVVpRdmFWbTdhanMyVU9pUk5ORkxGS2ZqQVF1NkdMb3dNOGRDSjlnY2NzOU1TQ19HSFRVM1U?oc=5",
+    "published": "2026-11-17T01:56:00.000Z",
+    "excerpt": "",
+    "source": "NPR",
+    "kind": "news",
+    "first_seen": "2026-11-22T07:06:11.845Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
   },
   {
     "title": "Judge tosses DHS rule limiting how long foreign students can study in US",
@@ -589,6 +641,19 @@
     "summary": null,
     "ai": true,
     "doc_type": "other"
+  },
+  {
+    "title": "NLRB Denied Chance to Restore Injunction Test in Seventh Circuit",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRWtpa2hRa2l3VWtXN0xLYlphdGlXMk8zTXlQLTE5V2FkRUtsRDhSeFRNQXRyV01GSkt4ZEdZcHB2dnh0bEVjUURTZ0VBZ0M2QmpRNGdrZWNBaTdDRDh2Zk5GY0lrZWJNamhxc185NW9DM0xlQzRTTWxRZjZWN3pLZ3R4bVVkZEw2Um1acXlIQmhSMktlemhMYXpQbEFaM3phLUUwaXl2dTV2RTZoVFROb2JURQ?oc=5",
+    "published": "2026-11-16T00:51:00.000Z",
+    "excerpt": "",
+    "source": "Bloomberg",
+    "kind": "news",
+    "first_seen": "2026-11-22T07:06:11.845Z",
+    "relevant": true,
+    "topics": [],
+    "summary": null,
+    "ai": false
   },
   {
     "title": "Trump Admin Questions Microsoft’s H-1B Applications After Outage",
