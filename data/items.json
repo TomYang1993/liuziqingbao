@@ -7,10 +7,14 @@
     "source": "The PIE",
     "kind": "news",
     "first_seen": "2026-11-24T14:59:25.477Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "CPT",
+      "F-1"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Worried about your H-1B renewal? New DHS proposal could affect 208,000 visa petitions",
@@ -20,10 +24,13 @@
     "source": "American Bazaar",
     "kind": "news",
     "first_seen": "2026-11-24T14:59:25.477Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "H-1B Prevailing Wage Changes 2026: What Employers Need to Know",
@@ -49,10 +56,13 @@
     "source": "National Law Review",
     "kind": "news",
     "first_seen": "2026-11-24T14:59:25.477Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "PERM"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "A World of Difference in Immigration - Immigration attorneys, solicitors, and consultants worldwide",
@@ -110,10 +120,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-24T14:59:25.477Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Union, Tech Firm Wrongfully Influenced Layoff, Lawsuit Says (1)",
