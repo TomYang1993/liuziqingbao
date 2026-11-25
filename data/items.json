@@ -218,9 +218,13 @@
     "kind": "news",
     "first_seen": "2026-11-25T00:53:23.294Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1"
+    ],
+    "summary": "A federal court vacated the DHS rule that would have replaced F, J, and I nonimmigrants' open-ended duration of status with fixed admission periods, Ogletree reports. International students and exchange visitors on F-1, J-1, and I visas are affected.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQm9SQlBkZXRxQ01rSTRpWldQbVgydHpYSi1mRG43WVhrbTJhTDlKdHRoZWtuN0JRY2RYYUVfQXBlQlhzN21FQVFqUGdxT2NnUzQ4N1dkMm43VUVGMmV1YW5rYTVNZTBjbjB2dzJjMDZlbUpNanNGUWpDbXpIaEFzVlFvbzVYTUZ0RlV3clF0dGIzWkVRdFNrUFNqdDdIQ1J4X044U1BQRWw3WF9iYkhjTA?oc=5"
   },
   {
     "title": "PERM Overhaul: What DOL’s Proposed Rule Means for Your Green Card Sponsorship Program",
