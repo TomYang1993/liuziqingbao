@@ -88,10 +88,13 @@
     "source": "New York Times",
     "kind": "news",
     "first_seen": "2026-11-27T14:00:20.491Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "USCIS AOS Memo: What Employers and Employees Should Know",
@@ -229,10 +232,13 @@
     "source": "Ogletree",
     "kind": "news",
     "first_seen": "2026-11-27T14:00:20.491Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "EEOC’s Fred Meyer Sex Harassment Case Can Proceed, Judge Says",
