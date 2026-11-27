@@ -7,10 +7,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-11-27T00:40:44.540Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Trump’s Latest Birthright Citizenship Limits Halted by Judge (1)",
@@ -85,10 +88,13 @@
     "source": "Boundless",
     "kind": "news",
     "first_seen": "2026-11-27T00:40:44.540Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "H-1B Prevailing Wage Changes 2026: What Employers Need to Know",
@@ -275,10 +281,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-27T00:40:44.540Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "What international students should know about the UK job market",
@@ -288,10 +297,13 @@
     "source": "Times Higher Education",
     "kind": "news",
     "first_seen": "2026-11-27T00:40:44.540Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "H-1B Visa Workers Are Fed Up and Abandoning American Tech Jobs",
@@ -334,9 +346,14 @@
     "kind": "news",
     "first_seen": "2026-11-27T00:40:44.540Z",
     "relevant": true,
-    "topics": [],
-    "summary": null,
-    "ai": false
+    "topics": [
+      "F-1",
+      "CPT"
+    ],
+    "summary": "A federal judge blocked restrictions on international student training (CPT) opportunities, continuing coverage of the ICE policy injunction, Inside Higher Ed reports.",
+    "ai": true,
+    "doc_type": "court",
+    "duplicate_of": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXJLQllwUGdhQ2xYUUVpTTY0YlMtNTUyTWRZS001SE5McXhWaVIwUE9CTHFQWUpTREpWSGhPdExpMEdCdEhJR24zVVZMeWZxbnYtUzFsY1cweHZ5ZV83NGxZcFFOMklDeEFvZzVwNnhlZkNsczRoRGxITFBEZ2llQk83R2lrVUpOR3lPd2dpYXBpT1hZbHRXLXk2bkppeDFQLWhCVA?oc=5"
   },
   {
     "title": "F-1 Student Visa Rules: Cap Struck Down, CPT Restrictions Temporarily Blocked",
