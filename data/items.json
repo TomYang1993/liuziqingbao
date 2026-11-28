@@ -7,10 +7,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-11-28T00:06:58.323Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Anthropic Sued Over Heart Transplant Patient’s Demotion, Firing",
@@ -20,10 +23,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-28T00:06:58.323Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "H-1B Approvals Surge Eightfold at Major Texas Tech Employer: Report",
@@ -33,10 +39,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-11-28T00:06:58.323Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Scott Colom Targets H-1B Visas After Mississippi Senate Win",
@@ -46,10 +55,13 @@
     "source": "Newsweek",
     "kind": "news",
     "first_seen": "2026-11-28T00:06:58.323Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "H-1B"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Democrats Plan to Target Supreme Court Citizens United Ruling",
@@ -59,10 +71,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-28T00:06:58.323Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "Kroger Targeted Over H-1B Visa Filings Amid Mass Layoffs",
@@ -88,10 +103,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-28T00:06:58.323Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Trump’s Latest Birthright Citizenship Limits Halted by Judge (1)",
@@ -214,10 +232,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-28T00:06:58.323Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "court"
   },
   {
     "title": "Week in review: Greek life under heavy scrutiny",
