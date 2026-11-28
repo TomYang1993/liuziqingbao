@@ -151,10 +151,13 @@
     "source": "Bloomberg",
     "kind": "news",
     "first_seen": "2026-11-28T16:59:00.730Z",
-    "relevant": true,
-    "topics": [],
+    "relevant": false,
+    "topics": [
+      "Other"
+    ],
     "summary": null,
-    "ai": false
+    "ai": true,
+    "doc_type": "other"
   },
   {
     "title": "US CPT ruling welcomed, but concerns over student confidence remain",
